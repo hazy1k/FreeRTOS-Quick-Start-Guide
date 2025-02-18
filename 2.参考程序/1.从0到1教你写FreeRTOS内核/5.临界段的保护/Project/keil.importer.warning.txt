@@ -1,0 +1,17 @@
+!!! 警告 !!!
+
+存在未解决的依赖项，请手动添加它们 !, 完成添加后，请删除该文件，避免再次弹出提示。
+
+项目位置：'e:\StudyNote\study_FreeRTOS\2.参考程序\1.从0到1教你写FreeRTOS内核\5.临界段的保护\Project\Project.code-workspace'
+
+---
+
+FileName: 'Device\ARM\ARMCM3\Source\ARM\startup_ARMCM3.s'
+	Class:     'Device'
+	Category:  'sourceAsm'
+	Location:  'RTE/Device/ARMCM3/startup_ARMCM3.s'
+
+FileName: 'Device\ARM\ARMCM3\Source\system_ARMCM3.c'
+	Class:     'Device'
+	Category:  'sourceC'
+	Location:  'RTE/Device/ARMCM3/system_ARMCM3.c'
