@@ -3,7 +3,7 @@
  * Auto generated Run-Time-Environment Configuration File
  *      *** Do not modify ! ***
  *
- * Project: 'Fire_FreeRTOS' 
+ * Project: 'FreeRTOS' 
  * Target:  'Target 1' 
  */
 
