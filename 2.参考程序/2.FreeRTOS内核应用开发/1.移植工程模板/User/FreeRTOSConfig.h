@@ -71,7 +71,7 @@
 #define FREERTOS_CONFIG_H
 
 #include "stm32f10x.h"
-#include "bsp_usart.h"
+#include "uart.h"
 
 
 //针对不同的编译器调用不同的stdint.h文件
@@ -312,4 +312,3 @@
 
 
 #endif /* FREERTOS_CONFIG_H */
-

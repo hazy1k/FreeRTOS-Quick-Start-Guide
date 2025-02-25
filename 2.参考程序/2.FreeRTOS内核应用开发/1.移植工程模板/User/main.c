@@ -1,10 +1,10 @@
 #include "FreeRTOS.h"
 #include "task.h"
-// ¿ª·¢°åÓ²¼şbspÍ·ÎÄ¼ş 
-#include "bsp_led.h"
-#include "bsp_usart.h"
+#include "led.h"
+#include "uart.h"
 
 int main(void)
 {	
-  
+	LED_Init(); // LEDæ¥å£åˆå§‹åŒ–
+	LED1_ON();
 }
