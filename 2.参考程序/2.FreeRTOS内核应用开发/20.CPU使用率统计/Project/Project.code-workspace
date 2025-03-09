@@ -1,0 +1,39 @@
+{
+    "folders": [
+        {
+            "path": "."
+        }
+    ],
+    "settings": {
+        "files.associations": {
+            "*.m": "matlab",
+            "freertos.h": "c",
+            "timbase.h": "c",
+            "string.h": "c",
+            "stdint.h": "c",
+            "stm32f10x_it.h": "c",
+            "freertosconfig.h": "c",
+            "uart.h": "c",
+            "task.h": "c"
+        },
+        "MicroPython.executeButton": [
+            {
+                "text": "▶",
+                "tooltip": "运行",
+                "alignment": "left",
+                "command": "extension.executeFile",
+                "priority": 3.5
+            }
+        ],
+        "MicroPython.syncButton": [
+            {
+                "text": "$(sync)",
+                "tooltip": "同步",
+                "alignment": "left",
+                "command": "extension.execute",
+                "priority": 4
+            }
+        ]
+    },
+    "extensions": {}
+}

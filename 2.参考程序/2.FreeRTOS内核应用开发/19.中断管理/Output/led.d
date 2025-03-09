@@ -1,0 +1,8 @@
+..\output\led.o: ..\User\led\led.c
+..\output\led.o: ..\User\led\led.h
+..\output\led.o: ..\Libraries\CMSIS\stm32f10x.h
+..\output\led.o: ..\Libraries\CMSIS\core_cm3.h
+..\output\led.o: E:\dianzi\MDKv5\ARM\AC5\Bin\..\include\stdint.h
+..\output\led.o: ..\Libraries\CMSIS\system_stm32f10x.h
+..\output\led.o: ..\User\stm32f10x_conf.h
+..\output\led.o: ..\Libraries\CMSIS\stm32f10x.h
