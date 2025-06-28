@@ -1,0 +1,7 @@
+FreeRTOS：-存放FreeRTOS组件
+Libraries：-STM32F1和M3库文件
+Output：-MDK编译输出的文件
+Project：-MDK的工程目录
+User：-用户编写的代码和BSP驱动
+VSCode：-使用Embedded IDE For VSCode产生的文件
+REDME.md：-整个工程的简单介绍和注意事项
