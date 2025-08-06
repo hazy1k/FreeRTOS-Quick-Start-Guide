@@ -1,9 +1,10 @@
 #ifndef FREERTOS_CONFIG_H
 #define FREERTOS_CONFIG_H
 
-/* 头文件 */
-#include "./SYSTEM/sys/sys.h"
-#include "./SYSTEM/usart/usart.h"
+/* 用户头文件 */
+#include "sys.h"
+#include "usart.h"
+/* 系统头文件 */
 #include <stdint.h>
 
 extern uint32_t SystemCoreClock;
@@ -52,7 +53,7 @@ extern uint32_t SystemCoreClock;
 /* 运行时间和任务状态统计相关定义 */
 #define configGENERATE_RUN_TIME_STATS                   0                       /* 1: 使能任务运行时间统计功能, 默认: 0 */
 #if configGENERATE_RUN_TIME_STATS
-#include "./BSP/TIMER/btim.h"
+#include "btim.h"
 #define portCONFIGURE_TIMER_FOR_RUN_TIME_STATS()        ConfigureTimeForRunTimeStats()
 extern uint32_t FreeRTOSRunTimeTicks;
 #define portGET_RUN_TIME_COUNTER_VALUE()                FreeRTOSRunTimeTicks

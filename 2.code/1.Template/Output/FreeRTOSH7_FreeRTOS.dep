@@ -1,24 +1,26 @@
 Dependencies for Project 'FreeRTOSH7', Target 'FreeRTOS': (DO NOT MODIFY !)
-CompilerVersion: 5060960::V5.06 update 7 (build 960)::.\AC5
-F (..\Drivers\CMSIS\Device\ST\STM32H7xx\Source\Templates\arm\startup_stm32h750xx.s)(0x6540A28B)(--cpu Cortex-M7.fp.dp --apcs=interwork -IE:\dianzi\MDKv5\Keil\STM32H7xx_DFP\3.1.0\Drivers\CMSIS\Device\ST\STM32H7xx\Include--pd "__UVISION_VERSION SETA 538" --pd "STM32H750xx SETA 1"-o ..\output\startup_stm32h750xx.o --depend ..\output\startup_stm32h750xx.d)
-F (..\User\main.c)(0x688A41B2)(--c99 -c --cpu Cortex-M7.fp.dp -O1 --apcs=interwork --split_sections -I ..\Drivers -I ..\Drivers\CMSIS\Device\ST\STM32H7xx\Include -I ..\Drivers\STM32H7xx_HAL_Driver\Inc -I ..\Drivers\CMSIS\Include -I ..\Middlewares -I ..\Middlewares\MALLOC -I ..\Middlewares\FreeRTOS\include -I ..\Middlewares\FreeRTOS\portable\RVDS\ARM_CM7\r0p1 -I ..\Drivers\SYSTEM\delay -I ..\Drivers\SYSTEM\sys -I ..\Drivers\SYSTEM\usart -I ..\Drivers\BSP\KEY -I ..\Drivers\BSP\LCD -I ..\Drivers\BSP\LED -I ..\Drivers\BSP\MPU -I ..\Drivers\BSP\TIMER -I ..\User-IE:\dianzi\MDKv5\Keil\STM32H7xx_DFP\3.1.0\Drivers\CMSIS\Device\ST\STM32H7xx\Include-D__UVISION_VERSION="538" -DSTM32H750xx -DSTM32H750xx -DUSE_HAL_DRIVER-o ..\output\main.o --depend ..\output\main.d)
+CompilerVersion: 6190000::V6.19::ARMCLANG
+F (..\Drivers\CMSIS\Device\ST\STM32H7xx\Source\Templates\arm\startup_stm32h750xx.s)(0x6540A28B)(--target=arm-arm-none-eabi -mcpu=cortex-m7 -mfpu=fpv5-d16 -mfloat-abi=hard -masm=auto  -Wa,armasm,--diag_suppress=A1950W -c-IE:/dianzi/MDKv5/Keil/STM32H7xx_DFP/3.1.0/Drivers/CMSIS/Device/ST/STM32H7xx/Include-Wa,armasm,--pd,"__UVISION_VERSION SETA 538" -Wa,armasm,--pd,"STM32H750xx SETA 1"-o ../output/startup_stm32h750xx.o)
+F (..\User\main.c)(0x688A41B2)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m7 -mfpu=fpv5-d16 -mfloat-abi=hard -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-O2 -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-reserved-identifier -I ../Drivers -I ../Drivers/CMSIS/Device/ST/STM32H7xx/Include -I ../Drivers/STM32H7xx_HAL_Driver/Inc -I ../Drivers/CMSIS/Include -I ../Middlewares -I ../Middlewares/MALLOC -I ../Middlewares/FreeRTOS/include -I ../Drivers/SYSTEM/delay -I ../Drivers/SYSTEM/sys -I ../Drivers/SYSTEM/usart -I ../Drivers/BSP/KEY -I ../Drivers/BSP/LCD -I ../Drivers/BSP/LED -I ../Drivers/BSP/MPU -I ../Drivers/BSP/TIMER -I ../User -I ../Middlewares/FreeRTOS/portable/GCC/ARM_CM7/r0p1-IE:/dianzi/MDKv5/Keil/STM32H7xx_DFP/3.1.0/Drivers/CMSIS/Device/ST/STM32H7xx/Include-D__UVISION_VERSION="538" -DSTM32H750xx -DSTM32H750xx -DUSE_HAL_DRIVER-o ../output/main.o -MD)
 I (..\Drivers\SYSTEM\sys\sys.h)(0x688A423C)
 I (..\Drivers\CMSIS\Device\ST\STM32H7xx\Include\stm32h7xx.h)(0x6540A28B)
 I (..\Drivers\CMSIS\Device\ST\STM32H7xx\Include\stm32h750xx.h)(0x6540A28B)
 I (..\Drivers\CMSIS\Include\core_cm7.h)(0x6540A28B)
-I (E:\dianzi\MDKv5\ARM\AC5\include\stdint.h)(0x5E8E3CC2)
+I (E:\dianzi\MDKv5\ARM\ARMCLANG\include\stdint.h)(0x637AECBC)
 I (..\Drivers\CMSIS\Include\cmsis_version.h)(0x6540A28B)
 I (..\Drivers\CMSIS\Include\cmsis_compiler.h)(0x6540A28B)
-I (..\Drivers\CMSIS\Include\cmsis_armcc.h)(0x6540A28B)
+I (..\Drivers\CMSIS\Include\cmsis_armclang.h)(0x6540A28B)
+I (E:\dianzi\MDKv5\ARM\ARMCLANG\include\arm_compat.h)(0x6306C9C0)
+I (E:\dianzi\MDKv5\ARM\ARMCLANG\include\arm_acle.h)(0x637AECB8)
 I (..\Drivers\CMSIS\Include\mpu_armv7.h)(0x6540A28B)
 I (..\Drivers\CMSIS\Device\ST\STM32H7xx\Include\system_stm32h7xx.h)(0x6540A28B)
 I (..\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal.h)(0x6540A28B)
 I (..\User\stm32h7xx_hal_conf.h)(0x6540A28E)
 I (..\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_rcc.h)(0x6540A28B)
 I (..\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_def.h)(0x6540A28B)
-I (..\Drivers\STM32H7xx_HAL_Driver\Inc\Legacy/stm32_hal_legacy.h)(0x6540A28B)
-I (E:\dianzi\MDKv5\ARM\AC5\include\stddef.h)(0x5E8E3CC2)
-I (E:\dianzi\MDKv5\ARM\AC5\include\math.h)(0x5E8E3CC2)
+I (..\Drivers\STM32H7xx_HAL_Driver\Inc\Legacy\stm32_hal_legacy.h)(0x6540A28B)
+I (E:\dianzi\MDKv5\ARM\ARMCLANG\include\stddef.h)(0x637AECBC)
+I (E:\dianzi\MDKv5\ARM\ARMCLANG\include\math.h)(0x637AECBA)
 I (..\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_rcc_ex.h)(0x6540A28B)
 I (..\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_gpio.h)(0x6540A28B)
 I (..\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_gpio_ex.h)(0x6540A28B)
@@ -103,15 +105,15 @@ I (..\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_pcd_ex.h)(0x6540A28B)
 I (..\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_hcd.h)(0x6540A28B)
 I (..\Drivers\SYSTEM\delay\delay.h)(0x688A423C)
 I (..\Drivers\SYSTEM\usart\usart.h)(0x688A423C)
-I (E:\dianzi\MDKv5\ARM\AC5\include\stdio.h)(0x5E8E3CC2)
+I (E:\dianzi\MDKv5\ARM\ARMCLANG\include\stdio.h)(0x637AECBC)
 I (..\Drivers\BSP\LED\led.h)(0x688A429A)
 I (..\Drivers\BSP\MPU\mpu.h)(0x688A4375)
 I (..\Drivers\BSP\LCD\lcd.h)(0x688A432C)
-I (E:\dianzi\MDKv5\ARM\AC5\include\stdlib.h)(0x5E8E3CC2)
+I (E:\dianzi\MDKv5\ARM\ARMCLANG\include\stdlib.h)(0x637AECBC)
 I (..\Drivers\BSP\KEY\key.h)(0x688A42BB)
-I (..\Middlewares\MALLOC\malloc.h)(0x688A438F)
+I (..\Middlewares\MALLOC\malloc.h)(0x6890759B)
 I (..\User\freertos_demo.h)(0x688A43F4)
-F (..\User\stm32h7xx_it.c)(0x688A41DC)(--c99 -c --cpu Cortex-M7.fp.dp -O1 --apcs=interwork --split_sections -I ..\Drivers -I ..\Drivers\CMSIS\Device\ST\STM32H7xx\Include -I ..\Drivers\STM32H7xx_HAL_Driver\Inc -I ..\Drivers\CMSIS\Include -I ..\Middlewares -I ..\Middlewares\MALLOC -I ..\Middlewares\FreeRTOS\include -I ..\Middlewares\FreeRTOS\portable\RVDS\ARM_CM7\r0p1 -I ..\Drivers\SYSTEM\delay -I ..\Drivers\SYSTEM\sys -I ..\Drivers\SYSTEM\usart -I ..\Drivers\BSP\KEY -I ..\Drivers\BSP\LCD -I ..\Drivers\BSP\LED -I ..\Drivers\BSP\MPU -I ..\Drivers\BSP\TIMER -I ..\User-IE:\dianzi\MDKv5\Keil\STM32H7xx_DFP\3.1.0\Drivers\CMSIS\Device\ST\STM32H7xx\Include-D__UVISION_VERSION="538" -DSTM32H750xx -DSTM32H750xx -DUSE_HAL_DRIVER-o ..\output\stm32h7xx_it.o --depend ..\output\stm32h7xx_it.d)
+F (..\User\stm32h7xx_it.c)(0x688A41DC)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m7 -mfpu=fpv5-d16 -mfloat-abi=hard -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-O2 -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-reserved-identifier -I ../Drivers -I ../Drivers/CMSIS/Device/ST/STM32H7xx/Include -I ../Drivers/STM32H7xx_HAL_Driver/Inc -I ../Drivers/CMSIS/Include -I ../Middlewares -I ../Middlewares/MALLOC -I ../Middlewares/FreeRTOS/include -I ../Drivers/SYSTEM/delay -I ../Drivers/SYSTEM/sys -I ../Drivers/SYSTEM/usart -I ../Drivers/BSP/KEY -I ../Drivers/BSP/LCD -I ../Drivers/BSP/LED -I ../Drivers/BSP/MPU -I ../Drivers/BSP/TIMER -I ../User -I ../Middlewares/FreeRTOS/portable/GCC/ARM_CM7/r0p1-IE:/dianzi/MDKv5/Keil/STM32H7xx_DFP/3.1.0/Drivers/CMSIS/Device/ST/STM32H7xx/Include-D__UVISION_VERSION="538" -DSTM32H750xx -DSTM32H750xx -DUSE_HAL_DRIVER-o ../output/stm32h7xx_it.o -MD)
 I (..\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal.h)(0x6540A28B)
 I (..\User\stm32h7xx_hal_conf.h)(0x6540A28E)
 I (..\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_rcc.h)(0x6540A28B)
@@ -119,15 +121,17 @@ I (..\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_def.h)(0x6540A28B)
 I (..\Drivers\CMSIS\Device\ST\STM32H7xx\Include\stm32h7xx.h)(0x6540A28B)
 I (..\Drivers\CMSIS\Device\ST\STM32H7xx\Include\stm32h750xx.h)(0x6540A28B)
 I (..\Drivers\CMSIS\Include\core_cm7.h)(0x6540A28B)
-I (E:\dianzi\MDKv5\ARM\AC5\include\stdint.h)(0x5E8E3CC2)
+I (E:\dianzi\MDKv5\ARM\ARMCLANG\include\stdint.h)(0x637AECBC)
 I (..\Drivers\CMSIS\Include\cmsis_version.h)(0x6540A28B)
 I (..\Drivers\CMSIS\Include\cmsis_compiler.h)(0x6540A28B)
-I (..\Drivers\CMSIS\Include\cmsis_armcc.h)(0x6540A28B)
+I (..\Drivers\CMSIS\Include\cmsis_armclang.h)(0x6540A28B)
+I (E:\dianzi\MDKv5\ARM\ARMCLANG\include\arm_compat.h)(0x6306C9C0)
+I (E:\dianzi\MDKv5\ARM\ARMCLANG\include\arm_acle.h)(0x637AECB8)
 I (..\Drivers\CMSIS\Include\mpu_armv7.h)(0x6540A28B)
 I (..\Drivers\CMSIS\Device\ST\STM32H7xx\Include\system_stm32h7xx.h)(0x6540A28B)
-I (..\Drivers\STM32H7xx_HAL_Driver\Inc\Legacy/stm32_hal_legacy.h)(0x6540A28B)
-I (E:\dianzi\MDKv5\ARM\AC5\include\stddef.h)(0x5E8E3CC2)
-I (E:\dianzi\MDKv5\ARM\AC5\include\math.h)(0x5E8E3CC2)
+I (..\Drivers\STM32H7xx_HAL_Driver\Inc\Legacy\stm32_hal_legacy.h)(0x6540A28B)
+I (E:\dianzi\MDKv5\ARM\ARMCLANG\include\stddef.h)(0x637AECBC)
+I (E:\dianzi\MDKv5\ARM\ARMCLANG\include\math.h)(0x637AECBA)
 I (..\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_rcc_ex.h)(0x6540A28B)
 I (..\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_gpio.h)(0x6540A28B)
 I (..\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_gpio_ex.h)(0x6540A28B)
@@ -212,27 +216,29 @@ I (..\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_pcd_ex.h)(0x6540A28B)
 I (..\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_hcd.h)(0x6540A28B)
 I (..\User\stm32h7xx_it.h)(0x6540A28E)
 I (..\Drivers\SYSTEM\sys\sys.h)(0x688A423C)
-F (..\User\freertos_demo.c)(0x688A41DC)(--c99 -c --cpu Cortex-M7.fp.dp -O1 --apcs=interwork --split_sections -I ..\Drivers -I ..\Drivers\CMSIS\Device\ST\STM32H7xx\Include -I ..\Drivers\STM32H7xx_HAL_Driver\Inc -I ..\Drivers\CMSIS\Include -I ..\Middlewares -I ..\Middlewares\MALLOC -I ..\Middlewares\FreeRTOS\include -I ..\Middlewares\FreeRTOS\portable\RVDS\ARM_CM7\r0p1 -I ..\Drivers\SYSTEM\delay -I ..\Drivers\SYSTEM\sys -I ..\Drivers\SYSTEM\usart -I ..\Drivers\BSP\KEY -I ..\Drivers\BSP\LCD -I ..\Drivers\BSP\LED -I ..\Drivers\BSP\MPU -I ..\Drivers\BSP\TIMER -I ..\User-IE:\dianzi\MDKv5\Keil\STM32H7xx_DFP\3.1.0\Drivers\CMSIS\Device\ST\STM32H7xx\Include-D__UVISION_VERSION="538" -DSTM32H750xx -DSTM32H750xx -DUSE_HAL_DRIVER-o ..\output\freertos_demo.o --depend ..\output\freertos_demo.d)
+F (..\User\freertos_demo.c)(0x688A41DC)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m7 -mfpu=fpv5-d16 -mfloat-abi=hard -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-O2 -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-reserved-identifier -I ../Drivers -I ../Drivers/CMSIS/Device/ST/STM32H7xx/Include -I ../Drivers/STM32H7xx_HAL_Driver/Inc -I ../Drivers/CMSIS/Include -I ../Middlewares -I ../Middlewares/MALLOC -I ../Middlewares/FreeRTOS/include -I ../Drivers/SYSTEM/delay -I ../Drivers/SYSTEM/sys -I ../Drivers/SYSTEM/usart -I ../Drivers/BSP/KEY -I ../Drivers/BSP/LCD -I ../Drivers/BSP/LED -I ../Drivers/BSP/MPU -I ../Drivers/BSP/TIMER -I ../User -I ../Middlewares/FreeRTOS/portable/GCC/ARM_CM7/r0p1-IE:/dianzi/MDKv5/Keil/STM32H7xx_DFP/3.1.0/Drivers/CMSIS/Device/ST/STM32H7xx/Include-D__UVISION_VERSION="538" -DSTM32H750xx -DSTM32H750xx -DUSE_HAL_DRIVER-o ../output/freertos_demo.o -MD)
 I (..\User\freertos_demo.h)(0x688A43F4)
 I (..\Drivers\SYSTEM\usart\usart.h)(0x688A423C)
-I (E:\dianzi\MDKv5\ARM\AC5\include\stdio.h)(0x5E8E3CC2)
+I (E:\dianzi\MDKv5\ARM\ARMCLANG\include\stdio.h)(0x637AECBC)
 I (..\Drivers\SYSTEM\sys\sys.h)(0x688A423C)
 I (..\Drivers\CMSIS\Device\ST\STM32H7xx\Include\stm32h7xx.h)(0x6540A28B)
 I (..\Drivers\CMSIS\Device\ST\STM32H7xx\Include\stm32h750xx.h)(0x6540A28B)
 I (..\Drivers\CMSIS\Include\core_cm7.h)(0x6540A28B)
-I (E:\dianzi\MDKv5\ARM\AC5\include\stdint.h)(0x5E8E3CC2)
+I (E:\dianzi\MDKv5\ARM\ARMCLANG\include\stdint.h)(0x637AECBC)
 I (..\Drivers\CMSIS\Include\cmsis_version.h)(0x6540A28B)
 I (..\Drivers\CMSIS\Include\cmsis_compiler.h)(0x6540A28B)
-I (..\Drivers\CMSIS\Include\cmsis_armcc.h)(0x6540A28B)
+I (..\Drivers\CMSIS\Include\cmsis_armclang.h)(0x6540A28B)
+I (E:\dianzi\MDKv5\ARM\ARMCLANG\include\arm_compat.h)(0x6306C9C0)
+I (E:\dianzi\MDKv5\ARM\ARMCLANG\include\arm_acle.h)(0x637AECB8)
 I (..\Drivers\CMSIS\Include\mpu_armv7.h)(0x6540A28B)
 I (..\Drivers\CMSIS\Device\ST\STM32H7xx\Include\system_stm32h7xx.h)(0x6540A28B)
 I (..\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal.h)(0x6540A28B)
 I (..\User\stm32h7xx_hal_conf.h)(0x6540A28E)
 I (..\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_rcc.h)(0x6540A28B)
 I (..\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_def.h)(0x6540A28B)
-I (..\Drivers\STM32H7xx_HAL_Driver\Inc\Legacy/stm32_hal_legacy.h)(0x6540A28B)
-I (E:\dianzi\MDKv5\ARM\AC5\include\stddef.h)(0x5E8E3CC2)
-I (E:\dianzi\MDKv5\ARM\AC5\include\math.h)(0x5E8E3CC2)
+I (..\Drivers\STM32H7xx_HAL_Driver\Inc\Legacy\stm32_hal_legacy.h)(0x6540A28B)
+I (E:\dianzi\MDKv5\ARM\ARMCLANG\include\stddef.h)(0x637AECBC)
+I (E:\dianzi\MDKv5\ARM\ARMCLANG\include\math.h)(0x637AECBA)
 I (..\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_rcc_ex.h)(0x6540A28B)
 I (..\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_gpio.h)(0x6540A28B)
 I (..\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_gpio_ex.h)(0x6540A28B)
@@ -317,33 +323,35 @@ I (..\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_pcd_ex.h)(0x6540A28B)
 I (..\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_hcd.h)(0x6540A28B)
 I (..\Drivers\BSP\LED\led.h)(0x688A429A)
 I (..\Drivers\BSP\LCD\lcd.h)(0x688A432C)
-I (E:\dianzi\MDKv5\ARM\AC5\include\stdlib.h)(0x5E8E3CC2)
+I (E:\dianzi\MDKv5\ARM\ARMCLANG\include\stdlib.h)(0x637AECBC)
 I (..\Middlewares\FreeRTOS\include\FreeRTOS.h)(0x6540A28D)
-I (..\User\FreeRTOSConfig.h)(0x6540A28E)
+I (..\User\FreeRTOSConfig.h)(0x68907994)
 I (..\Middlewares\FreeRTOS\include\projdefs.h)(0x6540A28D)
 I (..\Middlewares\FreeRTOS\include\portable.h)(0x6540A28D)
 I (..\Middlewares\FreeRTOS\include\deprecated_definitions.h)(0x6540A28D)
-I (..\Middlewares\FreeRTOS\portable\RVDS\ARM_CM7\r0p1\portmacro.h)(0x6540A28E)
+I (..\Middlewares\FreeRTOS\portable\GCC\ARM_CM7\r0p1\portmacro.h)(0x61C2EEAA)
 I (..\Middlewares\FreeRTOS\include\mpu_wrappers.h)(0x6540A28D)
 I (..\Middlewares\FreeRTOS\include\task.h)(0x6540A28D)
 I (..\Middlewares\FreeRTOS\include\list.h)(0x6540A28D)
-F (..\Drivers\CMSIS\Device\ST\STM32H7xx\Source\Templates\system_stm32h7xx.c)(0x6540A28B)(--c99 -c --cpu Cortex-M7.fp.dp -O1 --apcs=interwork --split_sections -I ..\Drivers -I ..\Drivers\CMSIS\Device\ST\STM32H7xx\Include -I ..\Drivers\STM32H7xx_HAL_Driver\Inc -I ..\Drivers\CMSIS\Include -I ..\Middlewares -I ..\Middlewares\MALLOC -I ..\Middlewares\FreeRTOS\include -I ..\Middlewares\FreeRTOS\portable\RVDS\ARM_CM7\r0p1 -I ..\Drivers\SYSTEM\delay -I ..\Drivers\SYSTEM\sys -I ..\Drivers\SYSTEM\usart -I ..\Drivers\BSP\KEY -I ..\Drivers\BSP\LCD -I ..\Drivers\BSP\LED -I ..\Drivers\BSP\MPU -I ..\Drivers\BSP\TIMER -I ..\User-IE:\dianzi\MDKv5\Keil\STM32H7xx_DFP\3.1.0\Drivers\CMSIS\Device\ST\STM32H7xx\Include-D__UVISION_VERSION="538" -DSTM32H750xx -DSTM32H750xx -DUSE_HAL_DRIVER-o ..\output\system_stm32h7xx.o --depend ..\output\system_stm32h7xx.d)
+F (..\Drivers\CMSIS\Device\ST\STM32H7xx\Source\Templates\system_stm32h7xx.c)(0x6540A28B)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m7 -mfpu=fpv5-d16 -mfloat-abi=hard -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-O2 -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-reserved-identifier -I ../Drivers -I ../Drivers/CMSIS/Device/ST/STM32H7xx/Include -I ../Drivers/STM32H7xx_HAL_Driver/Inc -I ../Drivers/CMSIS/Include -I ../Middlewares -I ../Middlewares/MALLOC -I ../Middlewares/FreeRTOS/include -I ../Drivers/SYSTEM/delay -I ../Drivers/SYSTEM/sys -I ../Drivers/SYSTEM/usart -I ../Drivers/BSP/KEY -I ../Drivers/BSP/LCD -I ../Drivers/BSP/LED -I ../Drivers/BSP/MPU -I ../Drivers/BSP/TIMER -I ../User -I ../Middlewares/FreeRTOS/portable/GCC/ARM_CM7/r0p1-IE:/dianzi/MDKv5/Keil/STM32H7xx_DFP/3.1.0/Drivers/CMSIS/Device/ST/STM32H7xx/Include-D__UVISION_VERSION="538" -DSTM32H750xx -DSTM32H750xx -DUSE_HAL_DRIVER-o ../output/system_stm32h7xx.o -MD)
 I (..\Drivers\CMSIS\Device\ST\STM32H7xx\Include\stm32h7xx.h)(0x6540A28B)
 I (..\Drivers\CMSIS\Device\ST\STM32H7xx\Include\stm32h750xx.h)(0x6540A28B)
 I (..\Drivers\CMSIS\Include\core_cm7.h)(0x6540A28B)
-I (E:\dianzi\MDKv5\ARM\AC5\include\stdint.h)(0x5E8E3CC2)
+I (E:\dianzi\MDKv5\ARM\ARMCLANG\include\stdint.h)(0x637AECBC)
 I (..\Drivers\CMSIS\Include\cmsis_version.h)(0x6540A28B)
 I (..\Drivers\CMSIS\Include\cmsis_compiler.h)(0x6540A28B)
-I (..\Drivers\CMSIS\Include\cmsis_armcc.h)(0x6540A28B)
+I (..\Drivers\CMSIS\Include\cmsis_armclang.h)(0x6540A28B)
+I (E:\dianzi\MDKv5\ARM\ARMCLANG\include\arm_compat.h)(0x6306C9C0)
+I (E:\dianzi\MDKv5\ARM\ARMCLANG\include\arm_acle.h)(0x637AECB8)
 I (..\Drivers\CMSIS\Include\mpu_armv7.h)(0x6540A28B)
 I (..\Drivers\CMSIS\Device\ST\STM32H7xx\Include\system_stm32h7xx.h)(0x6540A28B)
 I (..\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal.h)(0x6540A28B)
 I (..\User\stm32h7xx_hal_conf.h)(0x6540A28E)
 I (..\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_rcc.h)(0x6540A28B)
 I (..\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_def.h)(0x6540A28B)
-I (..\Drivers\STM32H7xx_HAL_Driver\Inc\Legacy/stm32_hal_legacy.h)(0x6540A28B)
-I (E:\dianzi\MDKv5\ARM\AC5\include\stddef.h)(0x5E8E3CC2)
-I (E:\dianzi\MDKv5\ARM\AC5\include\math.h)(0x5E8E3CC2)
+I (..\Drivers\STM32H7xx_HAL_Driver\Inc\Legacy\stm32_hal_legacy.h)(0x6540A28B)
+I (E:\dianzi\MDKv5\ARM\ARMCLANG\include\stddef.h)(0x637AECBC)
+I (E:\dianzi\MDKv5\ARM\ARMCLANG\include\math.h)(0x637AECBA)
 I (..\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_rcc_ex.h)(0x6540A28B)
 I (..\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_gpio.h)(0x6540A28B)
 I (..\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_gpio_ex.h)(0x6540A28B)
@@ -426,24 +434,26 @@ I (..\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_pcd.h)(0x6540A28B)
 I (..\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_ll_usb.h)(0x6540A28C)
 I (..\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_pcd_ex.h)(0x6540A28B)
 I (..\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_hcd.h)(0x6540A28B)
-F (..\Drivers\SYSTEM\delay\delay.c)(0x688A423C)(--c99 -c --cpu Cortex-M7.fp.dp -O1 --apcs=interwork --split_sections -I ..\Drivers -I ..\Drivers\CMSIS\Device\ST\STM32H7xx\Include -I ..\Drivers\STM32H7xx_HAL_Driver\Inc -I ..\Drivers\CMSIS\Include -I ..\Middlewares -I ..\Middlewares\MALLOC -I ..\Middlewares\FreeRTOS\include -I ..\Middlewares\FreeRTOS\portable\RVDS\ARM_CM7\r0p1 -I ..\Drivers\SYSTEM\delay -I ..\Drivers\SYSTEM\sys -I ..\Drivers\SYSTEM\usart -I ..\Drivers\BSP\KEY -I ..\Drivers\BSP\LCD -I ..\Drivers\BSP\LED -I ..\Drivers\BSP\MPU -I ..\Drivers\BSP\TIMER -I ..\User-IE:\dianzi\MDKv5\Keil\STM32H7xx_DFP\3.1.0\Drivers\CMSIS\Device\ST\STM32H7xx\Include-D__UVISION_VERSION="538" -DSTM32H750xx -DSTM32H750xx -DUSE_HAL_DRIVER-o ..\output\delay.o --depend ..\output\delay.d)
+F (..\Drivers\SYSTEM\delay\delay.c)(0x688A423C)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m7 -mfpu=fpv5-d16 -mfloat-abi=hard -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-O2 -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-reserved-identifier -I ../Drivers -I ../Drivers/CMSIS/Device/ST/STM32H7xx/Include -I ../Drivers/STM32H7xx_HAL_Driver/Inc -I ../Drivers/CMSIS/Include -I ../Middlewares -I ../Middlewares/MALLOC -I ../Middlewares/FreeRTOS/include -I ../Drivers/SYSTEM/delay -I ../Drivers/SYSTEM/sys -I ../Drivers/SYSTEM/usart -I ../Drivers/BSP/KEY -I ../Drivers/BSP/LCD -I ../Drivers/BSP/LED -I ../Drivers/BSP/MPU -I ../Drivers/BSP/TIMER -I ../User -I ../Middlewares/FreeRTOS/portable/GCC/ARM_CM7/r0p1-IE:/dianzi/MDKv5/Keil/STM32H7xx_DFP/3.1.0/Drivers/CMSIS/Device/ST/STM32H7xx/Include-D__UVISION_VERSION="538" -DSTM32H750xx -DSTM32H750xx -DUSE_HAL_DRIVER-o ../output/delay.o -MD)
 I (..\Drivers\SYSTEM\sys\sys.h)(0x688A423C)
 I (..\Drivers\CMSIS\Device\ST\STM32H7xx\Include\stm32h7xx.h)(0x6540A28B)
 I (..\Drivers\CMSIS\Device\ST\STM32H7xx\Include\stm32h750xx.h)(0x6540A28B)
 I (..\Drivers\CMSIS\Include\core_cm7.h)(0x6540A28B)
-I (E:\dianzi\MDKv5\ARM\AC5\include\stdint.h)(0x5E8E3CC2)
+I (E:\dianzi\MDKv5\ARM\ARMCLANG\include\stdint.h)(0x637AECBC)
 I (..\Drivers\CMSIS\Include\cmsis_version.h)(0x6540A28B)
 I (..\Drivers\CMSIS\Include\cmsis_compiler.h)(0x6540A28B)
-I (..\Drivers\CMSIS\Include\cmsis_armcc.h)(0x6540A28B)
+I (..\Drivers\CMSIS\Include\cmsis_armclang.h)(0x6540A28B)
+I (E:\dianzi\MDKv5\ARM\ARMCLANG\include\arm_compat.h)(0x6306C9C0)
+I (E:\dianzi\MDKv5\ARM\ARMCLANG\include\arm_acle.h)(0x637AECB8)
 I (..\Drivers\CMSIS\Include\mpu_armv7.h)(0x6540A28B)
 I (..\Drivers\CMSIS\Device\ST\STM32H7xx\Include\system_stm32h7xx.h)(0x6540A28B)
 I (..\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal.h)(0x6540A28B)
 I (..\User\stm32h7xx_hal_conf.h)(0x6540A28E)
 I (..\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_rcc.h)(0x6540A28B)
 I (..\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_def.h)(0x6540A28B)
-I (..\Drivers\STM32H7xx_HAL_Driver\Inc\Legacy/stm32_hal_legacy.h)(0x6540A28B)
-I (E:\dianzi\MDKv5\ARM\AC5\include\stddef.h)(0x5E8E3CC2)
-I (E:\dianzi\MDKv5\ARM\AC5\include\math.h)(0x5E8E3CC2)
+I (..\Drivers\STM32H7xx_HAL_Driver\Inc\Legacy\stm32_hal_legacy.h)(0x6540A28B)
+I (E:\dianzi\MDKv5\ARM\ARMCLANG\include\stddef.h)(0x637AECBC)
+I (E:\dianzi\MDKv5\ARM\ARMCLANG\include\math.h)(0x637AECBA)
 I (..\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_rcc_ex.h)(0x6540A28B)
 I (..\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_gpio.h)(0x6540A28B)
 I (..\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_gpio_ex.h)(0x6540A28B)
@@ -528,34 +538,36 @@ I (..\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_pcd_ex.h)(0x6540A28B)
 I (..\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_hcd.h)(0x6540A28B)
 I (..\Drivers\SYSTEM\delay\delay.h)(0x688A423C)
 I (..\Middlewares\FreeRTOS\include\FreeRTOS.h)(0x6540A28D)
-I (..\User\FreeRTOSConfig.h)(0x6540A28E)
-I (..\Drivers\./SYSTEM/usart/usart.h)(0x688A423C)
-I (E:\dianzi\MDKv5\ARM\AC5\include\stdio.h)(0x5E8E3CC2)
+I (..\User\FreeRTOSConfig.h)(0x68907994)
+I (..\Drivers\SYSTEM\usart\usart.h)(0x688A423C)
+I (E:\dianzi\MDKv5\ARM\ARMCLANG\include\stdio.h)(0x637AECBC)
 I (..\Middlewares\FreeRTOS\include\projdefs.h)(0x6540A28D)
 I (..\Middlewares\FreeRTOS\include\portable.h)(0x6540A28D)
 I (..\Middlewares\FreeRTOS\include\deprecated_definitions.h)(0x6540A28D)
-I (..\Middlewares\FreeRTOS\portable\RVDS\ARM_CM7\r0p1\portmacro.h)(0x6540A28E)
+I (..\Middlewares\FreeRTOS\portable\GCC\ARM_CM7\r0p1\portmacro.h)(0x61C2EEAA)
 I (..\Middlewares\FreeRTOS\include\mpu_wrappers.h)(0x6540A28D)
 I (..\Middlewares\FreeRTOS\include\task.h)(0x6540A28D)
 I (..\Middlewares\FreeRTOS\include\list.h)(0x6540A28D)
-F (..\Drivers\SYSTEM\sys\sys.c)(0x688A423C)(--c99 -c --cpu Cortex-M7.fp.dp -O1 --apcs=interwork --split_sections -I ..\Drivers -I ..\Drivers\CMSIS\Device\ST\STM32H7xx\Include -I ..\Drivers\STM32H7xx_HAL_Driver\Inc -I ..\Drivers\CMSIS\Include -I ..\Middlewares -I ..\Middlewares\MALLOC -I ..\Middlewares\FreeRTOS\include -I ..\Middlewares\FreeRTOS\portable\RVDS\ARM_CM7\r0p1 -I ..\Drivers\SYSTEM\delay -I ..\Drivers\SYSTEM\sys -I ..\Drivers\SYSTEM\usart -I ..\Drivers\BSP\KEY -I ..\Drivers\BSP\LCD -I ..\Drivers\BSP\LED -I ..\Drivers\BSP\MPU -I ..\Drivers\BSP\TIMER -I ..\User-IE:\dianzi\MDKv5\Keil\STM32H7xx_DFP\3.1.0\Drivers\CMSIS\Device\ST\STM32H7xx\Include-D__UVISION_VERSION="538" -DSTM32H750xx -DSTM32H750xx -DUSE_HAL_DRIVER-o ..\output\sys.o --depend ..\output\sys.d)
+F (..\Drivers\SYSTEM\sys\sys.c)(0x688A423C)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m7 -mfpu=fpv5-d16 -mfloat-abi=hard -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-O2 -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-reserved-identifier -I ../Drivers -I ../Drivers/CMSIS/Device/ST/STM32H7xx/Include -I ../Drivers/STM32H7xx_HAL_Driver/Inc -I ../Drivers/CMSIS/Include -I ../Middlewares -I ../Middlewares/MALLOC -I ../Middlewares/FreeRTOS/include -I ../Drivers/SYSTEM/delay -I ../Drivers/SYSTEM/sys -I ../Drivers/SYSTEM/usart -I ../Drivers/BSP/KEY -I ../Drivers/BSP/LCD -I ../Drivers/BSP/LED -I ../Drivers/BSP/MPU -I ../Drivers/BSP/TIMER -I ../User -I ../Middlewares/FreeRTOS/portable/GCC/ARM_CM7/r0p1-IE:/dianzi/MDKv5/Keil/STM32H7xx_DFP/3.1.0/Drivers/CMSIS/Device/ST/STM32H7xx/Include-D__UVISION_VERSION="538" -DSTM32H750xx -DSTM32H750xx -DUSE_HAL_DRIVER-o ../output/sys.o -MD)
 I (..\Drivers\SYSTEM\sys\sys.h)(0x688A423C)
 I (..\Drivers\CMSIS\Device\ST\STM32H7xx\Include\stm32h7xx.h)(0x6540A28B)
 I (..\Drivers\CMSIS\Device\ST\STM32H7xx\Include\stm32h750xx.h)(0x6540A28B)
 I (..\Drivers\CMSIS\Include\core_cm7.h)(0x6540A28B)
-I (E:\dianzi\MDKv5\ARM\AC5\include\stdint.h)(0x5E8E3CC2)
+I (E:\dianzi\MDKv5\ARM\ARMCLANG\include\stdint.h)(0x637AECBC)
 I (..\Drivers\CMSIS\Include\cmsis_version.h)(0x6540A28B)
 I (..\Drivers\CMSIS\Include\cmsis_compiler.h)(0x6540A28B)
-I (..\Drivers\CMSIS\Include\cmsis_armcc.h)(0x6540A28B)
+I (..\Drivers\CMSIS\Include\cmsis_armclang.h)(0x6540A28B)
+I (E:\dianzi\MDKv5\ARM\ARMCLANG\include\arm_compat.h)(0x6306C9C0)
+I (E:\dianzi\MDKv5\ARM\ARMCLANG\include\arm_acle.h)(0x637AECB8)
 I (..\Drivers\CMSIS\Include\mpu_armv7.h)(0x6540A28B)
 I (..\Drivers\CMSIS\Device\ST\STM32H7xx\Include\system_stm32h7xx.h)(0x6540A28B)
 I (..\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal.h)(0x6540A28B)
 I (..\User\stm32h7xx_hal_conf.h)(0x6540A28E)
 I (..\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_rcc.h)(0x6540A28B)
 I (..\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_def.h)(0x6540A28B)
-I (..\Drivers\STM32H7xx_HAL_Driver\Inc\Legacy/stm32_hal_legacy.h)(0x6540A28B)
-I (E:\dianzi\MDKv5\ARM\AC5\include\stddef.h)(0x5E8E3CC2)
-I (E:\dianzi\MDKv5\ARM\AC5\include\math.h)(0x5E8E3CC2)
+I (..\Drivers\STM32H7xx_HAL_Driver\Inc\Legacy\stm32_hal_legacy.h)(0x6540A28B)
+I (E:\dianzi\MDKv5\ARM\ARMCLANG\include\stddef.h)(0x637AECBC)
+I (E:\dianzi\MDKv5\ARM\ARMCLANG\include\math.h)(0x637AECBA)
 I (..\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_rcc_ex.h)(0x6540A28B)
 I (..\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_gpio.h)(0x6540A28B)
 I (..\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_gpio_ex.h)(0x6540A28B)
@@ -638,24 +650,26 @@ I (..\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_pcd.h)(0x6540A28B)
 I (..\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_ll_usb.h)(0x6540A28C)
 I (..\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_pcd_ex.h)(0x6540A28B)
 I (..\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_hcd.h)(0x6540A28B)
-F (..\Drivers\SYSTEM\usart\usart.c)(0x688A423C)(--c99 -c --cpu Cortex-M7.fp.dp -O1 --apcs=interwork --split_sections -I ..\Drivers -I ..\Drivers\CMSIS\Device\ST\STM32H7xx\Include -I ..\Drivers\STM32H7xx_HAL_Driver\Inc -I ..\Drivers\CMSIS\Include -I ..\Middlewares -I ..\Middlewares\MALLOC -I ..\Middlewares\FreeRTOS\include -I ..\Middlewares\FreeRTOS\portable\RVDS\ARM_CM7\r0p1 -I ..\Drivers\SYSTEM\delay -I ..\Drivers\SYSTEM\sys -I ..\Drivers\SYSTEM\usart -I ..\Drivers\BSP\KEY -I ..\Drivers\BSP\LCD -I ..\Drivers\BSP\LED -I ..\Drivers\BSP\MPU -I ..\Drivers\BSP\TIMER -I ..\User-IE:\dianzi\MDKv5\Keil\STM32H7xx_DFP\3.1.0\Drivers\CMSIS\Device\ST\STM32H7xx\Include-D__UVISION_VERSION="538" -DSTM32H750xx -DSTM32H750xx -DUSE_HAL_DRIVER-o ..\output\usart.o --depend ..\output\usart.d)
+F (..\Drivers\SYSTEM\usart\usart.c)(0x688A423C)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m7 -mfpu=fpv5-d16 -mfloat-abi=hard -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-O2 -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-reserved-identifier -I ../Drivers -I ../Drivers/CMSIS/Device/ST/STM32H7xx/Include -I ../Drivers/STM32H7xx_HAL_Driver/Inc -I ../Drivers/CMSIS/Include -I ../Middlewares -I ../Middlewares/MALLOC -I ../Middlewares/FreeRTOS/include -I ../Drivers/SYSTEM/delay -I ../Drivers/SYSTEM/sys -I ../Drivers/SYSTEM/usart -I ../Drivers/BSP/KEY -I ../Drivers/BSP/LCD -I ../Drivers/BSP/LED -I ../Drivers/BSP/MPU -I ../Drivers/BSP/TIMER -I ../User -I ../Middlewares/FreeRTOS/portable/GCC/ARM_CM7/r0p1-IE:/dianzi/MDKv5/Keil/STM32H7xx_DFP/3.1.0/Drivers/CMSIS/Device/ST/STM32H7xx/Include-D__UVISION_VERSION="538" -DSTM32H750xx -DSTM32H750xx -DUSE_HAL_DRIVER-o ../output/usart.o -MD)
 I (..\Drivers\SYSTEM\sys\sys.h)(0x688A423C)
 I (..\Drivers\CMSIS\Device\ST\STM32H7xx\Include\stm32h7xx.h)(0x6540A28B)
 I (..\Drivers\CMSIS\Device\ST\STM32H7xx\Include\stm32h750xx.h)(0x6540A28B)
 I (..\Drivers\CMSIS\Include\core_cm7.h)(0x6540A28B)
-I (E:\dianzi\MDKv5\ARM\AC5\include\stdint.h)(0x5E8E3CC2)
+I (E:\dianzi\MDKv5\ARM\ARMCLANG\include\stdint.h)(0x637AECBC)
 I (..\Drivers\CMSIS\Include\cmsis_version.h)(0x6540A28B)
 I (..\Drivers\CMSIS\Include\cmsis_compiler.h)(0x6540A28B)
-I (..\Drivers\CMSIS\Include\cmsis_armcc.h)(0x6540A28B)
+I (..\Drivers\CMSIS\Include\cmsis_armclang.h)(0x6540A28B)
+I (E:\dianzi\MDKv5\ARM\ARMCLANG\include\arm_compat.h)(0x6306C9C0)
+I (E:\dianzi\MDKv5\ARM\ARMCLANG\include\arm_acle.h)(0x637AECB8)
 I (..\Drivers\CMSIS\Include\mpu_armv7.h)(0x6540A28B)
 I (..\Drivers\CMSIS\Device\ST\STM32H7xx\Include\system_stm32h7xx.h)(0x6540A28B)
 I (..\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal.h)(0x6540A28B)
 I (..\User\stm32h7xx_hal_conf.h)(0x6540A28E)
 I (..\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_rcc.h)(0x6540A28B)
 I (..\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_def.h)(0x6540A28B)
-I (..\Drivers\STM32H7xx_HAL_Driver\Inc\Legacy/stm32_hal_legacy.h)(0x6540A28B)
-I (E:\dianzi\MDKv5\ARM\AC5\include\stddef.h)(0x5E8E3CC2)
-I (E:\dianzi\MDKv5\ARM\AC5\include\math.h)(0x5E8E3CC2)
+I (..\Drivers\STM32H7xx_HAL_Driver\Inc\Legacy\stm32_hal_legacy.h)(0x6540A28B)
+I (E:\dianzi\MDKv5\ARM\ARMCLANG\include\stddef.h)(0x637AECBC)
+I (E:\dianzi\MDKv5\ARM\ARMCLANG\include\math.h)(0x637AECBA)
 I (..\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_rcc_ex.h)(0x6540A28B)
 I (..\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_gpio.h)(0x6540A28B)
 I (..\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_gpio_ex.h)(0x6540A28B)
@@ -739,8 +753,8 @@ I (..\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_ll_usb.h)(0x6540A28C)
 I (..\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_pcd_ex.h)(0x6540A28B)
 I (..\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_hcd.h)(0x6540A28B)
 I (..\Drivers\SYSTEM\usart\usart.h)(0x688A423C)
-I (E:\dianzi\MDKv5\ARM\AC5\include\stdio.h)(0x5E8E3CC2)
-F (..\Drivers\STM32H7xx_HAL_Driver\Src\stm32h7xx_hal.c)(0x6540A28C)(--c99 -c --cpu Cortex-M7.fp.dp -O1 --apcs=interwork --split_sections -I ..\Drivers -I ..\Drivers\CMSIS\Device\ST\STM32H7xx\Include -I ..\Drivers\STM32H7xx_HAL_Driver\Inc -I ..\Drivers\CMSIS\Include -I ..\Middlewares -I ..\Middlewares\MALLOC -I ..\Middlewares\FreeRTOS\include -I ..\Middlewares\FreeRTOS\portable\RVDS\ARM_CM7\r0p1 -I ..\Drivers\SYSTEM\delay -I ..\Drivers\SYSTEM\sys -I ..\Drivers\SYSTEM\usart -I ..\Drivers\BSP\KEY -I ..\Drivers\BSP\LCD -I ..\Drivers\BSP\LED -I ..\Drivers\BSP\MPU -I ..\Drivers\BSP\TIMER -I ..\User-IE:\dianzi\MDKv5\Keil\STM32H7xx_DFP\3.1.0\Drivers\CMSIS\Device\ST\STM32H7xx\Include-D__UVISION_VERSION="538" -DSTM32H750xx -DSTM32H750xx -DUSE_HAL_DRIVER-o ..\output\stm32h7xx_hal.o --depend ..\output\stm32h7xx_hal.d)
+I (E:\dianzi\MDKv5\ARM\ARMCLANG\include\stdio.h)(0x637AECBC)
+F (..\Drivers\STM32H7xx_HAL_Driver\Src\stm32h7xx_hal.c)(0x6540A28C)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m7 -mfpu=fpv5-d16 -mfloat-abi=hard -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-O2 -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-reserved-identifier -I ../Drivers -I ../Drivers/CMSIS/Device/ST/STM32H7xx/Include -I ../Drivers/STM32H7xx_HAL_Driver/Inc -I ../Drivers/CMSIS/Include -I ../Middlewares -I ../Middlewares/MALLOC -I ../Middlewares/FreeRTOS/include -I ../Drivers/SYSTEM/delay -I ../Drivers/SYSTEM/sys -I ../Drivers/SYSTEM/usart -I ../Drivers/BSP/KEY -I ../Drivers/BSP/LCD -I ../Drivers/BSP/LED -I ../Drivers/BSP/MPU -I ../Drivers/BSP/TIMER -I ../User -I ../Middlewares/FreeRTOS/portable/GCC/ARM_CM7/r0p1-IE:/dianzi/MDKv5/Keil/STM32H7xx_DFP/3.1.0/Drivers/CMSIS/Device/ST/STM32H7xx/Include-D__UVISION_VERSION="538" -DSTM32H750xx -DSTM32H750xx -DUSE_HAL_DRIVER-o ../output/stm32h7xx_hal.o -MD)
 I (..\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal.h)(0x6540A28B)
 I (..\User\stm32h7xx_hal_conf.h)(0x6540A28E)
 I (..\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_rcc.h)(0x6540A28B)
@@ -748,15 +762,17 @@ I (..\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_def.h)(0x6540A28B)
 I (..\Drivers\CMSIS\Device\ST\STM32H7xx\Include\stm32h7xx.h)(0x6540A28B)
 I (..\Drivers\CMSIS\Device\ST\STM32H7xx\Include\stm32h750xx.h)(0x6540A28B)
 I (..\Drivers\CMSIS\Include\core_cm7.h)(0x6540A28B)
-I (E:\dianzi\MDKv5\ARM\AC5\include\stdint.h)(0x5E8E3CC2)
+I (E:\dianzi\MDKv5\ARM\ARMCLANG\include\stdint.h)(0x637AECBC)
 I (..\Drivers\CMSIS\Include\cmsis_version.h)(0x6540A28B)
 I (..\Drivers\CMSIS\Include\cmsis_compiler.h)(0x6540A28B)
-I (..\Drivers\CMSIS\Include\cmsis_armcc.h)(0x6540A28B)
+I (..\Drivers\CMSIS\Include\cmsis_armclang.h)(0x6540A28B)
+I (E:\dianzi\MDKv5\ARM\ARMCLANG\include\arm_compat.h)(0x6306C9C0)
+I (E:\dianzi\MDKv5\ARM\ARMCLANG\include\arm_acle.h)(0x637AECB8)
 I (..\Drivers\CMSIS\Include\mpu_armv7.h)(0x6540A28B)
 I (..\Drivers\CMSIS\Device\ST\STM32H7xx\Include\system_stm32h7xx.h)(0x6540A28B)
-I (..\Drivers\STM32H7xx_HAL_Driver\Inc\Legacy/stm32_hal_legacy.h)(0x6540A28B)
-I (E:\dianzi\MDKv5\ARM\AC5\include\stddef.h)(0x5E8E3CC2)
-I (E:\dianzi\MDKv5\ARM\AC5\include\math.h)(0x5E8E3CC2)
+I (..\Drivers\STM32H7xx_HAL_Driver\Inc\Legacy\stm32_hal_legacy.h)(0x6540A28B)
+I (E:\dianzi\MDKv5\ARM\ARMCLANG\include\stddef.h)(0x637AECBC)
+I (E:\dianzi\MDKv5\ARM\ARMCLANG\include\math.h)(0x637AECBA)
 I (..\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_rcc_ex.h)(0x6540A28B)
 I (..\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_gpio.h)(0x6540A28B)
 I (..\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_gpio_ex.h)(0x6540A28B)
@@ -839,7 +855,7 @@ I (..\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_pcd.h)(0x6540A28B)
 I (..\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_ll_usb.h)(0x6540A28C)
 I (..\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_pcd_ex.h)(0x6540A28B)
 I (..\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_hcd.h)(0x6540A28B)
-F (..\Drivers\STM32H7xx_HAL_Driver\Src\stm32h7xx_hal_cortex.c)(0x6540A28C)(--c99 -c --cpu Cortex-M7.fp.dp -O1 --apcs=interwork --split_sections -I ..\Drivers -I ..\Drivers\CMSIS\Device\ST\STM32H7xx\Include -I ..\Drivers\STM32H7xx_HAL_Driver\Inc -I ..\Drivers\CMSIS\Include -I ..\Middlewares -I ..\Middlewares\MALLOC -I ..\Middlewares\FreeRTOS\include -I ..\Middlewares\FreeRTOS\portable\RVDS\ARM_CM7\r0p1 -I ..\Drivers\SYSTEM\delay -I ..\Drivers\SYSTEM\sys -I ..\Drivers\SYSTEM\usart -I ..\Drivers\BSP\KEY -I ..\Drivers\BSP\LCD -I ..\Drivers\BSP\LED -I ..\Drivers\BSP\MPU -I ..\Drivers\BSP\TIMER -I ..\User-IE:\dianzi\MDKv5\Keil\STM32H7xx_DFP\3.1.0\Drivers\CMSIS\Device\ST\STM32H7xx\Include-D__UVISION_VERSION="538" -DSTM32H750xx -DSTM32H750xx -DUSE_HAL_DRIVER-o ..\output\stm32h7xx_hal_cortex.o --depend ..\output\stm32h7xx_hal_cortex.d)
+F (..\Drivers\STM32H7xx_HAL_Driver\Src\stm32h7xx_hal_cortex.c)(0x6540A28C)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m7 -mfpu=fpv5-d16 -mfloat-abi=hard -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-O2 -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-reserved-identifier -I ../Drivers -I ../Drivers/CMSIS/Device/ST/STM32H7xx/Include -I ../Drivers/STM32H7xx_HAL_Driver/Inc -I ../Drivers/CMSIS/Include -I ../Middlewares -I ../Middlewares/MALLOC -I ../Middlewares/FreeRTOS/include -I ../Drivers/SYSTEM/delay -I ../Drivers/SYSTEM/sys -I ../Drivers/SYSTEM/usart -I ../Drivers/BSP/KEY -I ../Drivers/BSP/LCD -I ../Drivers/BSP/LED -I ../Drivers/BSP/MPU -I ../Drivers/BSP/TIMER -I ../User -I ../Middlewares/FreeRTOS/portable/GCC/ARM_CM7/r0p1-IE:/dianzi/MDKv5/Keil/STM32H7xx_DFP/3.1.0/Drivers/CMSIS/Device/ST/STM32H7xx/Include-D__UVISION_VERSION="538" -DSTM32H750xx -DSTM32H750xx -DUSE_HAL_DRIVER-o ../output/stm32h7xx_hal_cortex.o -MD)
 I (..\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal.h)(0x6540A28B)
 I (..\User\stm32h7xx_hal_conf.h)(0x6540A28E)
 I (..\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_rcc.h)(0x6540A28B)
@@ -847,15 +863,17 @@ I (..\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_def.h)(0x6540A28B)
 I (..\Drivers\CMSIS\Device\ST\STM32H7xx\Include\stm32h7xx.h)(0x6540A28B)
 I (..\Drivers\CMSIS\Device\ST\STM32H7xx\Include\stm32h750xx.h)(0x6540A28B)
 I (..\Drivers\CMSIS\Include\core_cm7.h)(0x6540A28B)
-I (E:\dianzi\MDKv5\ARM\AC5\include\stdint.h)(0x5E8E3CC2)
+I (E:\dianzi\MDKv5\ARM\ARMCLANG\include\stdint.h)(0x637AECBC)
 I (..\Drivers\CMSIS\Include\cmsis_version.h)(0x6540A28B)
 I (..\Drivers\CMSIS\Include\cmsis_compiler.h)(0x6540A28B)
-I (..\Drivers\CMSIS\Include\cmsis_armcc.h)(0x6540A28B)
+I (..\Drivers\CMSIS\Include\cmsis_armclang.h)(0x6540A28B)
+I (E:\dianzi\MDKv5\ARM\ARMCLANG\include\arm_compat.h)(0x6306C9C0)
+I (E:\dianzi\MDKv5\ARM\ARMCLANG\include\arm_acle.h)(0x637AECB8)
 I (..\Drivers\CMSIS\Include\mpu_armv7.h)(0x6540A28B)
 I (..\Drivers\CMSIS\Device\ST\STM32H7xx\Include\system_stm32h7xx.h)(0x6540A28B)
-I (..\Drivers\STM32H7xx_HAL_Driver\Inc\Legacy/stm32_hal_legacy.h)(0x6540A28B)
-I (E:\dianzi\MDKv5\ARM\AC5\include\stddef.h)(0x5E8E3CC2)
-I (E:\dianzi\MDKv5\ARM\AC5\include\math.h)(0x5E8E3CC2)
+I (..\Drivers\STM32H7xx_HAL_Driver\Inc\Legacy\stm32_hal_legacy.h)(0x6540A28B)
+I (E:\dianzi\MDKv5\ARM\ARMCLANG\include\stddef.h)(0x637AECBC)
+I (E:\dianzi\MDKv5\ARM\ARMCLANG\include\math.h)(0x637AECBA)
 I (..\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_rcc_ex.h)(0x6540A28B)
 I (..\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_gpio.h)(0x6540A28B)
 I (..\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_gpio_ex.h)(0x6540A28B)
@@ -938,7 +956,7 @@ I (..\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_pcd.h)(0x6540A28B)
 I (..\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_ll_usb.h)(0x6540A28C)
 I (..\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_pcd_ex.h)(0x6540A28B)
 I (..\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_hcd.h)(0x6540A28B)
-F (..\Drivers\STM32H7xx_HAL_Driver\Src\stm32h7xx_hal_dma.c)(0x6540A28D)(--c99 -c --cpu Cortex-M7.fp.dp -O1 --apcs=interwork --split_sections -I ..\Drivers -I ..\Drivers\CMSIS\Device\ST\STM32H7xx\Include -I ..\Drivers\STM32H7xx_HAL_Driver\Inc -I ..\Drivers\CMSIS\Include -I ..\Middlewares -I ..\Middlewares\MALLOC -I ..\Middlewares\FreeRTOS\include -I ..\Middlewares\FreeRTOS\portable\RVDS\ARM_CM7\r0p1 -I ..\Drivers\SYSTEM\delay -I ..\Drivers\SYSTEM\sys -I ..\Drivers\SYSTEM\usart -I ..\Drivers\BSP\KEY -I ..\Drivers\BSP\LCD -I ..\Drivers\BSP\LED -I ..\Drivers\BSP\MPU -I ..\Drivers\BSP\TIMER -I ..\User-IE:\dianzi\MDKv5\Keil\STM32H7xx_DFP\3.1.0\Drivers\CMSIS\Device\ST\STM32H7xx\Include-D__UVISION_VERSION="538" -DSTM32H750xx -DSTM32H750xx -DUSE_HAL_DRIVER-o ..\output\stm32h7xx_hal_dma.o --depend ..\output\stm32h7xx_hal_dma.d)
+F (..\Drivers\STM32H7xx_HAL_Driver\Src\stm32h7xx_hal_dma.c)(0x6540A28D)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m7 -mfpu=fpv5-d16 -mfloat-abi=hard -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-O2 -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-reserved-identifier -I ../Drivers -I ../Drivers/CMSIS/Device/ST/STM32H7xx/Include -I ../Drivers/STM32H7xx_HAL_Driver/Inc -I ../Drivers/CMSIS/Include -I ../Middlewares -I ../Middlewares/MALLOC -I ../Middlewares/FreeRTOS/include -I ../Drivers/SYSTEM/delay -I ../Drivers/SYSTEM/sys -I ../Drivers/SYSTEM/usart -I ../Drivers/BSP/KEY -I ../Drivers/BSP/LCD -I ../Drivers/BSP/LED -I ../Drivers/BSP/MPU -I ../Drivers/BSP/TIMER -I ../User -I ../Middlewares/FreeRTOS/portable/GCC/ARM_CM7/r0p1-IE:/dianzi/MDKv5/Keil/STM32H7xx_DFP/3.1.0/Drivers/CMSIS/Device/ST/STM32H7xx/Include-D__UVISION_VERSION="538" -DSTM32H750xx -DSTM32H750xx -DUSE_HAL_DRIVER-o ../output/stm32h7xx_hal_dma.o -MD)
 I (..\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal.h)(0x6540A28B)
 I (..\User\stm32h7xx_hal_conf.h)(0x6540A28E)
 I (..\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_rcc.h)(0x6540A28B)
@@ -946,15 +964,17 @@ I (..\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_def.h)(0x6540A28B)
 I (..\Drivers\CMSIS\Device\ST\STM32H7xx\Include\stm32h7xx.h)(0x6540A28B)
 I (..\Drivers\CMSIS\Device\ST\STM32H7xx\Include\stm32h750xx.h)(0x6540A28B)
 I (..\Drivers\CMSIS\Include\core_cm7.h)(0x6540A28B)
-I (E:\dianzi\MDKv5\ARM\AC5\include\stdint.h)(0x5E8E3CC2)
+I (E:\dianzi\MDKv5\ARM\ARMCLANG\include\stdint.h)(0x637AECBC)
 I (..\Drivers\CMSIS\Include\cmsis_version.h)(0x6540A28B)
 I (..\Drivers\CMSIS\Include\cmsis_compiler.h)(0x6540A28B)
-I (..\Drivers\CMSIS\Include\cmsis_armcc.h)(0x6540A28B)
+I (..\Drivers\CMSIS\Include\cmsis_armclang.h)(0x6540A28B)
+I (E:\dianzi\MDKv5\ARM\ARMCLANG\include\arm_compat.h)(0x6306C9C0)
+I (E:\dianzi\MDKv5\ARM\ARMCLANG\include\arm_acle.h)(0x637AECB8)
 I (..\Drivers\CMSIS\Include\mpu_armv7.h)(0x6540A28B)
 I (..\Drivers\CMSIS\Device\ST\STM32H7xx\Include\system_stm32h7xx.h)(0x6540A28B)
-I (..\Drivers\STM32H7xx_HAL_Driver\Inc\Legacy/stm32_hal_legacy.h)(0x6540A28B)
-I (E:\dianzi\MDKv5\ARM\AC5\include\stddef.h)(0x5E8E3CC2)
-I (E:\dianzi\MDKv5\ARM\AC5\include\math.h)(0x5E8E3CC2)
+I (..\Drivers\STM32H7xx_HAL_Driver\Inc\Legacy\stm32_hal_legacy.h)(0x6540A28B)
+I (E:\dianzi\MDKv5\ARM\ARMCLANG\include\stddef.h)(0x637AECBC)
+I (E:\dianzi\MDKv5\ARM\ARMCLANG\include\math.h)(0x637AECBA)
 I (..\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_rcc_ex.h)(0x6540A28B)
 I (..\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_gpio.h)(0x6540A28B)
 I (..\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_gpio_ex.h)(0x6540A28B)
@@ -1037,7 +1057,7 @@ I (..\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_pcd.h)(0x6540A28B)
 I (..\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_ll_usb.h)(0x6540A28C)
 I (..\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_pcd_ex.h)(0x6540A28B)
 I (..\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_hcd.h)(0x6540A28B)
-F (..\Drivers\STM32H7xx_HAL_Driver\Src\stm32h7xx_hal_dma_ex.c)(0x6540A28D)(--c99 -c --cpu Cortex-M7.fp.dp -O1 --apcs=interwork --split_sections -I ..\Drivers -I ..\Drivers\CMSIS\Device\ST\STM32H7xx\Include -I ..\Drivers\STM32H7xx_HAL_Driver\Inc -I ..\Drivers\CMSIS\Include -I ..\Middlewares -I ..\Middlewares\MALLOC -I ..\Middlewares\FreeRTOS\include -I ..\Middlewares\FreeRTOS\portable\RVDS\ARM_CM7\r0p1 -I ..\Drivers\SYSTEM\delay -I ..\Drivers\SYSTEM\sys -I ..\Drivers\SYSTEM\usart -I ..\Drivers\BSP\KEY -I ..\Drivers\BSP\LCD -I ..\Drivers\BSP\LED -I ..\Drivers\BSP\MPU -I ..\Drivers\BSP\TIMER -I ..\User-IE:\dianzi\MDKv5\Keil\STM32H7xx_DFP\3.1.0\Drivers\CMSIS\Device\ST\STM32H7xx\Include-D__UVISION_VERSION="538" -DSTM32H750xx -DSTM32H750xx -DUSE_HAL_DRIVER-o ..\output\stm32h7xx_hal_dma_ex.o --depend ..\output\stm32h7xx_hal_dma_ex.d)
+F (..\Drivers\STM32H7xx_HAL_Driver\Src\stm32h7xx_hal_dma_ex.c)(0x6540A28D)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m7 -mfpu=fpv5-d16 -mfloat-abi=hard -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-O2 -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-reserved-identifier -I ../Drivers -I ../Drivers/CMSIS/Device/ST/STM32H7xx/Include -I ../Drivers/STM32H7xx_HAL_Driver/Inc -I ../Drivers/CMSIS/Include -I ../Middlewares -I ../Middlewares/MALLOC -I ../Middlewares/FreeRTOS/include -I ../Drivers/SYSTEM/delay -I ../Drivers/SYSTEM/sys -I ../Drivers/SYSTEM/usart -I ../Drivers/BSP/KEY -I ../Drivers/BSP/LCD -I ../Drivers/BSP/LED -I ../Drivers/BSP/MPU -I ../Drivers/BSP/TIMER -I ../User -I ../Middlewares/FreeRTOS/portable/GCC/ARM_CM7/r0p1-IE:/dianzi/MDKv5/Keil/STM32H7xx_DFP/3.1.0/Drivers/CMSIS/Device/ST/STM32H7xx/Include-D__UVISION_VERSION="538" -DSTM32H750xx -DSTM32H750xx -DUSE_HAL_DRIVER-o ../output/stm32h7xx_hal_dma_ex.o -MD)
 I (..\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal.h)(0x6540A28B)
 I (..\User\stm32h7xx_hal_conf.h)(0x6540A28E)
 I (..\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_rcc.h)(0x6540A28B)
@@ -1045,15 +1065,17 @@ I (..\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_def.h)(0x6540A28B)
 I (..\Drivers\CMSIS\Device\ST\STM32H7xx\Include\stm32h7xx.h)(0x6540A28B)
 I (..\Drivers\CMSIS\Device\ST\STM32H7xx\Include\stm32h750xx.h)(0x6540A28B)
 I (..\Drivers\CMSIS\Include\core_cm7.h)(0x6540A28B)
-I (E:\dianzi\MDKv5\ARM\AC5\include\stdint.h)(0x5E8E3CC2)
+I (E:\dianzi\MDKv5\ARM\ARMCLANG\include\stdint.h)(0x637AECBC)
 I (..\Drivers\CMSIS\Include\cmsis_version.h)(0x6540A28B)
 I (..\Drivers\CMSIS\Include\cmsis_compiler.h)(0x6540A28B)
-I (..\Drivers\CMSIS\Include\cmsis_armcc.h)(0x6540A28B)
+I (..\Drivers\CMSIS\Include\cmsis_armclang.h)(0x6540A28B)
+I (E:\dianzi\MDKv5\ARM\ARMCLANG\include\arm_compat.h)(0x6306C9C0)
+I (E:\dianzi\MDKv5\ARM\ARMCLANG\include\arm_acle.h)(0x637AECB8)
 I (..\Drivers\CMSIS\Include\mpu_armv7.h)(0x6540A28B)
 I (..\Drivers\CMSIS\Device\ST\STM32H7xx\Include\system_stm32h7xx.h)(0x6540A28B)
-I (..\Drivers\STM32H7xx_HAL_Driver\Inc\Legacy/stm32_hal_legacy.h)(0x6540A28B)
-I (E:\dianzi\MDKv5\ARM\AC5\include\stddef.h)(0x5E8E3CC2)
-I (E:\dianzi\MDKv5\ARM\AC5\include\math.h)(0x5E8E3CC2)
+I (..\Drivers\STM32H7xx_HAL_Driver\Inc\Legacy\stm32_hal_legacy.h)(0x6540A28B)
+I (E:\dianzi\MDKv5\ARM\ARMCLANG\include\stddef.h)(0x637AECBC)
+I (E:\dianzi\MDKv5\ARM\ARMCLANG\include\math.h)(0x637AECBA)
 I (..\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_rcc_ex.h)(0x6540A28B)
 I (..\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_gpio.h)(0x6540A28B)
 I (..\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_gpio_ex.h)(0x6540A28B)
@@ -1136,7 +1158,7 @@ I (..\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_pcd.h)(0x6540A28B)
 I (..\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_ll_usb.h)(0x6540A28C)
 I (..\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_pcd_ex.h)(0x6540A28B)
 I (..\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_hcd.h)(0x6540A28B)
-F (..\Drivers\STM32H7xx_HAL_Driver\Src\stm32h7xx_hal_gpio.c)(0x6540A28D)(--c99 -c --cpu Cortex-M7.fp.dp -O1 --apcs=interwork --split_sections -I ..\Drivers -I ..\Drivers\CMSIS\Device\ST\STM32H7xx\Include -I ..\Drivers\STM32H7xx_HAL_Driver\Inc -I ..\Drivers\CMSIS\Include -I ..\Middlewares -I ..\Middlewares\MALLOC -I ..\Middlewares\FreeRTOS\include -I ..\Middlewares\FreeRTOS\portable\RVDS\ARM_CM7\r0p1 -I ..\Drivers\SYSTEM\delay -I ..\Drivers\SYSTEM\sys -I ..\Drivers\SYSTEM\usart -I ..\Drivers\BSP\KEY -I ..\Drivers\BSP\LCD -I ..\Drivers\BSP\LED -I ..\Drivers\BSP\MPU -I ..\Drivers\BSP\TIMER -I ..\User-IE:\dianzi\MDKv5\Keil\STM32H7xx_DFP\3.1.0\Drivers\CMSIS\Device\ST\STM32H7xx\Include-D__UVISION_VERSION="538" -DSTM32H750xx -DSTM32H750xx -DUSE_HAL_DRIVER-o ..\output\stm32h7xx_hal_gpio.o --depend ..\output\stm32h7xx_hal_gpio.d)
+F (..\Drivers\STM32H7xx_HAL_Driver\Src\stm32h7xx_hal_gpio.c)(0x6540A28D)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m7 -mfpu=fpv5-d16 -mfloat-abi=hard -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-O2 -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-reserved-identifier -I ../Drivers -I ../Drivers/CMSIS/Device/ST/STM32H7xx/Include -I ../Drivers/STM32H7xx_HAL_Driver/Inc -I ../Drivers/CMSIS/Include -I ../Middlewares -I ../Middlewares/MALLOC -I ../Middlewares/FreeRTOS/include -I ../Drivers/SYSTEM/delay -I ../Drivers/SYSTEM/sys -I ../Drivers/SYSTEM/usart -I ../Drivers/BSP/KEY -I ../Drivers/BSP/LCD -I ../Drivers/BSP/LED -I ../Drivers/BSP/MPU -I ../Drivers/BSP/TIMER -I ../User -I ../Middlewares/FreeRTOS/portable/GCC/ARM_CM7/r0p1-IE:/dianzi/MDKv5/Keil/STM32H7xx_DFP/3.1.0/Drivers/CMSIS/Device/ST/STM32H7xx/Include-D__UVISION_VERSION="538" -DSTM32H750xx -DSTM32H750xx -DUSE_HAL_DRIVER-o ../output/stm32h7xx_hal_gpio.o -MD)
 I (..\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal.h)(0x6540A28B)
 I (..\User\stm32h7xx_hal_conf.h)(0x6540A28E)
 I (..\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_rcc.h)(0x6540A28B)
@@ -1144,15 +1166,17 @@ I (..\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_def.h)(0x6540A28B)
 I (..\Drivers\CMSIS\Device\ST\STM32H7xx\Include\stm32h7xx.h)(0x6540A28B)
 I (..\Drivers\CMSIS\Device\ST\STM32H7xx\Include\stm32h750xx.h)(0x6540A28B)
 I (..\Drivers\CMSIS\Include\core_cm7.h)(0x6540A28B)
-I (E:\dianzi\MDKv5\ARM\AC5\include\stdint.h)(0x5E8E3CC2)
+I (E:\dianzi\MDKv5\ARM\ARMCLANG\include\stdint.h)(0x637AECBC)
 I (..\Drivers\CMSIS\Include\cmsis_version.h)(0x6540A28B)
 I (..\Drivers\CMSIS\Include\cmsis_compiler.h)(0x6540A28B)
-I (..\Drivers\CMSIS\Include\cmsis_armcc.h)(0x6540A28B)
+I (..\Drivers\CMSIS\Include\cmsis_armclang.h)(0x6540A28B)
+I (E:\dianzi\MDKv5\ARM\ARMCLANG\include\arm_compat.h)(0x6306C9C0)
+I (E:\dianzi\MDKv5\ARM\ARMCLANG\include\arm_acle.h)(0x637AECB8)
 I (..\Drivers\CMSIS\Include\mpu_armv7.h)(0x6540A28B)
 I (..\Drivers\CMSIS\Device\ST\STM32H7xx\Include\system_stm32h7xx.h)(0x6540A28B)
-I (..\Drivers\STM32H7xx_HAL_Driver\Inc\Legacy/stm32_hal_legacy.h)(0x6540A28B)
-I (E:\dianzi\MDKv5\ARM\AC5\include\stddef.h)(0x5E8E3CC2)
-I (E:\dianzi\MDKv5\ARM\AC5\include\math.h)(0x5E8E3CC2)
+I (..\Drivers\STM32H7xx_HAL_Driver\Inc\Legacy\stm32_hal_legacy.h)(0x6540A28B)
+I (E:\dianzi\MDKv5\ARM\ARMCLANG\include\stddef.h)(0x637AECBC)
+I (E:\dianzi\MDKv5\ARM\ARMCLANG\include\math.h)(0x637AECBA)
 I (..\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_rcc_ex.h)(0x6540A28B)
 I (..\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_gpio.h)(0x6540A28B)
 I (..\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_gpio_ex.h)(0x6540A28B)
@@ -1235,7 +1259,7 @@ I (..\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_pcd.h)(0x6540A28B)
 I (..\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_ll_usb.h)(0x6540A28C)
 I (..\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_pcd_ex.h)(0x6540A28B)
 I (..\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_hcd.h)(0x6540A28B)
-F (..\Drivers\STM32H7xx_HAL_Driver\Src\stm32h7xx_hal_pwr.c)(0x6540A28D)(--c99 -c --cpu Cortex-M7.fp.dp -O1 --apcs=interwork --split_sections -I ..\Drivers -I ..\Drivers\CMSIS\Device\ST\STM32H7xx\Include -I ..\Drivers\STM32H7xx_HAL_Driver\Inc -I ..\Drivers\CMSIS\Include -I ..\Middlewares -I ..\Middlewares\MALLOC -I ..\Middlewares\FreeRTOS\include -I ..\Middlewares\FreeRTOS\portable\RVDS\ARM_CM7\r0p1 -I ..\Drivers\SYSTEM\delay -I ..\Drivers\SYSTEM\sys -I ..\Drivers\SYSTEM\usart -I ..\Drivers\BSP\KEY -I ..\Drivers\BSP\LCD -I ..\Drivers\BSP\LED -I ..\Drivers\BSP\MPU -I ..\Drivers\BSP\TIMER -I ..\User-IE:\dianzi\MDKv5\Keil\STM32H7xx_DFP\3.1.0\Drivers\CMSIS\Device\ST\STM32H7xx\Include-D__UVISION_VERSION="538" -DSTM32H750xx -DSTM32H750xx -DUSE_HAL_DRIVER-o ..\output\stm32h7xx_hal_pwr.o --depend ..\output\stm32h7xx_hal_pwr.d)
+F (..\Drivers\STM32H7xx_HAL_Driver\Src\stm32h7xx_hal_pwr.c)(0x6540A28D)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m7 -mfpu=fpv5-d16 -mfloat-abi=hard -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-O2 -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-reserved-identifier -I ../Drivers -I ../Drivers/CMSIS/Device/ST/STM32H7xx/Include -I ../Drivers/STM32H7xx_HAL_Driver/Inc -I ../Drivers/CMSIS/Include -I ../Middlewares -I ../Middlewares/MALLOC -I ../Middlewares/FreeRTOS/include -I ../Drivers/SYSTEM/delay -I ../Drivers/SYSTEM/sys -I ../Drivers/SYSTEM/usart -I ../Drivers/BSP/KEY -I ../Drivers/BSP/LCD -I ../Drivers/BSP/LED -I ../Drivers/BSP/MPU -I ../Drivers/BSP/TIMER -I ../User -I ../Middlewares/FreeRTOS/portable/GCC/ARM_CM7/r0p1-IE:/dianzi/MDKv5/Keil/STM32H7xx_DFP/3.1.0/Drivers/CMSIS/Device/ST/STM32H7xx/Include-D__UVISION_VERSION="538" -DSTM32H750xx -DSTM32H750xx -DUSE_HAL_DRIVER-o ../output/stm32h7xx_hal_pwr.o -MD)
 I (..\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal.h)(0x6540A28B)
 I (..\User\stm32h7xx_hal_conf.h)(0x6540A28E)
 I (..\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_rcc.h)(0x6540A28B)
@@ -1243,15 +1267,17 @@ I (..\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_def.h)(0x6540A28B)
 I (..\Drivers\CMSIS\Device\ST\STM32H7xx\Include\stm32h7xx.h)(0x6540A28B)
 I (..\Drivers\CMSIS\Device\ST\STM32H7xx\Include\stm32h750xx.h)(0x6540A28B)
 I (..\Drivers\CMSIS\Include\core_cm7.h)(0x6540A28B)
-I (E:\dianzi\MDKv5\ARM\AC5\include\stdint.h)(0x5E8E3CC2)
+I (E:\dianzi\MDKv5\ARM\ARMCLANG\include\stdint.h)(0x637AECBC)
 I (..\Drivers\CMSIS\Include\cmsis_version.h)(0x6540A28B)
 I (..\Drivers\CMSIS\Include\cmsis_compiler.h)(0x6540A28B)
-I (..\Drivers\CMSIS\Include\cmsis_armcc.h)(0x6540A28B)
+I (..\Drivers\CMSIS\Include\cmsis_armclang.h)(0x6540A28B)
+I (E:\dianzi\MDKv5\ARM\ARMCLANG\include\arm_compat.h)(0x6306C9C0)
+I (E:\dianzi\MDKv5\ARM\ARMCLANG\include\arm_acle.h)(0x637AECB8)
 I (..\Drivers\CMSIS\Include\mpu_armv7.h)(0x6540A28B)
 I (..\Drivers\CMSIS\Device\ST\STM32H7xx\Include\system_stm32h7xx.h)(0x6540A28B)
-I (..\Drivers\STM32H7xx_HAL_Driver\Inc\Legacy/stm32_hal_legacy.h)(0x6540A28B)
-I (E:\dianzi\MDKv5\ARM\AC5\include\stddef.h)(0x5E8E3CC2)
-I (E:\dianzi\MDKv5\ARM\AC5\include\math.h)(0x5E8E3CC2)
+I (..\Drivers\STM32H7xx_HAL_Driver\Inc\Legacy\stm32_hal_legacy.h)(0x6540A28B)
+I (E:\dianzi\MDKv5\ARM\ARMCLANG\include\stddef.h)(0x637AECBC)
+I (E:\dianzi\MDKv5\ARM\ARMCLANG\include\math.h)(0x637AECBA)
 I (..\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_rcc_ex.h)(0x6540A28B)
 I (..\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_gpio.h)(0x6540A28B)
 I (..\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_gpio_ex.h)(0x6540A28B)
@@ -1334,7 +1360,7 @@ I (..\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_pcd.h)(0x6540A28B)
 I (..\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_ll_usb.h)(0x6540A28C)
 I (..\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_pcd_ex.h)(0x6540A28B)
 I (..\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_hcd.h)(0x6540A28B)
-F (..\Drivers\STM32H7xx_HAL_Driver\Src\stm32h7xx_hal_pwr_ex.c)(0x6540A28D)(--c99 -c --cpu Cortex-M7.fp.dp -O1 --apcs=interwork --split_sections -I ..\Drivers -I ..\Drivers\CMSIS\Device\ST\STM32H7xx\Include -I ..\Drivers\STM32H7xx_HAL_Driver\Inc -I ..\Drivers\CMSIS\Include -I ..\Middlewares -I ..\Middlewares\MALLOC -I ..\Middlewares\FreeRTOS\include -I ..\Middlewares\FreeRTOS\portable\RVDS\ARM_CM7\r0p1 -I ..\Drivers\SYSTEM\delay -I ..\Drivers\SYSTEM\sys -I ..\Drivers\SYSTEM\usart -I ..\Drivers\BSP\KEY -I ..\Drivers\BSP\LCD -I ..\Drivers\BSP\LED -I ..\Drivers\BSP\MPU -I ..\Drivers\BSP\TIMER -I ..\User-IE:\dianzi\MDKv5\Keil\STM32H7xx_DFP\3.1.0\Drivers\CMSIS\Device\ST\STM32H7xx\Include-D__UVISION_VERSION="538" -DSTM32H750xx -DSTM32H750xx -DUSE_HAL_DRIVER-o ..\output\stm32h7xx_hal_pwr_ex.o --depend ..\output\stm32h7xx_hal_pwr_ex.d)
+F (..\Drivers\STM32H7xx_HAL_Driver\Src\stm32h7xx_hal_pwr_ex.c)(0x6540A28D)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m7 -mfpu=fpv5-d16 -mfloat-abi=hard -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-O2 -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-reserved-identifier -I ../Drivers -I ../Drivers/CMSIS/Device/ST/STM32H7xx/Include -I ../Drivers/STM32H7xx_HAL_Driver/Inc -I ../Drivers/CMSIS/Include -I ../Middlewares -I ../Middlewares/MALLOC -I ../Middlewares/FreeRTOS/include -I ../Drivers/SYSTEM/delay -I ../Drivers/SYSTEM/sys -I ../Drivers/SYSTEM/usart -I ../Drivers/BSP/KEY -I ../Drivers/BSP/LCD -I ../Drivers/BSP/LED -I ../Drivers/BSP/MPU -I ../Drivers/BSP/TIMER -I ../User -I ../Middlewares/FreeRTOS/portable/GCC/ARM_CM7/r0p1-IE:/dianzi/MDKv5/Keil/STM32H7xx_DFP/3.1.0/Drivers/CMSIS/Device/ST/STM32H7xx/Include-D__UVISION_VERSION="538" -DSTM32H750xx -DSTM32H750xx -DUSE_HAL_DRIVER-o ../output/stm32h7xx_hal_pwr_ex.o -MD)
 I (..\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal.h)(0x6540A28B)
 I (..\User\stm32h7xx_hal_conf.h)(0x6540A28E)
 I (..\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_rcc.h)(0x6540A28B)
@@ -1342,15 +1368,17 @@ I (..\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_def.h)(0x6540A28B)
 I (..\Drivers\CMSIS\Device\ST\STM32H7xx\Include\stm32h7xx.h)(0x6540A28B)
 I (..\Drivers\CMSIS\Device\ST\STM32H7xx\Include\stm32h750xx.h)(0x6540A28B)
 I (..\Drivers\CMSIS\Include\core_cm7.h)(0x6540A28B)
-I (E:\dianzi\MDKv5\ARM\AC5\include\stdint.h)(0x5E8E3CC2)
+I (E:\dianzi\MDKv5\ARM\ARMCLANG\include\stdint.h)(0x637AECBC)
 I (..\Drivers\CMSIS\Include\cmsis_version.h)(0x6540A28B)
 I (..\Drivers\CMSIS\Include\cmsis_compiler.h)(0x6540A28B)
-I (..\Drivers\CMSIS\Include\cmsis_armcc.h)(0x6540A28B)
+I (..\Drivers\CMSIS\Include\cmsis_armclang.h)(0x6540A28B)
+I (E:\dianzi\MDKv5\ARM\ARMCLANG\include\arm_compat.h)(0x6306C9C0)
+I (E:\dianzi\MDKv5\ARM\ARMCLANG\include\arm_acle.h)(0x637AECB8)
 I (..\Drivers\CMSIS\Include\mpu_armv7.h)(0x6540A28B)
 I (..\Drivers\CMSIS\Device\ST\STM32H7xx\Include\system_stm32h7xx.h)(0x6540A28B)
-I (..\Drivers\STM32H7xx_HAL_Driver\Inc\Legacy/stm32_hal_legacy.h)(0x6540A28B)
-I (E:\dianzi\MDKv5\ARM\AC5\include\stddef.h)(0x5E8E3CC2)
-I (E:\dianzi\MDKv5\ARM\AC5\include\math.h)(0x5E8E3CC2)
+I (..\Drivers\STM32H7xx_HAL_Driver\Inc\Legacy\stm32_hal_legacy.h)(0x6540A28B)
+I (E:\dianzi\MDKv5\ARM\ARMCLANG\include\stddef.h)(0x637AECBC)
+I (E:\dianzi\MDKv5\ARM\ARMCLANG\include\math.h)(0x637AECBA)
 I (..\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_rcc_ex.h)(0x6540A28B)
 I (..\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_gpio.h)(0x6540A28B)
 I (..\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_gpio_ex.h)(0x6540A28B)
@@ -1433,7 +1461,7 @@ I (..\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_pcd.h)(0x6540A28B)
 I (..\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_ll_usb.h)(0x6540A28C)
 I (..\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_pcd_ex.h)(0x6540A28B)
 I (..\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_hcd.h)(0x6540A28B)
-F (..\Drivers\STM32H7xx_HAL_Driver\Src\stm32h7xx_hal_rcc.c)(0x6540A28D)(--c99 -c --cpu Cortex-M7.fp.dp -O1 --apcs=interwork --split_sections -I ..\Drivers -I ..\Drivers\CMSIS\Device\ST\STM32H7xx\Include -I ..\Drivers\STM32H7xx_HAL_Driver\Inc -I ..\Drivers\CMSIS\Include -I ..\Middlewares -I ..\Middlewares\MALLOC -I ..\Middlewares\FreeRTOS\include -I ..\Middlewares\FreeRTOS\portable\RVDS\ARM_CM7\r0p1 -I ..\Drivers\SYSTEM\delay -I ..\Drivers\SYSTEM\sys -I ..\Drivers\SYSTEM\usart -I ..\Drivers\BSP\KEY -I ..\Drivers\BSP\LCD -I ..\Drivers\BSP\LED -I ..\Drivers\BSP\MPU -I ..\Drivers\BSP\TIMER -I ..\User-IE:\dianzi\MDKv5\Keil\STM32H7xx_DFP\3.1.0\Drivers\CMSIS\Device\ST\STM32H7xx\Include-D__UVISION_VERSION="538" -DSTM32H750xx -DSTM32H750xx -DUSE_HAL_DRIVER-o ..\output\stm32h7xx_hal_rcc.o --depend ..\output\stm32h7xx_hal_rcc.d)
+F (..\Drivers\STM32H7xx_HAL_Driver\Src\stm32h7xx_hal_rcc.c)(0x6540A28D)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m7 -mfpu=fpv5-d16 -mfloat-abi=hard -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-O2 -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-reserved-identifier -I ../Drivers -I ../Drivers/CMSIS/Device/ST/STM32H7xx/Include -I ../Drivers/STM32H7xx_HAL_Driver/Inc -I ../Drivers/CMSIS/Include -I ../Middlewares -I ../Middlewares/MALLOC -I ../Middlewares/FreeRTOS/include -I ../Drivers/SYSTEM/delay -I ../Drivers/SYSTEM/sys -I ../Drivers/SYSTEM/usart -I ../Drivers/BSP/KEY -I ../Drivers/BSP/LCD -I ../Drivers/BSP/LED -I ../Drivers/BSP/MPU -I ../Drivers/BSP/TIMER -I ../User -I ../Middlewares/FreeRTOS/portable/GCC/ARM_CM7/r0p1-IE:/dianzi/MDKv5/Keil/STM32H7xx_DFP/3.1.0/Drivers/CMSIS/Device/ST/STM32H7xx/Include-D__UVISION_VERSION="538" -DSTM32H750xx -DSTM32H750xx -DUSE_HAL_DRIVER-o ../output/stm32h7xx_hal_rcc.o -MD)
 I (..\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal.h)(0x6540A28B)
 I (..\User\stm32h7xx_hal_conf.h)(0x6540A28E)
 I (..\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_rcc.h)(0x6540A28B)
@@ -1441,15 +1469,17 @@ I (..\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_def.h)(0x6540A28B)
 I (..\Drivers\CMSIS\Device\ST\STM32H7xx\Include\stm32h7xx.h)(0x6540A28B)
 I (..\Drivers\CMSIS\Device\ST\STM32H7xx\Include\stm32h750xx.h)(0x6540A28B)
 I (..\Drivers\CMSIS\Include\core_cm7.h)(0x6540A28B)
-I (E:\dianzi\MDKv5\ARM\AC5\include\stdint.h)(0x5E8E3CC2)
+I (E:\dianzi\MDKv5\ARM\ARMCLANG\include\stdint.h)(0x637AECBC)
 I (..\Drivers\CMSIS\Include\cmsis_version.h)(0x6540A28B)
 I (..\Drivers\CMSIS\Include\cmsis_compiler.h)(0x6540A28B)
-I (..\Drivers\CMSIS\Include\cmsis_armcc.h)(0x6540A28B)
+I (..\Drivers\CMSIS\Include\cmsis_armclang.h)(0x6540A28B)
+I (E:\dianzi\MDKv5\ARM\ARMCLANG\include\arm_compat.h)(0x6306C9C0)
+I (E:\dianzi\MDKv5\ARM\ARMCLANG\include\arm_acle.h)(0x637AECB8)
 I (..\Drivers\CMSIS\Include\mpu_armv7.h)(0x6540A28B)
 I (..\Drivers\CMSIS\Device\ST\STM32H7xx\Include\system_stm32h7xx.h)(0x6540A28B)
-I (..\Drivers\STM32H7xx_HAL_Driver\Inc\Legacy/stm32_hal_legacy.h)(0x6540A28B)
-I (E:\dianzi\MDKv5\ARM\AC5\include\stddef.h)(0x5E8E3CC2)
-I (E:\dianzi\MDKv5\ARM\AC5\include\math.h)(0x5E8E3CC2)
+I (..\Drivers\STM32H7xx_HAL_Driver\Inc\Legacy\stm32_hal_legacy.h)(0x6540A28B)
+I (E:\dianzi\MDKv5\ARM\ARMCLANG\include\stddef.h)(0x637AECBC)
+I (E:\dianzi\MDKv5\ARM\ARMCLANG\include\math.h)(0x637AECBA)
 I (..\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_rcc_ex.h)(0x6540A28B)
 I (..\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_gpio.h)(0x6540A28B)
 I (..\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_gpio_ex.h)(0x6540A28B)
@@ -1532,7 +1562,7 @@ I (..\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_pcd.h)(0x6540A28B)
 I (..\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_ll_usb.h)(0x6540A28C)
 I (..\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_pcd_ex.h)(0x6540A28B)
 I (..\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_hcd.h)(0x6540A28B)
-F (..\Drivers\STM32H7xx_HAL_Driver\Src\stm32h7xx_hal_rcc_ex.c)(0x6540A28D)(--c99 -c --cpu Cortex-M7.fp.dp -O1 --apcs=interwork --split_sections -I ..\Drivers -I ..\Drivers\CMSIS\Device\ST\STM32H7xx\Include -I ..\Drivers\STM32H7xx_HAL_Driver\Inc -I ..\Drivers\CMSIS\Include -I ..\Middlewares -I ..\Middlewares\MALLOC -I ..\Middlewares\FreeRTOS\include -I ..\Middlewares\FreeRTOS\portable\RVDS\ARM_CM7\r0p1 -I ..\Drivers\SYSTEM\delay -I ..\Drivers\SYSTEM\sys -I ..\Drivers\SYSTEM\usart -I ..\Drivers\BSP\KEY -I ..\Drivers\BSP\LCD -I ..\Drivers\BSP\LED -I ..\Drivers\BSP\MPU -I ..\Drivers\BSP\TIMER -I ..\User-IE:\dianzi\MDKv5\Keil\STM32H7xx_DFP\3.1.0\Drivers\CMSIS\Device\ST\STM32H7xx\Include-D__UVISION_VERSION="538" -DSTM32H750xx -DSTM32H750xx -DUSE_HAL_DRIVER-o ..\output\stm32h7xx_hal_rcc_ex.o --depend ..\output\stm32h7xx_hal_rcc_ex.d)
+F (..\Drivers\STM32H7xx_HAL_Driver\Src\stm32h7xx_hal_rcc_ex.c)(0x6540A28D)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m7 -mfpu=fpv5-d16 -mfloat-abi=hard -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-O2 -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-reserved-identifier -I ../Drivers -I ../Drivers/CMSIS/Device/ST/STM32H7xx/Include -I ../Drivers/STM32H7xx_HAL_Driver/Inc -I ../Drivers/CMSIS/Include -I ../Middlewares -I ../Middlewares/MALLOC -I ../Middlewares/FreeRTOS/include -I ../Drivers/SYSTEM/delay -I ../Drivers/SYSTEM/sys -I ../Drivers/SYSTEM/usart -I ../Drivers/BSP/KEY -I ../Drivers/BSP/LCD -I ../Drivers/BSP/LED -I ../Drivers/BSP/MPU -I ../Drivers/BSP/TIMER -I ../User -I ../Middlewares/FreeRTOS/portable/GCC/ARM_CM7/r0p1-IE:/dianzi/MDKv5/Keil/STM32H7xx_DFP/3.1.0/Drivers/CMSIS/Device/ST/STM32H7xx/Include-D__UVISION_VERSION="538" -DSTM32H750xx -DSTM32H750xx -DUSE_HAL_DRIVER-o ../output/stm32h7xx_hal_rcc_ex.o -MD)
 I (..\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal.h)(0x6540A28B)
 I (..\User\stm32h7xx_hal_conf.h)(0x6540A28E)
 I (..\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_rcc.h)(0x6540A28B)
@@ -1540,15 +1570,17 @@ I (..\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_def.h)(0x6540A28B)
 I (..\Drivers\CMSIS\Device\ST\STM32H7xx\Include\stm32h7xx.h)(0x6540A28B)
 I (..\Drivers\CMSIS\Device\ST\STM32H7xx\Include\stm32h750xx.h)(0x6540A28B)
 I (..\Drivers\CMSIS\Include\core_cm7.h)(0x6540A28B)
-I (E:\dianzi\MDKv5\ARM\AC5\include\stdint.h)(0x5E8E3CC2)
+I (E:\dianzi\MDKv5\ARM\ARMCLANG\include\stdint.h)(0x637AECBC)
 I (..\Drivers\CMSIS\Include\cmsis_version.h)(0x6540A28B)
 I (..\Drivers\CMSIS\Include\cmsis_compiler.h)(0x6540A28B)
-I (..\Drivers\CMSIS\Include\cmsis_armcc.h)(0x6540A28B)
+I (..\Drivers\CMSIS\Include\cmsis_armclang.h)(0x6540A28B)
+I (E:\dianzi\MDKv5\ARM\ARMCLANG\include\arm_compat.h)(0x6306C9C0)
+I (E:\dianzi\MDKv5\ARM\ARMCLANG\include\arm_acle.h)(0x637AECB8)
 I (..\Drivers\CMSIS\Include\mpu_armv7.h)(0x6540A28B)
 I (..\Drivers\CMSIS\Device\ST\STM32H7xx\Include\system_stm32h7xx.h)(0x6540A28B)
-I (..\Drivers\STM32H7xx_HAL_Driver\Inc\Legacy/stm32_hal_legacy.h)(0x6540A28B)
-I (E:\dianzi\MDKv5\ARM\AC5\include\stddef.h)(0x5E8E3CC2)
-I (E:\dianzi\MDKv5\ARM\AC5\include\math.h)(0x5E8E3CC2)
+I (..\Drivers\STM32H7xx_HAL_Driver\Inc\Legacy\stm32_hal_legacy.h)(0x6540A28B)
+I (E:\dianzi\MDKv5\ARM\ARMCLANG\include\stddef.h)(0x637AECBC)
+I (E:\dianzi\MDKv5\ARM\ARMCLANG\include\math.h)(0x637AECBA)
 I (..\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_rcc_ex.h)(0x6540A28B)
 I (..\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_gpio.h)(0x6540A28B)
 I (..\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_gpio_ex.h)(0x6540A28B)
@@ -1631,7 +1663,7 @@ I (..\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_pcd.h)(0x6540A28B)
 I (..\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_ll_usb.h)(0x6540A28C)
 I (..\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_pcd_ex.h)(0x6540A28B)
 I (..\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_hcd.h)(0x6540A28B)
-F (..\Drivers\STM32H7xx_HAL_Driver\Src\stm32h7xx_hal_uart.c)(0x6540A28D)(--c99 -c --cpu Cortex-M7.fp.dp -O1 --apcs=interwork --split_sections -I ..\Drivers -I ..\Drivers\CMSIS\Device\ST\STM32H7xx\Include -I ..\Drivers\STM32H7xx_HAL_Driver\Inc -I ..\Drivers\CMSIS\Include -I ..\Middlewares -I ..\Middlewares\MALLOC -I ..\Middlewares\FreeRTOS\include -I ..\Middlewares\FreeRTOS\portable\RVDS\ARM_CM7\r0p1 -I ..\Drivers\SYSTEM\delay -I ..\Drivers\SYSTEM\sys -I ..\Drivers\SYSTEM\usart -I ..\Drivers\BSP\KEY -I ..\Drivers\BSP\LCD -I ..\Drivers\BSP\LED -I ..\Drivers\BSP\MPU -I ..\Drivers\BSP\TIMER -I ..\User-IE:\dianzi\MDKv5\Keil\STM32H7xx_DFP\3.1.0\Drivers\CMSIS\Device\ST\STM32H7xx\Include-D__UVISION_VERSION="538" -DSTM32H750xx -DSTM32H750xx -DUSE_HAL_DRIVER-o ..\output\stm32h7xx_hal_uart.o --depend ..\output\stm32h7xx_hal_uart.d)
+F (..\Drivers\STM32H7xx_HAL_Driver\Src\stm32h7xx_hal_uart.c)(0x6540A28D)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m7 -mfpu=fpv5-d16 -mfloat-abi=hard -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-O2 -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-reserved-identifier -I ../Drivers -I ../Drivers/CMSIS/Device/ST/STM32H7xx/Include -I ../Drivers/STM32H7xx_HAL_Driver/Inc -I ../Drivers/CMSIS/Include -I ../Middlewares -I ../Middlewares/MALLOC -I ../Middlewares/FreeRTOS/include -I ../Drivers/SYSTEM/delay -I ../Drivers/SYSTEM/sys -I ../Drivers/SYSTEM/usart -I ../Drivers/BSP/KEY -I ../Drivers/BSP/LCD -I ../Drivers/BSP/LED -I ../Drivers/BSP/MPU -I ../Drivers/BSP/TIMER -I ../User -I ../Middlewares/FreeRTOS/portable/GCC/ARM_CM7/r0p1-IE:/dianzi/MDKv5/Keil/STM32H7xx_DFP/3.1.0/Drivers/CMSIS/Device/ST/STM32H7xx/Include-D__UVISION_VERSION="538" -DSTM32H750xx -DSTM32H750xx -DUSE_HAL_DRIVER-o ../output/stm32h7xx_hal_uart.o -MD)
 I (..\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal.h)(0x6540A28B)
 I (..\User\stm32h7xx_hal_conf.h)(0x6540A28E)
 I (..\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_rcc.h)(0x6540A28B)
@@ -1639,15 +1671,17 @@ I (..\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_def.h)(0x6540A28B)
 I (..\Drivers\CMSIS\Device\ST\STM32H7xx\Include\stm32h7xx.h)(0x6540A28B)
 I (..\Drivers\CMSIS\Device\ST\STM32H7xx\Include\stm32h750xx.h)(0x6540A28B)
 I (..\Drivers\CMSIS\Include\core_cm7.h)(0x6540A28B)
-I (E:\dianzi\MDKv5\ARM\AC5\include\stdint.h)(0x5E8E3CC2)
+I (E:\dianzi\MDKv5\ARM\ARMCLANG\include\stdint.h)(0x637AECBC)
 I (..\Drivers\CMSIS\Include\cmsis_version.h)(0x6540A28B)
 I (..\Drivers\CMSIS\Include\cmsis_compiler.h)(0x6540A28B)
-I (..\Drivers\CMSIS\Include\cmsis_armcc.h)(0x6540A28B)
+I (..\Drivers\CMSIS\Include\cmsis_armclang.h)(0x6540A28B)
+I (E:\dianzi\MDKv5\ARM\ARMCLANG\include\arm_compat.h)(0x6306C9C0)
+I (E:\dianzi\MDKv5\ARM\ARMCLANG\include\arm_acle.h)(0x637AECB8)
 I (..\Drivers\CMSIS\Include\mpu_armv7.h)(0x6540A28B)
 I (..\Drivers\CMSIS\Device\ST\STM32H7xx\Include\system_stm32h7xx.h)(0x6540A28B)
-I (..\Drivers\STM32H7xx_HAL_Driver\Inc\Legacy/stm32_hal_legacy.h)(0x6540A28B)
-I (E:\dianzi\MDKv5\ARM\AC5\include\stddef.h)(0x5E8E3CC2)
-I (E:\dianzi\MDKv5\ARM\AC5\include\math.h)(0x5E8E3CC2)
+I (..\Drivers\STM32H7xx_HAL_Driver\Inc\Legacy\stm32_hal_legacy.h)(0x6540A28B)
+I (E:\dianzi\MDKv5\ARM\ARMCLANG\include\stddef.h)(0x637AECBC)
+I (E:\dianzi\MDKv5\ARM\ARMCLANG\include\math.h)(0x637AECBA)
 I (..\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_rcc_ex.h)(0x6540A28B)
 I (..\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_gpio.h)(0x6540A28B)
 I (..\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_gpio_ex.h)(0x6540A28B)
@@ -1730,7 +1764,7 @@ I (..\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_pcd.h)(0x6540A28B)
 I (..\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_ll_usb.h)(0x6540A28C)
 I (..\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_pcd_ex.h)(0x6540A28B)
 I (..\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_hcd.h)(0x6540A28B)
-F (..\Drivers\STM32H7xx_HAL_Driver\Src\stm32h7xx_hal_uart_ex.c)(0x6540A28D)(--c99 -c --cpu Cortex-M7.fp.dp -O1 --apcs=interwork --split_sections -I ..\Drivers -I ..\Drivers\CMSIS\Device\ST\STM32H7xx\Include -I ..\Drivers\STM32H7xx_HAL_Driver\Inc -I ..\Drivers\CMSIS\Include -I ..\Middlewares -I ..\Middlewares\MALLOC -I ..\Middlewares\FreeRTOS\include -I ..\Middlewares\FreeRTOS\portable\RVDS\ARM_CM7\r0p1 -I ..\Drivers\SYSTEM\delay -I ..\Drivers\SYSTEM\sys -I ..\Drivers\SYSTEM\usart -I ..\Drivers\BSP\KEY -I ..\Drivers\BSP\LCD -I ..\Drivers\BSP\LED -I ..\Drivers\BSP\MPU -I ..\Drivers\BSP\TIMER -I ..\User-IE:\dianzi\MDKv5\Keil\STM32H7xx_DFP\3.1.0\Drivers\CMSIS\Device\ST\STM32H7xx\Include-D__UVISION_VERSION="538" -DSTM32H750xx -DSTM32H750xx -DUSE_HAL_DRIVER-o ..\output\stm32h7xx_hal_uart_ex.o --depend ..\output\stm32h7xx_hal_uart_ex.d)
+F (..\Drivers\STM32H7xx_HAL_Driver\Src\stm32h7xx_hal_uart_ex.c)(0x6540A28D)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m7 -mfpu=fpv5-d16 -mfloat-abi=hard -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-O2 -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-reserved-identifier -I ../Drivers -I ../Drivers/CMSIS/Device/ST/STM32H7xx/Include -I ../Drivers/STM32H7xx_HAL_Driver/Inc -I ../Drivers/CMSIS/Include -I ../Middlewares -I ../Middlewares/MALLOC -I ../Middlewares/FreeRTOS/include -I ../Drivers/SYSTEM/delay -I ../Drivers/SYSTEM/sys -I ../Drivers/SYSTEM/usart -I ../Drivers/BSP/KEY -I ../Drivers/BSP/LCD -I ../Drivers/BSP/LED -I ../Drivers/BSP/MPU -I ../Drivers/BSP/TIMER -I ../User -I ../Middlewares/FreeRTOS/portable/GCC/ARM_CM7/r0p1-IE:/dianzi/MDKv5/Keil/STM32H7xx_DFP/3.1.0/Drivers/CMSIS/Device/ST/STM32H7xx/Include-D__UVISION_VERSION="538" -DSTM32H750xx -DSTM32H750xx -DUSE_HAL_DRIVER-o ../output/stm32h7xx_hal_uart_ex.o -MD)
 I (..\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal.h)(0x6540A28B)
 I (..\User\stm32h7xx_hal_conf.h)(0x6540A28E)
 I (..\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_rcc.h)(0x6540A28B)
@@ -1738,15 +1772,17 @@ I (..\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_def.h)(0x6540A28B)
 I (..\Drivers\CMSIS\Device\ST\STM32H7xx\Include\stm32h7xx.h)(0x6540A28B)
 I (..\Drivers\CMSIS\Device\ST\STM32H7xx\Include\stm32h750xx.h)(0x6540A28B)
 I (..\Drivers\CMSIS\Include\core_cm7.h)(0x6540A28B)
-I (E:\dianzi\MDKv5\ARM\AC5\include\stdint.h)(0x5E8E3CC2)
+I (E:\dianzi\MDKv5\ARM\ARMCLANG\include\stdint.h)(0x637AECBC)
 I (..\Drivers\CMSIS\Include\cmsis_version.h)(0x6540A28B)
 I (..\Drivers\CMSIS\Include\cmsis_compiler.h)(0x6540A28B)
-I (..\Drivers\CMSIS\Include\cmsis_armcc.h)(0x6540A28B)
+I (..\Drivers\CMSIS\Include\cmsis_armclang.h)(0x6540A28B)
+I (E:\dianzi\MDKv5\ARM\ARMCLANG\include\arm_compat.h)(0x6306C9C0)
+I (E:\dianzi\MDKv5\ARM\ARMCLANG\include\arm_acle.h)(0x637AECB8)
 I (..\Drivers\CMSIS\Include\mpu_armv7.h)(0x6540A28B)
 I (..\Drivers\CMSIS\Device\ST\STM32H7xx\Include\system_stm32h7xx.h)(0x6540A28B)
-I (..\Drivers\STM32H7xx_HAL_Driver\Inc\Legacy/stm32_hal_legacy.h)(0x6540A28B)
-I (E:\dianzi\MDKv5\ARM\AC5\include\stddef.h)(0x5E8E3CC2)
-I (E:\dianzi\MDKv5\ARM\AC5\include\math.h)(0x5E8E3CC2)
+I (..\Drivers\STM32H7xx_HAL_Driver\Inc\Legacy\stm32_hal_legacy.h)(0x6540A28B)
+I (E:\dianzi\MDKv5\ARM\ARMCLANG\include\stddef.h)(0x637AECBC)
+I (E:\dianzi\MDKv5\ARM\ARMCLANG\include\math.h)(0x637AECBA)
 I (..\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_rcc_ex.h)(0x6540A28B)
 I (..\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_gpio.h)(0x6540A28B)
 I (..\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_gpio_ex.h)(0x6540A28B)
@@ -1829,7 +1865,7 @@ I (..\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_pcd.h)(0x6540A28B)
 I (..\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_ll_usb.h)(0x6540A28C)
 I (..\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_pcd_ex.h)(0x6540A28B)
 I (..\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_hcd.h)(0x6540A28B)
-F (..\Drivers\STM32H7xx_HAL_Driver\Src\stm32h7xx_hal_usart.c)(0x6540A28D)(--c99 -c --cpu Cortex-M7.fp.dp -O1 --apcs=interwork --split_sections -I ..\Drivers -I ..\Drivers\CMSIS\Device\ST\STM32H7xx\Include -I ..\Drivers\STM32H7xx_HAL_Driver\Inc -I ..\Drivers\CMSIS\Include -I ..\Middlewares -I ..\Middlewares\MALLOC -I ..\Middlewares\FreeRTOS\include -I ..\Middlewares\FreeRTOS\portable\RVDS\ARM_CM7\r0p1 -I ..\Drivers\SYSTEM\delay -I ..\Drivers\SYSTEM\sys -I ..\Drivers\SYSTEM\usart -I ..\Drivers\BSP\KEY -I ..\Drivers\BSP\LCD -I ..\Drivers\BSP\LED -I ..\Drivers\BSP\MPU -I ..\Drivers\BSP\TIMER -I ..\User-IE:\dianzi\MDKv5\Keil\STM32H7xx_DFP\3.1.0\Drivers\CMSIS\Device\ST\STM32H7xx\Include-D__UVISION_VERSION="538" -DSTM32H750xx -DSTM32H750xx -DUSE_HAL_DRIVER-o ..\output\stm32h7xx_hal_usart.o --depend ..\output\stm32h7xx_hal_usart.d)
+F (..\Drivers\STM32H7xx_HAL_Driver\Src\stm32h7xx_hal_usart.c)(0x6540A28D)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m7 -mfpu=fpv5-d16 -mfloat-abi=hard -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-O2 -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-reserved-identifier -I ../Drivers -I ../Drivers/CMSIS/Device/ST/STM32H7xx/Include -I ../Drivers/STM32H7xx_HAL_Driver/Inc -I ../Drivers/CMSIS/Include -I ../Middlewares -I ../Middlewares/MALLOC -I ../Middlewares/FreeRTOS/include -I ../Drivers/SYSTEM/delay -I ../Drivers/SYSTEM/sys -I ../Drivers/SYSTEM/usart -I ../Drivers/BSP/KEY -I ../Drivers/BSP/LCD -I ../Drivers/BSP/LED -I ../Drivers/BSP/MPU -I ../Drivers/BSP/TIMER -I ../User -I ../Middlewares/FreeRTOS/portable/GCC/ARM_CM7/r0p1-IE:/dianzi/MDKv5/Keil/STM32H7xx_DFP/3.1.0/Drivers/CMSIS/Device/ST/STM32H7xx/Include-D__UVISION_VERSION="538" -DSTM32H750xx -DSTM32H750xx -DUSE_HAL_DRIVER-o ../output/stm32h7xx_hal_usart.o -MD)
 I (..\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal.h)(0x6540A28B)
 I (..\User\stm32h7xx_hal_conf.h)(0x6540A28E)
 I (..\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_rcc.h)(0x6540A28B)
@@ -1837,15 +1873,17 @@ I (..\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_def.h)(0x6540A28B)
 I (..\Drivers\CMSIS\Device\ST\STM32H7xx\Include\stm32h7xx.h)(0x6540A28B)
 I (..\Drivers\CMSIS\Device\ST\STM32H7xx\Include\stm32h750xx.h)(0x6540A28B)
 I (..\Drivers\CMSIS\Include\core_cm7.h)(0x6540A28B)
-I (E:\dianzi\MDKv5\ARM\AC5\include\stdint.h)(0x5E8E3CC2)
+I (E:\dianzi\MDKv5\ARM\ARMCLANG\include\stdint.h)(0x637AECBC)
 I (..\Drivers\CMSIS\Include\cmsis_version.h)(0x6540A28B)
 I (..\Drivers\CMSIS\Include\cmsis_compiler.h)(0x6540A28B)
-I (..\Drivers\CMSIS\Include\cmsis_armcc.h)(0x6540A28B)
+I (..\Drivers\CMSIS\Include\cmsis_armclang.h)(0x6540A28B)
+I (E:\dianzi\MDKv5\ARM\ARMCLANG\include\arm_compat.h)(0x6306C9C0)
+I (E:\dianzi\MDKv5\ARM\ARMCLANG\include\arm_acle.h)(0x637AECB8)
 I (..\Drivers\CMSIS\Include\mpu_armv7.h)(0x6540A28B)
 I (..\Drivers\CMSIS\Device\ST\STM32H7xx\Include\system_stm32h7xx.h)(0x6540A28B)
-I (..\Drivers\STM32H7xx_HAL_Driver\Inc\Legacy/stm32_hal_legacy.h)(0x6540A28B)
-I (E:\dianzi\MDKv5\ARM\AC5\include\stddef.h)(0x5E8E3CC2)
-I (E:\dianzi\MDKv5\ARM\AC5\include\math.h)(0x5E8E3CC2)
+I (..\Drivers\STM32H7xx_HAL_Driver\Inc\Legacy\stm32_hal_legacy.h)(0x6540A28B)
+I (E:\dianzi\MDKv5\ARM\ARMCLANG\include\stddef.h)(0x637AECBC)
+I (E:\dianzi\MDKv5\ARM\ARMCLANG\include\math.h)(0x637AECBA)
 I (..\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_rcc_ex.h)(0x6540A28B)
 I (..\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_gpio.h)(0x6540A28B)
 I (..\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_gpio_ex.h)(0x6540A28B)
@@ -1928,7 +1966,7 @@ I (..\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_pcd.h)(0x6540A28B)
 I (..\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_ll_usb.h)(0x6540A28C)
 I (..\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_pcd_ex.h)(0x6540A28B)
 I (..\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_hcd.h)(0x6540A28B)
-F (..\Drivers\STM32H7xx_HAL_Driver\Src\stm32h7xx_hal_usart_ex.c)(0x6540A28D)(--c99 -c --cpu Cortex-M7.fp.dp -O1 --apcs=interwork --split_sections -I ..\Drivers -I ..\Drivers\CMSIS\Device\ST\STM32H7xx\Include -I ..\Drivers\STM32H7xx_HAL_Driver\Inc -I ..\Drivers\CMSIS\Include -I ..\Middlewares -I ..\Middlewares\MALLOC -I ..\Middlewares\FreeRTOS\include -I ..\Middlewares\FreeRTOS\portable\RVDS\ARM_CM7\r0p1 -I ..\Drivers\SYSTEM\delay -I ..\Drivers\SYSTEM\sys -I ..\Drivers\SYSTEM\usart -I ..\Drivers\BSP\KEY -I ..\Drivers\BSP\LCD -I ..\Drivers\BSP\LED -I ..\Drivers\BSP\MPU -I ..\Drivers\BSP\TIMER -I ..\User-IE:\dianzi\MDKv5\Keil\STM32H7xx_DFP\3.1.0\Drivers\CMSIS\Device\ST\STM32H7xx\Include-D__UVISION_VERSION="538" -DSTM32H750xx -DSTM32H750xx -DUSE_HAL_DRIVER-o ..\output\stm32h7xx_hal_usart_ex.o --depend ..\output\stm32h7xx_hal_usart_ex.d)
+F (..\Drivers\STM32H7xx_HAL_Driver\Src\stm32h7xx_hal_usart_ex.c)(0x6540A28D)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m7 -mfpu=fpv5-d16 -mfloat-abi=hard -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-O2 -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-reserved-identifier -I ../Drivers -I ../Drivers/CMSIS/Device/ST/STM32H7xx/Include -I ../Drivers/STM32H7xx_HAL_Driver/Inc -I ../Drivers/CMSIS/Include -I ../Middlewares -I ../Middlewares/MALLOC -I ../Middlewares/FreeRTOS/include -I ../Drivers/SYSTEM/delay -I ../Drivers/SYSTEM/sys -I ../Drivers/SYSTEM/usart -I ../Drivers/BSP/KEY -I ../Drivers/BSP/LCD -I ../Drivers/BSP/LED -I ../Drivers/BSP/MPU -I ../Drivers/BSP/TIMER -I ../User -I ../Middlewares/FreeRTOS/portable/GCC/ARM_CM7/r0p1-IE:/dianzi/MDKv5/Keil/STM32H7xx_DFP/3.1.0/Drivers/CMSIS/Device/ST/STM32H7xx/Include-D__UVISION_VERSION="538" -DSTM32H750xx -DSTM32H750xx -DUSE_HAL_DRIVER-o ../output/stm32h7xx_hal_usart_ex.o -MD)
 I (..\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal.h)(0x6540A28B)
 I (..\User\stm32h7xx_hal_conf.h)(0x6540A28E)
 I (..\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_rcc.h)(0x6540A28B)
@@ -1936,15 +1974,17 @@ I (..\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_def.h)(0x6540A28B)
 I (..\Drivers\CMSIS\Device\ST\STM32H7xx\Include\stm32h7xx.h)(0x6540A28B)
 I (..\Drivers\CMSIS\Device\ST\STM32H7xx\Include\stm32h750xx.h)(0x6540A28B)
 I (..\Drivers\CMSIS\Include\core_cm7.h)(0x6540A28B)
-I (E:\dianzi\MDKv5\ARM\AC5\include\stdint.h)(0x5E8E3CC2)
+I (E:\dianzi\MDKv5\ARM\ARMCLANG\include\stdint.h)(0x637AECBC)
 I (..\Drivers\CMSIS\Include\cmsis_version.h)(0x6540A28B)
 I (..\Drivers\CMSIS\Include\cmsis_compiler.h)(0x6540A28B)
-I (..\Drivers\CMSIS\Include\cmsis_armcc.h)(0x6540A28B)
+I (..\Drivers\CMSIS\Include\cmsis_armclang.h)(0x6540A28B)
+I (E:\dianzi\MDKv5\ARM\ARMCLANG\include\arm_compat.h)(0x6306C9C0)
+I (E:\dianzi\MDKv5\ARM\ARMCLANG\include\arm_acle.h)(0x637AECB8)
 I (..\Drivers\CMSIS\Include\mpu_armv7.h)(0x6540A28B)
 I (..\Drivers\CMSIS\Device\ST\STM32H7xx\Include\system_stm32h7xx.h)(0x6540A28B)
-I (..\Drivers\STM32H7xx_HAL_Driver\Inc\Legacy/stm32_hal_legacy.h)(0x6540A28B)
-I (E:\dianzi\MDKv5\ARM\AC5\include\stddef.h)(0x5E8E3CC2)
-I (E:\dianzi\MDKv5\ARM\AC5\include\math.h)(0x5E8E3CC2)
+I (..\Drivers\STM32H7xx_HAL_Driver\Inc\Legacy\stm32_hal_legacy.h)(0x6540A28B)
+I (E:\dianzi\MDKv5\ARM\ARMCLANG\include\stddef.h)(0x637AECBC)
+I (E:\dianzi\MDKv5\ARM\ARMCLANG\include\math.h)(0x637AECBA)
 I (..\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_rcc_ex.h)(0x6540A28B)
 I (..\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_gpio.h)(0x6540A28B)
 I (..\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_gpio_ex.h)(0x6540A28B)
@@ -2027,7 +2067,7 @@ I (..\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_pcd.h)(0x6540A28B)
 I (..\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_ll_usb.h)(0x6540A28C)
 I (..\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_pcd_ex.h)(0x6540A28B)
 I (..\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_hcd.h)(0x6540A28B)
-F (..\Drivers\STM32H7xx_HAL_Driver\Src\stm32h7xx_hal_mdma.c)(0x6540A28D)(--c99 -c --cpu Cortex-M7.fp.dp -O1 --apcs=interwork --split_sections -I ..\Drivers -I ..\Drivers\CMSIS\Device\ST\STM32H7xx\Include -I ..\Drivers\STM32H7xx_HAL_Driver\Inc -I ..\Drivers\CMSIS\Include -I ..\Middlewares -I ..\Middlewares\MALLOC -I ..\Middlewares\FreeRTOS\include -I ..\Middlewares\FreeRTOS\portable\RVDS\ARM_CM7\r0p1 -I ..\Drivers\SYSTEM\delay -I ..\Drivers\SYSTEM\sys -I ..\Drivers\SYSTEM\usart -I ..\Drivers\BSP\KEY -I ..\Drivers\BSP\LCD -I ..\Drivers\BSP\LED -I ..\Drivers\BSP\MPU -I ..\Drivers\BSP\TIMER -I ..\User-IE:\dianzi\MDKv5\Keil\STM32H7xx_DFP\3.1.0\Drivers\CMSIS\Device\ST\STM32H7xx\Include-D__UVISION_VERSION="538" -DSTM32H750xx -DSTM32H750xx -DUSE_HAL_DRIVER-o ..\output\stm32h7xx_hal_mdma.o --depend ..\output\stm32h7xx_hal_mdma.d)
+F (..\Drivers\STM32H7xx_HAL_Driver\Src\stm32h7xx_hal_mdma.c)(0x6540A28D)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m7 -mfpu=fpv5-d16 -mfloat-abi=hard -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-O2 -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-reserved-identifier -I ../Drivers -I ../Drivers/CMSIS/Device/ST/STM32H7xx/Include -I ../Drivers/STM32H7xx_HAL_Driver/Inc -I ../Drivers/CMSIS/Include -I ../Middlewares -I ../Middlewares/MALLOC -I ../Middlewares/FreeRTOS/include -I ../Drivers/SYSTEM/delay -I ../Drivers/SYSTEM/sys -I ../Drivers/SYSTEM/usart -I ../Drivers/BSP/KEY -I ../Drivers/BSP/LCD -I ../Drivers/BSP/LED -I ../Drivers/BSP/MPU -I ../Drivers/BSP/TIMER -I ../User -I ../Middlewares/FreeRTOS/portable/GCC/ARM_CM7/r0p1-IE:/dianzi/MDKv5/Keil/STM32H7xx_DFP/3.1.0/Drivers/CMSIS/Device/ST/STM32H7xx/Include-D__UVISION_VERSION="538" -DSTM32H750xx -DSTM32H750xx -DUSE_HAL_DRIVER-o ../output/stm32h7xx_hal_mdma.o -MD)
 I (..\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal.h)(0x6540A28B)
 I (..\User\stm32h7xx_hal_conf.h)(0x6540A28E)
 I (..\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_rcc.h)(0x6540A28B)
@@ -2035,15 +2075,17 @@ I (..\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_def.h)(0x6540A28B)
 I (..\Drivers\CMSIS\Device\ST\STM32H7xx\Include\stm32h7xx.h)(0x6540A28B)
 I (..\Drivers\CMSIS\Device\ST\STM32H7xx\Include\stm32h750xx.h)(0x6540A28B)
 I (..\Drivers\CMSIS\Include\core_cm7.h)(0x6540A28B)
-I (E:\dianzi\MDKv5\ARM\AC5\include\stdint.h)(0x5E8E3CC2)
+I (E:\dianzi\MDKv5\ARM\ARMCLANG\include\stdint.h)(0x637AECBC)
 I (..\Drivers\CMSIS\Include\cmsis_version.h)(0x6540A28B)
 I (..\Drivers\CMSIS\Include\cmsis_compiler.h)(0x6540A28B)
-I (..\Drivers\CMSIS\Include\cmsis_armcc.h)(0x6540A28B)
+I (..\Drivers\CMSIS\Include\cmsis_armclang.h)(0x6540A28B)
+I (E:\dianzi\MDKv5\ARM\ARMCLANG\include\arm_compat.h)(0x6306C9C0)
+I (E:\dianzi\MDKv5\ARM\ARMCLANG\include\arm_acle.h)(0x637AECB8)
 I (..\Drivers\CMSIS\Include\mpu_armv7.h)(0x6540A28B)
 I (..\Drivers\CMSIS\Device\ST\STM32H7xx\Include\system_stm32h7xx.h)(0x6540A28B)
-I (..\Drivers\STM32H7xx_HAL_Driver\Inc\Legacy/stm32_hal_legacy.h)(0x6540A28B)
-I (E:\dianzi\MDKv5\ARM\AC5\include\stddef.h)(0x5E8E3CC2)
-I (E:\dianzi\MDKv5\ARM\AC5\include\math.h)(0x5E8E3CC2)
+I (..\Drivers\STM32H7xx_HAL_Driver\Inc\Legacy\stm32_hal_legacy.h)(0x6540A28B)
+I (E:\dianzi\MDKv5\ARM\ARMCLANG\include\stddef.h)(0x637AECBC)
+I (E:\dianzi\MDKv5\ARM\ARMCLANG\include\math.h)(0x637AECBA)
 I (..\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_rcc_ex.h)(0x6540A28B)
 I (..\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_gpio.h)(0x6540A28B)
 I (..\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_gpio_ex.h)(0x6540A28B)
@@ -2126,7 +2168,7 @@ I (..\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_pcd.h)(0x6540A28B)
 I (..\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_ll_usb.h)(0x6540A28C)
 I (..\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_pcd_ex.h)(0x6540A28B)
 I (..\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_hcd.h)(0x6540A28B)
-F (..\Drivers\STM32H7xx_HAL_Driver\Src\stm32h7xx_hal_sram.c)(0x6540A28D)(--c99 -c --cpu Cortex-M7.fp.dp -O1 --apcs=interwork --split_sections -I ..\Drivers -I ..\Drivers\CMSIS\Device\ST\STM32H7xx\Include -I ..\Drivers\STM32H7xx_HAL_Driver\Inc -I ..\Drivers\CMSIS\Include -I ..\Middlewares -I ..\Middlewares\MALLOC -I ..\Middlewares\FreeRTOS\include -I ..\Middlewares\FreeRTOS\portable\RVDS\ARM_CM7\r0p1 -I ..\Drivers\SYSTEM\delay -I ..\Drivers\SYSTEM\sys -I ..\Drivers\SYSTEM\usart -I ..\Drivers\BSP\KEY -I ..\Drivers\BSP\LCD -I ..\Drivers\BSP\LED -I ..\Drivers\BSP\MPU -I ..\Drivers\BSP\TIMER -I ..\User-IE:\dianzi\MDKv5\Keil\STM32H7xx_DFP\3.1.0\Drivers\CMSIS\Device\ST\STM32H7xx\Include-D__UVISION_VERSION="538" -DSTM32H750xx -DSTM32H750xx -DUSE_HAL_DRIVER-o ..\output\stm32h7xx_hal_sram.o --depend ..\output\stm32h7xx_hal_sram.d)
+F (..\Drivers\STM32H7xx_HAL_Driver\Src\stm32h7xx_hal_sram.c)(0x6540A28D)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m7 -mfpu=fpv5-d16 -mfloat-abi=hard -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-O2 -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-reserved-identifier -I ../Drivers -I ../Drivers/CMSIS/Device/ST/STM32H7xx/Include -I ../Drivers/STM32H7xx_HAL_Driver/Inc -I ../Drivers/CMSIS/Include -I ../Middlewares -I ../Middlewares/MALLOC -I ../Middlewares/FreeRTOS/include -I ../Drivers/SYSTEM/delay -I ../Drivers/SYSTEM/sys -I ../Drivers/SYSTEM/usart -I ../Drivers/BSP/KEY -I ../Drivers/BSP/LCD -I ../Drivers/BSP/LED -I ../Drivers/BSP/MPU -I ../Drivers/BSP/TIMER -I ../User -I ../Middlewares/FreeRTOS/portable/GCC/ARM_CM7/r0p1-IE:/dianzi/MDKv5/Keil/STM32H7xx_DFP/3.1.0/Drivers/CMSIS/Device/ST/STM32H7xx/Include-D__UVISION_VERSION="538" -DSTM32H750xx -DSTM32H750xx -DUSE_HAL_DRIVER-o ../output/stm32h7xx_hal_sram.o -MD)
 I (..\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal.h)(0x6540A28B)
 I (..\User\stm32h7xx_hal_conf.h)(0x6540A28E)
 I (..\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_rcc.h)(0x6540A28B)
@@ -2134,15 +2176,17 @@ I (..\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_def.h)(0x6540A28B)
 I (..\Drivers\CMSIS\Device\ST\STM32H7xx\Include\stm32h7xx.h)(0x6540A28B)
 I (..\Drivers\CMSIS\Device\ST\STM32H7xx\Include\stm32h750xx.h)(0x6540A28B)
 I (..\Drivers\CMSIS\Include\core_cm7.h)(0x6540A28B)
-I (E:\dianzi\MDKv5\ARM\AC5\include\stdint.h)(0x5E8E3CC2)
+I (E:\dianzi\MDKv5\ARM\ARMCLANG\include\stdint.h)(0x637AECBC)
 I (..\Drivers\CMSIS\Include\cmsis_version.h)(0x6540A28B)
 I (..\Drivers\CMSIS\Include\cmsis_compiler.h)(0x6540A28B)
-I (..\Drivers\CMSIS\Include\cmsis_armcc.h)(0x6540A28B)
+I (..\Drivers\CMSIS\Include\cmsis_armclang.h)(0x6540A28B)
+I (E:\dianzi\MDKv5\ARM\ARMCLANG\include\arm_compat.h)(0x6306C9C0)
+I (E:\dianzi\MDKv5\ARM\ARMCLANG\include\arm_acle.h)(0x637AECB8)
 I (..\Drivers\CMSIS\Include\mpu_armv7.h)(0x6540A28B)
 I (..\Drivers\CMSIS\Device\ST\STM32H7xx\Include\system_stm32h7xx.h)(0x6540A28B)
-I (..\Drivers\STM32H7xx_HAL_Driver\Inc\Legacy/stm32_hal_legacy.h)(0x6540A28B)
-I (E:\dianzi\MDKv5\ARM\AC5\include\stddef.h)(0x5E8E3CC2)
-I (E:\dianzi\MDKv5\ARM\AC5\include\math.h)(0x5E8E3CC2)
+I (..\Drivers\STM32H7xx_HAL_Driver\Inc\Legacy\stm32_hal_legacy.h)(0x6540A28B)
+I (E:\dianzi\MDKv5\ARM\ARMCLANG\include\stddef.h)(0x637AECBC)
+I (E:\dianzi\MDKv5\ARM\ARMCLANG\include\math.h)(0x637AECBA)
 I (..\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_rcc_ex.h)(0x6540A28B)
 I (..\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_gpio.h)(0x6540A28B)
 I (..\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_gpio_ex.h)(0x6540A28B)
@@ -2225,7 +2269,7 @@ I (..\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_pcd.h)(0x6540A28B)
 I (..\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_ll_usb.h)(0x6540A28C)
 I (..\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_pcd_ex.h)(0x6540A28B)
 I (..\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_hcd.h)(0x6540A28B)
-F (..\Drivers\STM32H7xx_HAL_Driver\Src\stm32h7xx_hal_tim.c)(0x6540A28D)(--c99 -c --cpu Cortex-M7.fp.dp -O1 --apcs=interwork --split_sections -I ..\Drivers -I ..\Drivers\CMSIS\Device\ST\STM32H7xx\Include -I ..\Drivers\STM32H7xx_HAL_Driver\Inc -I ..\Drivers\CMSIS\Include -I ..\Middlewares -I ..\Middlewares\MALLOC -I ..\Middlewares\FreeRTOS\include -I ..\Middlewares\FreeRTOS\portable\RVDS\ARM_CM7\r0p1 -I ..\Drivers\SYSTEM\delay -I ..\Drivers\SYSTEM\sys -I ..\Drivers\SYSTEM\usart -I ..\Drivers\BSP\KEY -I ..\Drivers\BSP\LCD -I ..\Drivers\BSP\LED -I ..\Drivers\BSP\MPU -I ..\Drivers\BSP\TIMER -I ..\User-IE:\dianzi\MDKv5\Keil\STM32H7xx_DFP\3.1.0\Drivers\CMSIS\Device\ST\STM32H7xx\Include-D__UVISION_VERSION="538" -DSTM32H750xx -DSTM32H750xx -DUSE_HAL_DRIVER-o ..\output\stm32h7xx_hal_tim.o --depend ..\output\stm32h7xx_hal_tim.d)
+F (..\Drivers\STM32H7xx_HAL_Driver\Src\stm32h7xx_hal_tim.c)(0x6540A28D)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m7 -mfpu=fpv5-d16 -mfloat-abi=hard -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-O2 -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-reserved-identifier -I ../Drivers -I ../Drivers/CMSIS/Device/ST/STM32H7xx/Include -I ../Drivers/STM32H7xx_HAL_Driver/Inc -I ../Drivers/CMSIS/Include -I ../Middlewares -I ../Middlewares/MALLOC -I ../Middlewares/FreeRTOS/include -I ../Drivers/SYSTEM/delay -I ../Drivers/SYSTEM/sys -I ../Drivers/SYSTEM/usart -I ../Drivers/BSP/KEY -I ../Drivers/BSP/LCD -I ../Drivers/BSP/LED -I ../Drivers/BSP/MPU -I ../Drivers/BSP/TIMER -I ../User -I ../Middlewares/FreeRTOS/portable/GCC/ARM_CM7/r0p1-IE:/dianzi/MDKv5/Keil/STM32H7xx_DFP/3.1.0/Drivers/CMSIS/Device/ST/STM32H7xx/Include-D__UVISION_VERSION="538" -DSTM32H750xx -DSTM32H750xx -DUSE_HAL_DRIVER-o ../output/stm32h7xx_hal_tim.o -MD)
 I (..\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal.h)(0x6540A28B)
 I (..\User\stm32h7xx_hal_conf.h)(0x6540A28E)
 I (..\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_rcc.h)(0x6540A28B)
@@ -2233,15 +2277,17 @@ I (..\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_def.h)(0x6540A28B)
 I (..\Drivers\CMSIS\Device\ST\STM32H7xx\Include\stm32h7xx.h)(0x6540A28B)
 I (..\Drivers\CMSIS\Device\ST\STM32H7xx\Include\stm32h750xx.h)(0x6540A28B)
 I (..\Drivers\CMSIS\Include\core_cm7.h)(0x6540A28B)
-I (E:\dianzi\MDKv5\ARM\AC5\include\stdint.h)(0x5E8E3CC2)
+I (E:\dianzi\MDKv5\ARM\ARMCLANG\include\stdint.h)(0x637AECBC)
 I (..\Drivers\CMSIS\Include\cmsis_version.h)(0x6540A28B)
 I (..\Drivers\CMSIS\Include\cmsis_compiler.h)(0x6540A28B)
-I (..\Drivers\CMSIS\Include\cmsis_armcc.h)(0x6540A28B)
+I (..\Drivers\CMSIS\Include\cmsis_armclang.h)(0x6540A28B)
+I (E:\dianzi\MDKv5\ARM\ARMCLANG\include\arm_compat.h)(0x6306C9C0)
+I (E:\dianzi\MDKv5\ARM\ARMCLANG\include\arm_acle.h)(0x637AECB8)
 I (..\Drivers\CMSIS\Include\mpu_armv7.h)(0x6540A28B)
 I (..\Drivers\CMSIS\Device\ST\STM32H7xx\Include\system_stm32h7xx.h)(0x6540A28B)
-I (..\Drivers\STM32H7xx_HAL_Driver\Inc\Legacy/stm32_hal_legacy.h)(0x6540A28B)
-I (E:\dianzi\MDKv5\ARM\AC5\include\stddef.h)(0x5E8E3CC2)
-I (E:\dianzi\MDKv5\ARM\AC5\include\math.h)(0x5E8E3CC2)
+I (..\Drivers\STM32H7xx_HAL_Driver\Inc\Legacy\stm32_hal_legacy.h)(0x6540A28B)
+I (E:\dianzi\MDKv5\ARM\ARMCLANG\include\stddef.h)(0x637AECBC)
+I (E:\dianzi\MDKv5\ARM\ARMCLANG\include\math.h)(0x637AECBA)
 I (..\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_rcc_ex.h)(0x6540A28B)
 I (..\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_gpio.h)(0x6540A28B)
 I (..\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_gpio_ex.h)(0x6540A28B)
@@ -2324,7 +2370,7 @@ I (..\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_pcd.h)(0x6540A28B)
 I (..\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_ll_usb.h)(0x6540A28C)
 I (..\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_pcd_ex.h)(0x6540A28B)
 I (..\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_hcd.h)(0x6540A28B)
-F (..\Drivers\STM32H7xx_HAL_Driver\Src\stm32h7xx_hal_tim_ex.c)(0x6540A28D)(--c99 -c --cpu Cortex-M7.fp.dp -O1 --apcs=interwork --split_sections -I ..\Drivers -I ..\Drivers\CMSIS\Device\ST\STM32H7xx\Include -I ..\Drivers\STM32H7xx_HAL_Driver\Inc -I ..\Drivers\CMSIS\Include -I ..\Middlewares -I ..\Middlewares\MALLOC -I ..\Middlewares\FreeRTOS\include -I ..\Middlewares\FreeRTOS\portable\RVDS\ARM_CM7\r0p1 -I ..\Drivers\SYSTEM\delay -I ..\Drivers\SYSTEM\sys -I ..\Drivers\SYSTEM\usart -I ..\Drivers\BSP\KEY -I ..\Drivers\BSP\LCD -I ..\Drivers\BSP\LED -I ..\Drivers\BSP\MPU -I ..\Drivers\BSP\TIMER -I ..\User-IE:\dianzi\MDKv5\Keil\STM32H7xx_DFP\3.1.0\Drivers\CMSIS\Device\ST\STM32H7xx\Include-D__UVISION_VERSION="538" -DSTM32H750xx -DSTM32H750xx -DUSE_HAL_DRIVER-o ..\output\stm32h7xx_hal_tim_ex.o --depend ..\output\stm32h7xx_hal_tim_ex.d)
+F (..\Drivers\STM32H7xx_HAL_Driver\Src\stm32h7xx_hal_tim_ex.c)(0x6540A28D)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m7 -mfpu=fpv5-d16 -mfloat-abi=hard -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-O2 -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-reserved-identifier -I ../Drivers -I ../Drivers/CMSIS/Device/ST/STM32H7xx/Include -I ../Drivers/STM32H7xx_HAL_Driver/Inc -I ../Drivers/CMSIS/Include -I ../Middlewares -I ../Middlewares/MALLOC -I ../Middlewares/FreeRTOS/include -I ../Drivers/SYSTEM/delay -I ../Drivers/SYSTEM/sys -I ../Drivers/SYSTEM/usart -I ../Drivers/BSP/KEY -I ../Drivers/BSP/LCD -I ../Drivers/BSP/LED -I ../Drivers/BSP/MPU -I ../Drivers/BSP/TIMER -I ../User -I ../Middlewares/FreeRTOS/portable/GCC/ARM_CM7/r0p1-IE:/dianzi/MDKv5/Keil/STM32H7xx_DFP/3.1.0/Drivers/CMSIS/Device/ST/STM32H7xx/Include-D__UVISION_VERSION="538" -DSTM32H750xx -DSTM32H750xx -DUSE_HAL_DRIVER-o ../output/stm32h7xx_hal_tim_ex.o -MD)
 I (..\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal.h)(0x6540A28B)
 I (..\User\stm32h7xx_hal_conf.h)(0x6540A28E)
 I (..\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_rcc.h)(0x6540A28B)
@@ -2332,15 +2378,17 @@ I (..\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_def.h)(0x6540A28B)
 I (..\Drivers\CMSIS\Device\ST\STM32H7xx\Include\stm32h7xx.h)(0x6540A28B)
 I (..\Drivers\CMSIS\Device\ST\STM32H7xx\Include\stm32h750xx.h)(0x6540A28B)
 I (..\Drivers\CMSIS\Include\core_cm7.h)(0x6540A28B)
-I (E:\dianzi\MDKv5\ARM\AC5\include\stdint.h)(0x5E8E3CC2)
+I (E:\dianzi\MDKv5\ARM\ARMCLANG\include\stdint.h)(0x637AECBC)
 I (..\Drivers\CMSIS\Include\cmsis_version.h)(0x6540A28B)
 I (..\Drivers\CMSIS\Include\cmsis_compiler.h)(0x6540A28B)
-I (..\Drivers\CMSIS\Include\cmsis_armcc.h)(0x6540A28B)
+I (..\Drivers\CMSIS\Include\cmsis_armclang.h)(0x6540A28B)
+I (E:\dianzi\MDKv5\ARM\ARMCLANG\include\arm_compat.h)(0x6306C9C0)
+I (E:\dianzi\MDKv5\ARM\ARMCLANG\include\arm_acle.h)(0x637AECB8)
 I (..\Drivers\CMSIS\Include\mpu_armv7.h)(0x6540A28B)
 I (..\Drivers\CMSIS\Device\ST\STM32H7xx\Include\system_stm32h7xx.h)(0x6540A28B)
-I (..\Drivers\STM32H7xx_HAL_Driver\Inc\Legacy/stm32_hal_legacy.h)(0x6540A28B)
-I (E:\dianzi\MDKv5\ARM\AC5\include\stddef.h)(0x5E8E3CC2)
-I (E:\dianzi\MDKv5\ARM\AC5\include\math.h)(0x5E8E3CC2)
+I (..\Drivers\STM32H7xx_HAL_Driver\Inc\Legacy\stm32_hal_legacy.h)(0x6540A28B)
+I (E:\dianzi\MDKv5\ARM\ARMCLANG\include\stddef.h)(0x637AECBC)
+I (E:\dianzi\MDKv5\ARM\ARMCLANG\include\math.h)(0x637AECBA)
 I (..\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_rcc_ex.h)(0x6540A28B)
 I (..\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_gpio.h)(0x6540A28B)
 I (..\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_gpio_ex.h)(0x6540A28B)
@@ -2423,7 +2471,7 @@ I (..\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_pcd.h)(0x6540A28B)
 I (..\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_ll_usb.h)(0x6540A28C)
 I (..\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_pcd_ex.h)(0x6540A28B)
 I (..\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_hcd.h)(0x6540A28B)
-F (..\Drivers\STM32H7xx_HAL_Driver\Src\stm32h7xx_ll_fmc.c)(0x6540A28D)(--c99 -c --cpu Cortex-M7.fp.dp -O1 --apcs=interwork --split_sections -I ..\Drivers -I ..\Drivers\CMSIS\Device\ST\STM32H7xx\Include -I ..\Drivers\STM32H7xx_HAL_Driver\Inc -I ..\Drivers\CMSIS\Include -I ..\Middlewares -I ..\Middlewares\MALLOC -I ..\Middlewares\FreeRTOS\include -I ..\Middlewares\FreeRTOS\portable\RVDS\ARM_CM7\r0p1 -I ..\Drivers\SYSTEM\delay -I ..\Drivers\SYSTEM\sys -I ..\Drivers\SYSTEM\usart -I ..\Drivers\BSP\KEY -I ..\Drivers\BSP\LCD -I ..\Drivers\BSP\LED -I ..\Drivers\BSP\MPU -I ..\Drivers\BSP\TIMER -I ..\User-IE:\dianzi\MDKv5\Keil\STM32H7xx_DFP\3.1.0\Drivers\CMSIS\Device\ST\STM32H7xx\Include-D__UVISION_VERSION="538" -DSTM32H750xx -DSTM32H750xx -DUSE_HAL_DRIVER-o ..\output\stm32h7xx_ll_fmc.o --depend ..\output\stm32h7xx_ll_fmc.d)
+F (..\Drivers\STM32H7xx_HAL_Driver\Src\stm32h7xx_ll_fmc.c)(0x6540A28D)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m7 -mfpu=fpv5-d16 -mfloat-abi=hard -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-O2 -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-reserved-identifier -I ../Drivers -I ../Drivers/CMSIS/Device/ST/STM32H7xx/Include -I ../Drivers/STM32H7xx_HAL_Driver/Inc -I ../Drivers/CMSIS/Include -I ../Middlewares -I ../Middlewares/MALLOC -I ../Middlewares/FreeRTOS/include -I ../Drivers/SYSTEM/delay -I ../Drivers/SYSTEM/sys -I ../Drivers/SYSTEM/usart -I ../Drivers/BSP/KEY -I ../Drivers/BSP/LCD -I ../Drivers/BSP/LED -I ../Drivers/BSP/MPU -I ../Drivers/BSP/TIMER -I ../User -I ../Middlewares/FreeRTOS/portable/GCC/ARM_CM7/r0p1-IE:/dianzi/MDKv5/Keil/STM32H7xx_DFP/3.1.0/Drivers/CMSIS/Device/ST/STM32H7xx/Include-D__UVISION_VERSION="538" -DSTM32H750xx -DSTM32H750xx -DUSE_HAL_DRIVER-o ../output/stm32h7xx_ll_fmc.o -MD)
 I (..\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal.h)(0x6540A28B)
 I (..\User\stm32h7xx_hal_conf.h)(0x6540A28E)
 I (..\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_rcc.h)(0x6540A28B)
@@ -2431,15 +2479,17 @@ I (..\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_def.h)(0x6540A28B)
 I (..\Drivers\CMSIS\Device\ST\STM32H7xx\Include\stm32h7xx.h)(0x6540A28B)
 I (..\Drivers\CMSIS\Device\ST\STM32H7xx\Include\stm32h750xx.h)(0x6540A28B)
 I (..\Drivers\CMSIS\Include\core_cm7.h)(0x6540A28B)
-I (E:\dianzi\MDKv5\ARM\AC5\include\stdint.h)(0x5E8E3CC2)
+I (E:\dianzi\MDKv5\ARM\ARMCLANG\include\stdint.h)(0x637AECBC)
 I (..\Drivers\CMSIS\Include\cmsis_version.h)(0x6540A28B)
 I (..\Drivers\CMSIS\Include\cmsis_compiler.h)(0x6540A28B)
-I (..\Drivers\CMSIS\Include\cmsis_armcc.h)(0x6540A28B)
+I (..\Drivers\CMSIS\Include\cmsis_armclang.h)(0x6540A28B)
+I (E:\dianzi\MDKv5\ARM\ARMCLANG\include\arm_compat.h)(0x6306C9C0)
+I (E:\dianzi\MDKv5\ARM\ARMCLANG\include\arm_acle.h)(0x637AECB8)
 I (..\Drivers\CMSIS\Include\mpu_armv7.h)(0x6540A28B)
 I (..\Drivers\CMSIS\Device\ST\STM32H7xx\Include\system_stm32h7xx.h)(0x6540A28B)
-I (..\Drivers\STM32H7xx_HAL_Driver\Inc\Legacy/stm32_hal_legacy.h)(0x6540A28B)
-I (E:\dianzi\MDKv5\ARM\AC5\include\stddef.h)(0x5E8E3CC2)
-I (E:\dianzi\MDKv5\ARM\AC5\include\math.h)(0x5E8E3CC2)
+I (..\Drivers\STM32H7xx_HAL_Driver\Inc\Legacy\stm32_hal_legacy.h)(0x6540A28B)
+I (E:\dianzi\MDKv5\ARM\ARMCLANG\include\stddef.h)(0x637AECBC)
+I (E:\dianzi\MDKv5\ARM\ARMCLANG\include\math.h)(0x637AECBA)
 I (..\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_rcc_ex.h)(0x6540A28B)
 I (..\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_gpio.h)(0x6540A28B)
 I (..\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_gpio_ex.h)(0x6540A28B)
@@ -2522,25 +2572,27 @@ I (..\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_pcd.h)(0x6540A28B)
 I (..\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_ll_usb.h)(0x6540A28C)
 I (..\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_pcd_ex.h)(0x6540A28B)
 I (..\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_hcd.h)(0x6540A28B)
-F (..\Drivers\BSP\LED\led.c)(0x688A429A)(--c99 -c --cpu Cortex-M7.fp.dp -O1 --apcs=interwork --split_sections -I ..\Drivers -I ..\Drivers\CMSIS\Device\ST\STM32H7xx\Include -I ..\Drivers\STM32H7xx_HAL_Driver\Inc -I ..\Drivers\CMSIS\Include -I ..\Middlewares -I ..\Middlewares\MALLOC -I ..\Middlewares\FreeRTOS\include -I ..\Middlewares\FreeRTOS\portable\RVDS\ARM_CM7\r0p1 -I ..\Drivers\SYSTEM\delay -I ..\Drivers\SYSTEM\sys -I ..\Drivers\SYSTEM\usart -I ..\Drivers\BSP\KEY -I ..\Drivers\BSP\LCD -I ..\Drivers\BSP\LED -I ..\Drivers\BSP\MPU -I ..\Drivers\BSP\TIMER -I ..\User-IE:\dianzi\MDKv5\Keil\STM32H7xx_DFP\3.1.0\Drivers\CMSIS\Device\ST\STM32H7xx\Include-D__UVISION_VERSION="538" -DSTM32H750xx -DSTM32H750xx -DUSE_HAL_DRIVER-o ..\output\led.o --depend ..\output\led.d)
+F (..\Drivers\BSP\LED\led.c)(0x688A429A)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m7 -mfpu=fpv5-d16 -mfloat-abi=hard -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-O2 -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-reserved-identifier -I ../Drivers -I ../Drivers/CMSIS/Device/ST/STM32H7xx/Include -I ../Drivers/STM32H7xx_HAL_Driver/Inc -I ../Drivers/CMSIS/Include -I ../Middlewares -I ../Middlewares/MALLOC -I ../Middlewares/FreeRTOS/include -I ../Drivers/SYSTEM/delay -I ../Drivers/SYSTEM/sys -I ../Drivers/SYSTEM/usart -I ../Drivers/BSP/KEY -I ../Drivers/BSP/LCD -I ../Drivers/BSP/LED -I ../Drivers/BSP/MPU -I ../Drivers/BSP/TIMER -I ../User -I ../Middlewares/FreeRTOS/portable/GCC/ARM_CM7/r0p1-IE:/dianzi/MDKv5/Keil/STM32H7xx_DFP/3.1.0/Drivers/CMSIS/Device/ST/STM32H7xx/Include-D__UVISION_VERSION="538" -DSTM32H750xx -DSTM32H750xx -DUSE_HAL_DRIVER-o ../output/led.o -MD)
 I (..\Drivers\BSP\LED\led.h)(0x688A429A)
 I (..\Drivers\SYSTEM\sys\sys.h)(0x688A423C)
 I (..\Drivers\CMSIS\Device\ST\STM32H7xx\Include\stm32h7xx.h)(0x6540A28B)
 I (..\Drivers\CMSIS\Device\ST\STM32H7xx\Include\stm32h750xx.h)(0x6540A28B)
 I (..\Drivers\CMSIS\Include\core_cm7.h)(0x6540A28B)
-I (E:\dianzi\MDKv5\ARM\AC5\include\stdint.h)(0x5E8E3CC2)
+I (E:\dianzi\MDKv5\ARM\ARMCLANG\include\stdint.h)(0x637AECBC)
 I (..\Drivers\CMSIS\Include\cmsis_version.h)(0x6540A28B)
 I (..\Drivers\CMSIS\Include\cmsis_compiler.h)(0x6540A28B)
-I (..\Drivers\CMSIS\Include\cmsis_armcc.h)(0x6540A28B)
+I (..\Drivers\CMSIS\Include\cmsis_armclang.h)(0x6540A28B)
+I (E:\dianzi\MDKv5\ARM\ARMCLANG\include\arm_compat.h)(0x6306C9C0)
+I (E:\dianzi\MDKv5\ARM\ARMCLANG\include\arm_acle.h)(0x637AECB8)
 I (..\Drivers\CMSIS\Include\mpu_armv7.h)(0x6540A28B)
 I (..\Drivers\CMSIS\Device\ST\STM32H7xx\Include\system_stm32h7xx.h)(0x6540A28B)
 I (..\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal.h)(0x6540A28B)
 I (..\User\stm32h7xx_hal_conf.h)(0x6540A28E)
 I (..\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_rcc.h)(0x6540A28B)
 I (..\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_def.h)(0x6540A28B)
-I (..\Drivers\STM32H7xx_HAL_Driver\Inc\Legacy/stm32_hal_legacy.h)(0x6540A28B)
-I (E:\dianzi\MDKv5\ARM\AC5\include\stddef.h)(0x5E8E3CC2)
-I (E:\dianzi\MDKv5\ARM\AC5\include\math.h)(0x5E8E3CC2)
+I (..\Drivers\STM32H7xx_HAL_Driver\Inc\Legacy\stm32_hal_legacy.h)(0x6540A28B)
+I (E:\dianzi\MDKv5\ARM\ARMCLANG\include\stddef.h)(0x637AECBC)
+I (E:\dianzi\MDKv5\ARM\ARMCLANG\include\math.h)(0x637AECBA)
 I (..\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_rcc_ex.h)(0x6540A28B)
 I (..\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_gpio.h)(0x6540A28B)
 I (..\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_gpio_ex.h)(0x6540A28B)
@@ -2623,25 +2675,27 @@ I (..\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_pcd.h)(0x6540A28B)
 I (..\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_ll_usb.h)(0x6540A28C)
 I (..\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_pcd_ex.h)(0x6540A28B)
 I (..\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_hcd.h)(0x6540A28B)
-F (..\Drivers\BSP\KEY\key.c)(0x688A432C)(--c99 -c --cpu Cortex-M7.fp.dp -O1 --apcs=interwork --split_sections -I ..\Drivers -I ..\Drivers\CMSIS\Device\ST\STM32H7xx\Include -I ..\Drivers\STM32H7xx_HAL_Driver\Inc -I ..\Drivers\CMSIS\Include -I ..\Middlewares -I ..\Middlewares\MALLOC -I ..\Middlewares\FreeRTOS\include -I ..\Middlewares\FreeRTOS\portable\RVDS\ARM_CM7\r0p1 -I ..\Drivers\SYSTEM\delay -I ..\Drivers\SYSTEM\sys -I ..\Drivers\SYSTEM\usart -I ..\Drivers\BSP\KEY -I ..\Drivers\BSP\LCD -I ..\Drivers\BSP\LED -I ..\Drivers\BSP\MPU -I ..\Drivers\BSP\TIMER -I ..\User-IE:\dianzi\MDKv5\Keil\STM32H7xx_DFP\3.1.0\Drivers\CMSIS\Device\ST\STM32H7xx\Include-D__UVISION_VERSION="538" -DSTM32H750xx -DSTM32H750xx -DUSE_HAL_DRIVER-o ..\output\key.o --depend ..\output\key.d)
+F (..\Drivers\BSP\KEY\key.c)(0x688A432C)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m7 -mfpu=fpv5-d16 -mfloat-abi=hard -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-O2 -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-reserved-identifier -I ../Drivers -I ../Drivers/CMSIS/Device/ST/STM32H7xx/Include -I ../Drivers/STM32H7xx_HAL_Driver/Inc -I ../Drivers/CMSIS/Include -I ../Middlewares -I ../Middlewares/MALLOC -I ../Middlewares/FreeRTOS/include -I ../Drivers/SYSTEM/delay -I ../Drivers/SYSTEM/sys -I ../Drivers/SYSTEM/usart -I ../Drivers/BSP/KEY -I ../Drivers/BSP/LCD -I ../Drivers/BSP/LED -I ../Drivers/BSP/MPU -I ../Drivers/BSP/TIMER -I ../User -I ../Middlewares/FreeRTOS/portable/GCC/ARM_CM7/r0p1-IE:/dianzi/MDKv5/Keil/STM32H7xx_DFP/3.1.0/Drivers/CMSIS/Device/ST/STM32H7xx/Include-D__UVISION_VERSION="538" -DSTM32H750xx -DSTM32H750xx -DUSE_HAL_DRIVER-o ../output/key.o -MD)
 I (..\Drivers\BSP\KEY\key.h)(0x688A42BB)
 I (..\Drivers\SYSTEM\sys\sys.h)(0x688A423C)
 I (..\Drivers\CMSIS\Device\ST\STM32H7xx\Include\stm32h7xx.h)(0x6540A28B)
 I (..\Drivers\CMSIS\Device\ST\STM32H7xx\Include\stm32h750xx.h)(0x6540A28B)
 I (..\Drivers\CMSIS\Include\core_cm7.h)(0x6540A28B)
-I (E:\dianzi\MDKv5\ARM\AC5\include\stdint.h)(0x5E8E3CC2)
+I (E:\dianzi\MDKv5\ARM\ARMCLANG\include\stdint.h)(0x637AECBC)
 I (..\Drivers\CMSIS\Include\cmsis_version.h)(0x6540A28B)
 I (..\Drivers\CMSIS\Include\cmsis_compiler.h)(0x6540A28B)
-I (..\Drivers\CMSIS\Include\cmsis_armcc.h)(0x6540A28B)
+I (..\Drivers\CMSIS\Include\cmsis_armclang.h)(0x6540A28B)
+I (E:\dianzi\MDKv5\ARM\ARMCLANG\include\arm_compat.h)(0x6306C9C0)
+I (E:\dianzi\MDKv5\ARM\ARMCLANG\include\arm_acle.h)(0x637AECB8)
 I (..\Drivers\CMSIS\Include\mpu_armv7.h)(0x6540A28B)
 I (..\Drivers\CMSIS\Device\ST\STM32H7xx\Include\system_stm32h7xx.h)(0x6540A28B)
 I (..\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal.h)(0x6540A28B)
 I (..\User\stm32h7xx_hal_conf.h)(0x6540A28E)
 I (..\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_rcc.h)(0x6540A28B)
 I (..\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_def.h)(0x6540A28B)
-I (..\Drivers\STM32H7xx_HAL_Driver\Inc\Legacy/stm32_hal_legacy.h)(0x6540A28B)
-I (E:\dianzi\MDKv5\ARM\AC5\include\stddef.h)(0x5E8E3CC2)
-I (E:\dianzi\MDKv5\ARM\AC5\include\math.h)(0x5E8E3CC2)
+I (..\Drivers\STM32H7xx_HAL_Driver\Inc\Legacy\stm32_hal_legacy.h)(0x6540A28B)
+I (E:\dianzi\MDKv5\ARM\ARMCLANG\include\stddef.h)(0x637AECBC)
+I (E:\dianzi\MDKv5\ARM\ARMCLANG\include\math.h)(0x637AECBA)
 I (..\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_rcc_ex.h)(0x6540A28B)
 I (..\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_gpio.h)(0x6540A28B)
 I (..\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_gpio_ex.h)(0x6540A28B)
@@ -2725,26 +2779,28 @@ I (..\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_ll_usb.h)(0x6540A28C)
 I (..\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_pcd_ex.h)(0x6540A28B)
 I (..\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_hcd.h)(0x6540A28B)
 I (..\Drivers\SYSTEM\delay\delay.h)(0x688A423C)
-F (..\Drivers\BSP\LCD\lcd.c)(0x688A432C)(--c99 -c --cpu Cortex-M7.fp.dp -O1 --apcs=interwork --split_sections -I ..\Drivers -I ..\Drivers\CMSIS\Device\ST\STM32H7xx\Include -I ..\Drivers\STM32H7xx_HAL_Driver\Inc -I ..\Drivers\CMSIS\Include -I ..\Middlewares -I ..\Middlewares\MALLOC -I ..\Middlewares\FreeRTOS\include -I ..\Middlewares\FreeRTOS\portable\RVDS\ARM_CM7\r0p1 -I ..\Drivers\SYSTEM\delay -I ..\Drivers\SYSTEM\sys -I ..\Drivers\SYSTEM\usart -I ..\Drivers\BSP\KEY -I ..\Drivers\BSP\LCD -I ..\Drivers\BSP\LED -I ..\Drivers\BSP\MPU -I ..\Drivers\BSP\TIMER -I ..\User-IE:\dianzi\MDKv5\Keil\STM32H7xx_DFP\3.1.0\Drivers\CMSIS\Device\ST\STM32H7xx\Include-D__UVISION_VERSION="538" -DSTM32H750xx -DSTM32H750xx -DUSE_HAL_DRIVER-o ..\output\lcd.o --depend ..\output\lcd.d)
-I (E:\dianzi\MDKv5\ARM\AC5\include\stdlib.h)(0x5E8E3CC2)
+F (..\Drivers\BSP\LCD\lcd.c)(0x688A432C)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m7 -mfpu=fpv5-d16 -mfloat-abi=hard -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-O2 -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-reserved-identifier -I ../Drivers -I ../Drivers/CMSIS/Device/ST/STM32H7xx/Include -I ../Drivers/STM32H7xx_HAL_Driver/Inc -I ../Drivers/CMSIS/Include -I ../Middlewares -I ../Middlewares/MALLOC -I ../Middlewares/FreeRTOS/include -I ../Drivers/SYSTEM/delay -I ../Drivers/SYSTEM/sys -I ../Drivers/SYSTEM/usart -I ../Drivers/BSP/KEY -I ../Drivers/BSP/LCD -I ../Drivers/BSP/LED -I ../Drivers/BSP/MPU -I ../Drivers/BSP/TIMER -I ../User -I ../Middlewares/FreeRTOS/portable/GCC/ARM_CM7/r0p1-IE:/dianzi/MDKv5/Keil/STM32H7xx_DFP/3.1.0/Drivers/CMSIS/Device/ST/STM32H7xx/Include-D__UVISION_VERSION="538" -DSTM32H750xx -DSTM32H750xx -DUSE_HAL_DRIVER-o ../output/lcd.o -MD)
+I (E:\dianzi\MDKv5\ARM\ARMCLANG\include\stdlib.h)(0x637AECBC)
 I (..\Drivers\BSP\LCD\lcd.h)(0x688A432C)
 I (..\Drivers\SYSTEM\sys\sys.h)(0x688A423C)
 I (..\Drivers\CMSIS\Device\ST\STM32H7xx\Include\stm32h7xx.h)(0x6540A28B)
 I (..\Drivers\CMSIS\Device\ST\STM32H7xx\Include\stm32h750xx.h)(0x6540A28B)
 I (..\Drivers\CMSIS\Include\core_cm7.h)(0x6540A28B)
-I (E:\dianzi\MDKv5\ARM\AC5\include\stdint.h)(0x5E8E3CC2)
+I (E:\dianzi\MDKv5\ARM\ARMCLANG\include\stdint.h)(0x637AECBC)
 I (..\Drivers\CMSIS\Include\cmsis_version.h)(0x6540A28B)
 I (..\Drivers\CMSIS\Include\cmsis_compiler.h)(0x6540A28B)
-I (..\Drivers\CMSIS\Include\cmsis_armcc.h)(0x6540A28B)
+I (..\Drivers\CMSIS\Include\cmsis_armclang.h)(0x6540A28B)
+I (E:\dianzi\MDKv5\ARM\ARMCLANG\include\arm_compat.h)(0x6306C9C0)
+I (E:\dianzi\MDKv5\ARM\ARMCLANG\include\arm_acle.h)(0x637AECB8)
 I (..\Drivers\CMSIS\Include\mpu_armv7.h)(0x6540A28B)
 I (..\Drivers\CMSIS\Device\ST\STM32H7xx\Include\system_stm32h7xx.h)(0x6540A28B)
 I (..\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal.h)(0x6540A28B)
 I (..\User\stm32h7xx_hal_conf.h)(0x6540A28E)
 I (..\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_rcc.h)(0x6540A28B)
 I (..\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_def.h)(0x6540A28B)
-I (..\Drivers\STM32H7xx_HAL_Driver\Inc\Legacy/stm32_hal_legacy.h)(0x6540A28B)
-I (E:\dianzi\MDKv5\ARM\AC5\include\stddef.h)(0x5E8E3CC2)
-I (E:\dianzi\MDKv5\ARM\AC5\include\math.h)(0x5E8E3CC2)
+I (..\Drivers\STM32H7xx_HAL_Driver\Inc\Legacy\stm32_hal_legacy.h)(0x6540A28B)
+I (E:\dianzi\MDKv5\ARM\ARMCLANG\include\stddef.h)(0x637AECBC)
+I (E:\dianzi\MDKv5\ARM\ARMCLANG\include\math.h)(0x637AECBA)
 I (..\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_rcc_ex.h)(0x6540A28B)
 I (..\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_gpio.h)(0x6540A28B)
 I (..\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_gpio_ex.h)(0x6540A28B)
@@ -2829,29 +2885,31 @@ I (..\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_pcd_ex.h)(0x6540A28B)
 I (..\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_hcd.h)(0x6540A28B)
 I (..\Drivers\BSP\LCD\lcdfont.h)(0x688A432C)
 I (..\Drivers\SYSTEM\usart\usart.h)(0x688A423C)
-I (E:\dianzi\MDKv5\ARM\AC5\include\stdio.h)(0x5E8E3CC2)
+I (E:\dianzi\MDKv5\ARM\ARMCLANG\include\stdio.h)(0x637AECBC)
 I (..\Drivers\BSP\LCD\lcd_ex.c)(0x688A432C)
 I (..\Drivers\SYSTEM\delay\delay.h)(0x688A423C)
-F (..\Drivers\BSP\MPU\mpu.c)(0x688A4375)(--c99 -c --cpu Cortex-M7.fp.dp -O1 --apcs=interwork --split_sections -I ..\Drivers -I ..\Drivers\CMSIS\Device\ST\STM32H7xx\Include -I ..\Drivers\STM32H7xx_HAL_Driver\Inc -I ..\Drivers\CMSIS\Include -I ..\Middlewares -I ..\Middlewares\MALLOC -I ..\Middlewares\FreeRTOS\include -I ..\Middlewares\FreeRTOS\portable\RVDS\ARM_CM7\r0p1 -I ..\Drivers\SYSTEM\delay -I ..\Drivers\SYSTEM\sys -I ..\Drivers\SYSTEM\usart -I ..\Drivers\BSP\KEY -I ..\Drivers\BSP\LCD -I ..\Drivers\BSP\LED -I ..\Drivers\BSP\MPU -I ..\Drivers\BSP\TIMER -I ..\User-IE:\dianzi\MDKv5\Keil\STM32H7xx_DFP\3.1.0\Drivers\CMSIS\Device\ST\STM32H7xx\Include-D__UVISION_VERSION="538" -DSTM32H750xx -DSTM32H750xx -DUSE_HAL_DRIVER-o ..\output\mpu.o --depend ..\output\mpu.d)
+F (..\Drivers\BSP\MPU\mpu.c)(0x688A4375)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m7 -mfpu=fpv5-d16 -mfloat-abi=hard -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-O2 -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-reserved-identifier -I ../Drivers -I ../Drivers/CMSIS/Device/ST/STM32H7xx/Include -I ../Drivers/STM32H7xx_HAL_Driver/Inc -I ../Drivers/CMSIS/Include -I ../Middlewares -I ../Middlewares/MALLOC -I ../Middlewares/FreeRTOS/include -I ../Drivers/SYSTEM/delay -I ../Drivers/SYSTEM/sys -I ../Drivers/SYSTEM/usart -I ../Drivers/BSP/KEY -I ../Drivers/BSP/LCD -I ../Drivers/BSP/LED -I ../Drivers/BSP/MPU -I ../Drivers/BSP/TIMER -I ../User -I ../Middlewares/FreeRTOS/portable/GCC/ARM_CM7/r0p1-IE:/dianzi/MDKv5/Keil/STM32H7xx_DFP/3.1.0/Drivers/CMSIS/Device/ST/STM32H7xx/Include-D__UVISION_VERSION="538" -DSTM32H750xx -DSTM32H750xx -DUSE_HAL_DRIVER-o ../output/mpu.o -MD)
 I (..\Drivers\SYSTEM\usart\usart.h)(0x688A423C)
-I (E:\dianzi\MDKv5\ARM\AC5\include\stdio.h)(0x5E8E3CC2)
+I (E:\dianzi\MDKv5\ARM\ARMCLANG\include\stdio.h)(0x637AECBC)
 I (..\Drivers\SYSTEM\sys\sys.h)(0x688A423C)
 I (..\Drivers\CMSIS\Device\ST\STM32H7xx\Include\stm32h7xx.h)(0x6540A28B)
 I (..\Drivers\CMSIS\Device\ST\STM32H7xx\Include\stm32h750xx.h)(0x6540A28B)
 I (..\Drivers\CMSIS\Include\core_cm7.h)(0x6540A28B)
-I (E:\dianzi\MDKv5\ARM\AC5\include\stdint.h)(0x5E8E3CC2)
+I (E:\dianzi\MDKv5\ARM\ARMCLANG\include\stdint.h)(0x637AECBC)
 I (..\Drivers\CMSIS\Include\cmsis_version.h)(0x6540A28B)
 I (..\Drivers\CMSIS\Include\cmsis_compiler.h)(0x6540A28B)
-I (..\Drivers\CMSIS\Include\cmsis_armcc.h)(0x6540A28B)
+I (..\Drivers\CMSIS\Include\cmsis_armclang.h)(0x6540A28B)
+I (E:\dianzi\MDKv5\ARM\ARMCLANG\include\arm_compat.h)(0x6306C9C0)
+I (E:\dianzi\MDKv5\ARM\ARMCLANG\include\arm_acle.h)(0x637AECB8)
 I (..\Drivers\CMSIS\Include\mpu_armv7.h)(0x6540A28B)
 I (..\Drivers\CMSIS\Device\ST\STM32H7xx\Include\system_stm32h7xx.h)(0x6540A28B)
 I (..\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal.h)(0x6540A28B)
 I (..\User\stm32h7xx_hal_conf.h)(0x6540A28E)
 I (..\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_rcc.h)(0x6540A28B)
 I (..\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_def.h)(0x6540A28B)
-I (..\Drivers\STM32H7xx_HAL_Driver\Inc\Legacy/stm32_hal_legacy.h)(0x6540A28B)
-I (E:\dianzi\MDKv5\ARM\AC5\include\stddef.h)(0x5E8E3CC2)
-I (E:\dianzi\MDKv5\ARM\AC5\include\math.h)(0x5E8E3CC2)
+I (..\Drivers\STM32H7xx_HAL_Driver\Inc\Legacy\stm32_hal_legacy.h)(0x6540A28B)
+I (E:\dianzi\MDKv5\ARM\ARMCLANG\include\stddef.h)(0x637AECBC)
+I (E:\dianzi\MDKv5\ARM\ARMCLANG\include\math.h)(0x637AECBA)
 I (..\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_rcc_ex.h)(0x6540A28B)
 I (..\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_gpio.h)(0x6540A28B)
 I (..\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_gpio_ex.h)(0x6540A28B)
@@ -2937,25 +2995,27 @@ I (..\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_hcd.h)(0x6540A28B)
 I (..\Drivers\SYSTEM\delay\delay.h)(0x688A423C)
 I (..\Drivers\BSP\LED\led.h)(0x688A429A)
 I (..\Drivers\BSP\MPU\mpu.h)(0x688A4375)
-F (..\Drivers\BSP\TIMER\btim.c)(0x688A4375)(--c99 -c --cpu Cortex-M7.fp.dp -O1 --apcs=interwork --split_sections -I ..\Drivers -I ..\Drivers\CMSIS\Device\ST\STM32H7xx\Include -I ..\Drivers\STM32H7xx_HAL_Driver\Inc -I ..\Drivers\CMSIS\Include -I ..\Middlewares -I ..\Middlewares\MALLOC -I ..\Middlewares\FreeRTOS\include -I ..\Middlewares\FreeRTOS\portable\RVDS\ARM_CM7\r0p1 -I ..\Drivers\SYSTEM\delay -I ..\Drivers\SYSTEM\sys -I ..\Drivers\SYSTEM\usart -I ..\Drivers\BSP\KEY -I ..\Drivers\BSP\LCD -I ..\Drivers\BSP\LED -I ..\Drivers\BSP\MPU -I ..\Drivers\BSP\TIMER -I ..\User-IE:\dianzi\MDKv5\Keil\STM32H7xx_DFP\3.1.0\Drivers\CMSIS\Device\ST\STM32H7xx\Include-D__UVISION_VERSION="538" -DSTM32H750xx -DSTM32H750xx -DUSE_HAL_DRIVER-o ..\output\btim.o --depend ..\output\btim.d)
+F (..\Drivers\BSP\TIMER\btim.c)(0x688A4375)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m7 -mfpu=fpv5-d16 -mfloat-abi=hard -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-O2 -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-reserved-identifier -I ../Drivers -I ../Drivers/CMSIS/Device/ST/STM32H7xx/Include -I ../Drivers/STM32H7xx_HAL_Driver/Inc -I ../Drivers/CMSIS/Include -I ../Middlewares -I ../Middlewares/MALLOC -I ../Middlewares/FreeRTOS/include -I ../Drivers/SYSTEM/delay -I ../Drivers/SYSTEM/sys -I ../Drivers/SYSTEM/usart -I ../Drivers/BSP/KEY -I ../Drivers/BSP/LCD -I ../Drivers/BSP/LED -I ../Drivers/BSP/MPU -I ../Drivers/BSP/TIMER -I ../User -I ../Middlewares/FreeRTOS/portable/GCC/ARM_CM7/r0p1-IE:/dianzi/MDKv5/Keil/STM32H7xx_DFP/3.1.0/Drivers/CMSIS/Device/ST/STM32H7xx/Include-D__UVISION_VERSION="538" -DSTM32H750xx -DSTM32H750xx -DUSE_HAL_DRIVER-o ../output/btim.o -MD)
 I (..\Drivers\BSP\LED\led.h)(0x688A429A)
 I (..\Drivers\SYSTEM\sys\sys.h)(0x688A423C)
 I (..\Drivers\CMSIS\Device\ST\STM32H7xx\Include\stm32h7xx.h)(0x6540A28B)
 I (..\Drivers\CMSIS\Device\ST\STM32H7xx\Include\stm32h750xx.h)(0x6540A28B)
 I (..\Drivers\CMSIS\Include\core_cm7.h)(0x6540A28B)
-I (E:\dianzi\MDKv5\ARM\AC5\include\stdint.h)(0x5E8E3CC2)
+I (E:\dianzi\MDKv5\ARM\ARMCLANG\include\stdint.h)(0x637AECBC)
 I (..\Drivers\CMSIS\Include\cmsis_version.h)(0x6540A28B)
 I (..\Drivers\CMSIS\Include\cmsis_compiler.h)(0x6540A28B)
-I (..\Drivers\CMSIS\Include\cmsis_armcc.h)(0x6540A28B)
+I (..\Drivers\CMSIS\Include\cmsis_armclang.h)(0x6540A28B)
+I (E:\dianzi\MDKv5\ARM\ARMCLANG\include\arm_compat.h)(0x6306C9C0)
+I (E:\dianzi\MDKv5\ARM\ARMCLANG\include\arm_acle.h)(0x637AECB8)
 I (..\Drivers\CMSIS\Include\mpu_armv7.h)(0x6540A28B)
 I (..\Drivers\CMSIS\Device\ST\STM32H7xx\Include\system_stm32h7xx.h)(0x6540A28B)
 I (..\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal.h)(0x6540A28B)
 I (..\User\stm32h7xx_hal_conf.h)(0x6540A28E)
 I (..\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_rcc.h)(0x6540A28B)
 I (..\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_def.h)(0x6540A28B)
-I (..\Drivers\STM32H7xx_HAL_Driver\Inc\Legacy/stm32_hal_legacy.h)(0x6540A28B)
-I (E:\dianzi\MDKv5\ARM\AC5\include\stddef.h)(0x5E8E3CC2)
-I (E:\dianzi\MDKv5\ARM\AC5\include\math.h)(0x5E8E3CC2)
+I (..\Drivers\STM32H7xx_HAL_Driver\Inc\Legacy\stm32_hal_legacy.h)(0x6540A28B)
+I (E:\dianzi\MDKv5\ARM\ARMCLANG\include\stddef.h)(0x637AECBC)
+I (E:\dianzi\MDKv5\ARM\ARMCLANG\include\math.h)(0x637AECBA)
 I (..\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_rcc_ex.h)(0x6540A28B)
 I (..\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_gpio.h)(0x6540A28B)
 I (..\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_gpio_ex.h)(0x6540A28B)
@@ -3039,25 +3099,28 @@ I (..\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_ll_usb.h)(0x6540A28C)
 I (..\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_pcd_ex.h)(0x6540A28B)
 I (..\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_hcd.h)(0x6540A28B)
 I (..\Drivers\BSP\TIMER\btim.h)(0x688A4375)
-F (..\Middlewares\MALLOC\malloc.c)(0x688A438F)(--c99 -c --cpu Cortex-M7.fp.dp -O1 --apcs=interwork --split_sections -I ..\Drivers -I ..\Drivers\CMSIS\Device\ST\STM32H7xx\Include -I ..\Drivers\STM32H7xx_HAL_Driver\Inc -I ..\Drivers\CMSIS\Include -I ..\Middlewares -I ..\Middlewares\MALLOC -I ..\Middlewares\FreeRTOS\include -I ..\Middlewares\FreeRTOS\portable\RVDS\ARM_CM7\r0p1 -I ..\Drivers\SYSTEM\delay -I ..\Drivers\SYSTEM\sys -I ..\Drivers\SYSTEM\usart -I ..\Drivers\BSP\KEY -I ..\Drivers\BSP\LCD -I ..\Drivers\BSP\LED -I ..\Drivers\BSP\MPU -I ..\Drivers\BSP\TIMER -I ..\User-IE:\dianzi\MDKv5\Keil\STM32H7xx_DFP\3.1.0\Drivers\CMSIS\Device\ST\STM32H7xx\Include-D__UVISION_VERSION="538" -DSTM32H750xx -DSTM32H750xx -DUSE_HAL_DRIVER-o ..\output\malloc.o --depend ..\output\malloc.d)
-I (..\Middlewares\MALLOC\malloc.h)(0x688A438F)
+I (..\Drivers\.\SYSTEM\sys\sys.h)(0x688A423C)
+F (..\Middlewares\MALLOC\malloc.c)(0x688A438F)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m7 -mfpu=fpv5-d16 -mfloat-abi=hard -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-O2 -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-reserved-identifier -I ../Drivers -I ../Drivers/CMSIS/Device/ST/STM32H7xx/Include -I ../Drivers/STM32H7xx_HAL_Driver/Inc -I ../Drivers/CMSIS/Include -I ../Middlewares -I ../Middlewares/MALLOC -I ../Middlewares/FreeRTOS/include -I ../Drivers/SYSTEM/delay -I ../Drivers/SYSTEM/sys -I ../Drivers/SYSTEM/usart -I ../Drivers/BSP/KEY -I ../Drivers/BSP/LCD -I ../Drivers/BSP/LED -I ../Drivers/BSP/MPU -I ../Drivers/BSP/TIMER -I ../User -I ../Middlewares/FreeRTOS/portable/GCC/ARM_CM7/r0p1-IE:/dianzi/MDKv5/Keil/STM32H7xx_DFP/3.1.0/Drivers/CMSIS/Device/ST/STM32H7xx/Include-D__UVISION_VERSION="538" -DSTM32H750xx -DSTM32H750xx -DUSE_HAL_DRIVER-o ../output/malloc.o -MD)
+I (..\Middlewares\MALLOC\malloc.h)(0x6890759B)
 I (..\Drivers\SYSTEM\sys\sys.h)(0x688A423C)
 I (..\Drivers\CMSIS\Device\ST\STM32H7xx\Include\stm32h7xx.h)(0x6540A28B)
 I (..\Drivers\CMSIS\Device\ST\STM32H7xx\Include\stm32h750xx.h)(0x6540A28B)
 I (..\Drivers\CMSIS\Include\core_cm7.h)(0x6540A28B)
-I (E:\dianzi\MDKv5\ARM\AC5\include\stdint.h)(0x5E8E3CC2)
+I (E:\dianzi\MDKv5\ARM\ARMCLANG\include\stdint.h)(0x637AECBC)
 I (..\Drivers\CMSIS\Include\cmsis_version.h)(0x6540A28B)
 I (..\Drivers\CMSIS\Include\cmsis_compiler.h)(0x6540A28B)
-I (..\Drivers\CMSIS\Include\cmsis_armcc.h)(0x6540A28B)
+I (..\Drivers\CMSIS\Include\cmsis_armclang.h)(0x6540A28B)
+I (E:\dianzi\MDKv5\ARM\ARMCLANG\include\arm_compat.h)(0x6306C9C0)
+I (E:\dianzi\MDKv5\ARM\ARMCLANG\include\arm_acle.h)(0x637AECB8)
 I (..\Drivers\CMSIS\Include\mpu_armv7.h)(0x6540A28B)
 I (..\Drivers\CMSIS\Device\ST\STM32H7xx\Include\system_stm32h7xx.h)(0x6540A28B)
 I (..\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal.h)(0x6540A28B)
 I (..\User\stm32h7xx_hal_conf.h)(0x6540A28E)
 I (..\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_rcc.h)(0x6540A28B)
 I (..\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_def.h)(0x6540A28B)
-I (..\Drivers\STM32H7xx_HAL_Driver\Inc\Legacy/stm32_hal_legacy.h)(0x6540A28B)
-I (E:\dianzi\MDKv5\ARM\AC5\include\stddef.h)(0x5E8E3CC2)
-I (E:\dianzi\MDKv5\ARM\AC5\include\math.h)(0x5E8E3CC2)
+I (..\Drivers\STM32H7xx_HAL_Driver\Inc\Legacy\stm32_hal_legacy.h)(0x6540A28B)
+I (E:\dianzi\MDKv5\ARM\ARMCLANG\include\stddef.h)(0x637AECBC)
+I (E:\dianzi\MDKv5\ARM\ARMCLANG\include\math.h)(0x637AECBA)
 I (..\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_rcc_ex.h)(0x6540A28B)
 I (..\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_gpio.h)(0x6540A28B)
 I (..\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_gpio_ex.h)(0x6540A28B)
@@ -3140,26 +3203,28 @@ I (..\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_pcd.h)(0x6540A28B)
 I (..\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_ll_usb.h)(0x6540A28C)
 I (..\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_pcd_ex.h)(0x6540A28B)
 I (..\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_hcd.h)(0x6540A28B)
-F (..\Middlewares\FreeRTOS\croutine.c)(0x6540A28D)(--c99 -c --cpu Cortex-M7.fp.dp -O1 --apcs=interwork --split_sections -I ..\Drivers -I ..\Drivers\CMSIS\Device\ST\STM32H7xx\Include -I ..\Drivers\STM32H7xx_HAL_Driver\Inc -I ..\Drivers\CMSIS\Include -I ..\Middlewares -I ..\Middlewares\MALLOC -I ..\Middlewares\FreeRTOS\include -I ..\Middlewares\FreeRTOS\portable\RVDS\ARM_CM7\r0p1 -I ..\Drivers\SYSTEM\delay -I ..\Drivers\SYSTEM\sys -I ..\Drivers\SYSTEM\usart -I ..\Drivers\BSP\KEY -I ..\Drivers\BSP\LCD -I ..\Drivers\BSP\LED -I ..\Drivers\BSP\MPU -I ..\Drivers\BSP\TIMER -I ..\User-IE:\dianzi\MDKv5\Keil\STM32H7xx_DFP\3.1.0\Drivers\CMSIS\Device\ST\STM32H7xx\Include-D__UVISION_VERSION="538" -DSTM32H750xx -DSTM32H750xx -DUSE_HAL_DRIVER-o ..\output\croutine.o --depend ..\output\croutine.d)
+F (..\Middlewares\FreeRTOS\croutine.c)(0x6540A28D)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m7 -mfpu=fpv5-d16 -mfloat-abi=hard -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-O2 -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-reserved-identifier -I ../Drivers -I ../Drivers/CMSIS/Device/ST/STM32H7xx/Include -I ../Drivers/STM32H7xx_HAL_Driver/Inc -I ../Drivers/CMSIS/Include -I ../Middlewares -I ../Middlewares/MALLOC -I ../Middlewares/FreeRTOS/include -I ../Drivers/SYSTEM/delay -I ../Drivers/SYSTEM/sys -I ../Drivers/SYSTEM/usart -I ../Drivers/BSP/KEY -I ../Drivers/BSP/LCD -I ../Drivers/BSP/LED -I ../Drivers/BSP/MPU -I ../Drivers/BSP/TIMER -I ../User -I ../Middlewares/FreeRTOS/portable/GCC/ARM_CM7/r0p1-IE:/dianzi/MDKv5/Keil/STM32H7xx_DFP/3.1.0/Drivers/CMSIS/Device/ST/STM32H7xx/Include-D__UVISION_VERSION="538" -DSTM32H750xx -DSTM32H750xx -DUSE_HAL_DRIVER-o ../output/croutine.o -MD)
 I (..\Middlewares\FreeRTOS\include\FreeRTOS.h)(0x6540A28D)
-I (E:\dianzi\MDKv5\ARM\AC5\include\stddef.h)(0x5E8E3CC2)
-I (E:\dianzi\MDKv5\ARM\AC5\include\stdint.h)(0x5E8E3CC2)
-I (..\User\FreeRTOSConfig.h)(0x6540A28E)
-I (..\Drivers\./SYSTEM/sys/sys.h)(0x688A423C)
+I (E:\dianzi\MDKv5\ARM\ARMCLANG\include\stddef.h)(0x637AECBC)
+I (E:\dianzi\MDKv5\ARM\ARMCLANG\include\stdint.h)(0x637AECBC)
+I (..\User\FreeRTOSConfig.h)(0x68907994)
+I (..\Drivers\SYSTEM\sys\sys.h)(0x688A423C)
 I (..\Drivers\CMSIS\Device\ST\STM32H7xx\Include\stm32h7xx.h)(0x6540A28B)
 I (..\Drivers\CMSIS\Device\ST\STM32H7xx\Include\stm32h750xx.h)(0x6540A28B)
 I (..\Drivers\CMSIS\Include\core_cm7.h)(0x6540A28B)
 I (..\Drivers\CMSIS\Include\cmsis_version.h)(0x6540A28B)
 I (..\Drivers\CMSIS\Include\cmsis_compiler.h)(0x6540A28B)
-I (..\Drivers\CMSIS\Include\cmsis_armcc.h)(0x6540A28B)
+I (..\Drivers\CMSIS\Include\cmsis_armclang.h)(0x6540A28B)
+I (E:\dianzi\MDKv5\ARM\ARMCLANG\include\arm_compat.h)(0x6306C9C0)
+I (E:\dianzi\MDKv5\ARM\ARMCLANG\include\arm_acle.h)(0x637AECB8)
 I (..\Drivers\CMSIS\Include\mpu_armv7.h)(0x6540A28B)
 I (..\Drivers\CMSIS\Device\ST\STM32H7xx\Include\system_stm32h7xx.h)(0x6540A28B)
 I (..\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal.h)(0x6540A28B)
 I (..\User\stm32h7xx_hal_conf.h)(0x6540A28E)
 I (..\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_rcc.h)(0x6540A28B)
 I (..\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_def.h)(0x6540A28B)
-I (..\Drivers\STM32H7xx_HAL_Driver\Inc\Legacy/stm32_hal_legacy.h)(0x6540A28B)
-I (E:\dianzi\MDKv5\ARM\AC5\include\math.h)(0x5E8E3CC2)
+I (..\Drivers\STM32H7xx_HAL_Driver\Inc\Legacy\stm32_hal_legacy.h)(0x6540A28B)
+I (E:\dianzi\MDKv5\ARM\ARMCLANG\include\math.h)(0x637AECBA)
 I (..\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_rcc_ex.h)(0x6540A28B)
 I (..\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_gpio.h)(0x6540A28B)
 I (..\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_gpio_ex.h)(0x6540A28B)
@@ -3242,37 +3307,39 @@ I (..\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_pcd.h)(0x6540A28B)
 I (..\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_ll_usb.h)(0x6540A28C)
 I (..\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_pcd_ex.h)(0x6540A28B)
 I (..\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_hcd.h)(0x6540A28B)
-I (..\Drivers\./SYSTEM/usart/usart.h)(0x688A423C)
-I (E:\dianzi\MDKv5\ARM\AC5\include\stdio.h)(0x5E8E3CC2)
+I (..\Drivers\SYSTEM\usart\usart.h)(0x688A423C)
+I (E:\dianzi\MDKv5\ARM\ARMCLANG\include\stdio.h)(0x637AECBC)
 I (..\Middlewares\FreeRTOS\include\projdefs.h)(0x6540A28D)
 I (..\Middlewares\FreeRTOS\include\portable.h)(0x6540A28D)
 I (..\Middlewares\FreeRTOS\include\deprecated_definitions.h)(0x6540A28D)
-I (..\Middlewares\FreeRTOS\portable\RVDS\ARM_CM7\r0p1\portmacro.h)(0x6540A28E)
+I (..\Middlewares\FreeRTOS\portable\GCC\ARM_CM7\r0p1\portmacro.h)(0x61C2EEAA)
 I (..\Middlewares\FreeRTOS\include\mpu_wrappers.h)(0x6540A28D)
 I (..\Middlewares\FreeRTOS\include\task.h)(0x6540A28D)
 I (..\Middlewares\FreeRTOS\include\list.h)(0x6540A28D)
 I (..\Middlewares\FreeRTOS\include\croutine.h)(0x6540A28D)
-F (..\Middlewares\FreeRTOS\event_groups.c)(0x6540A28D)(--c99 -c --cpu Cortex-M7.fp.dp -O1 --apcs=interwork --split_sections -I ..\Drivers -I ..\Drivers\CMSIS\Device\ST\STM32H7xx\Include -I ..\Drivers\STM32H7xx_HAL_Driver\Inc -I ..\Drivers\CMSIS\Include -I ..\Middlewares -I ..\Middlewares\MALLOC -I ..\Middlewares\FreeRTOS\include -I ..\Middlewares\FreeRTOS\portable\RVDS\ARM_CM7\r0p1 -I ..\Drivers\SYSTEM\delay -I ..\Drivers\SYSTEM\sys -I ..\Drivers\SYSTEM\usart -I ..\Drivers\BSP\KEY -I ..\Drivers\BSP\LCD -I ..\Drivers\BSP\LED -I ..\Drivers\BSP\MPU -I ..\Drivers\BSP\TIMER -I ..\User-IE:\dianzi\MDKv5\Keil\STM32H7xx_DFP\3.1.0\Drivers\CMSIS\Device\ST\STM32H7xx\Include-D__UVISION_VERSION="538" -DSTM32H750xx -DSTM32H750xx -DUSE_HAL_DRIVER-o ..\output\event_groups.o --depend ..\output\event_groups.d)
-I (E:\dianzi\MDKv5\ARM\AC5\include\stdlib.h)(0x5E8E3CC2)
+F (..\Middlewares\FreeRTOS\event_groups.c)(0x6540A28D)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m7 -mfpu=fpv5-d16 -mfloat-abi=hard -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-O2 -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-reserved-identifier -I ../Drivers -I ../Drivers/CMSIS/Device/ST/STM32H7xx/Include -I ../Drivers/STM32H7xx_HAL_Driver/Inc -I ../Drivers/CMSIS/Include -I ../Middlewares -I ../Middlewares/MALLOC -I ../Middlewares/FreeRTOS/include -I ../Drivers/SYSTEM/delay -I ../Drivers/SYSTEM/sys -I ../Drivers/SYSTEM/usart -I ../Drivers/BSP/KEY -I ../Drivers/BSP/LCD -I ../Drivers/BSP/LED -I ../Drivers/BSP/MPU -I ../Drivers/BSP/TIMER -I ../User -I ../Middlewares/FreeRTOS/portable/GCC/ARM_CM7/r0p1-IE:/dianzi/MDKv5/Keil/STM32H7xx_DFP/3.1.0/Drivers/CMSIS/Device/ST/STM32H7xx/Include-D__UVISION_VERSION="538" -DSTM32H750xx -DSTM32H750xx -DUSE_HAL_DRIVER-o ../output/event_groups.o -MD)
+I (E:\dianzi\MDKv5\ARM\ARMCLANG\include\stdlib.h)(0x637AECBC)
 I (..\Middlewares\FreeRTOS\include\FreeRTOS.h)(0x6540A28D)
-I (E:\dianzi\MDKv5\ARM\AC5\include\stddef.h)(0x5E8E3CC2)
-I (E:\dianzi\MDKv5\ARM\AC5\include\stdint.h)(0x5E8E3CC2)
-I (..\User\FreeRTOSConfig.h)(0x6540A28E)
-I (..\Drivers\./SYSTEM/sys/sys.h)(0x688A423C)
+I (E:\dianzi\MDKv5\ARM\ARMCLANG\include\stddef.h)(0x637AECBC)
+I (E:\dianzi\MDKv5\ARM\ARMCLANG\include\stdint.h)(0x637AECBC)
+I (..\User\FreeRTOSConfig.h)(0x68907994)
+I (..\Drivers\SYSTEM\sys\sys.h)(0x688A423C)
 I (..\Drivers\CMSIS\Device\ST\STM32H7xx\Include\stm32h7xx.h)(0x6540A28B)
 I (..\Drivers\CMSIS\Device\ST\STM32H7xx\Include\stm32h750xx.h)(0x6540A28B)
 I (..\Drivers\CMSIS\Include\core_cm7.h)(0x6540A28B)
 I (..\Drivers\CMSIS\Include\cmsis_version.h)(0x6540A28B)
 I (..\Drivers\CMSIS\Include\cmsis_compiler.h)(0x6540A28B)
-I (..\Drivers\CMSIS\Include\cmsis_armcc.h)(0x6540A28B)
+I (..\Drivers\CMSIS\Include\cmsis_armclang.h)(0x6540A28B)
+I (E:\dianzi\MDKv5\ARM\ARMCLANG\include\arm_compat.h)(0x6306C9C0)
+I (E:\dianzi\MDKv5\ARM\ARMCLANG\include\arm_acle.h)(0x637AECB8)
 I (..\Drivers\CMSIS\Include\mpu_armv7.h)(0x6540A28B)
 I (..\Drivers\CMSIS\Device\ST\STM32H7xx\Include\system_stm32h7xx.h)(0x6540A28B)
 I (..\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal.h)(0x6540A28B)
 I (..\User\stm32h7xx_hal_conf.h)(0x6540A28E)
 I (..\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_rcc.h)(0x6540A28B)
 I (..\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_def.h)(0x6540A28B)
-I (..\Drivers\STM32H7xx_HAL_Driver\Inc\Legacy/stm32_hal_legacy.h)(0x6540A28B)
-I (E:\dianzi\MDKv5\ARM\AC5\include\math.h)(0x5E8E3CC2)
+I (..\Drivers\STM32H7xx_HAL_Driver\Inc\Legacy\stm32_hal_legacy.h)(0x6540A28B)
+I (E:\dianzi\MDKv5\ARM\ARMCLANG\include\math.h)(0x637AECBA)
 I (..\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_rcc_ex.h)(0x6540A28B)
 I (..\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_gpio.h)(0x6540A28B)
 I (..\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_gpio_ex.h)(0x6540A28B)
@@ -3355,38 +3422,40 @@ I (..\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_pcd.h)(0x6540A28B)
 I (..\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_ll_usb.h)(0x6540A28C)
 I (..\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_pcd_ex.h)(0x6540A28B)
 I (..\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_hcd.h)(0x6540A28B)
-I (..\Drivers\./SYSTEM/usart/usart.h)(0x688A423C)
-I (E:\dianzi\MDKv5\ARM\AC5\include\stdio.h)(0x5E8E3CC2)
+I (..\Drivers\SYSTEM\usart\usart.h)(0x688A423C)
+I (E:\dianzi\MDKv5\ARM\ARMCLANG\include\stdio.h)(0x637AECBC)
 I (..\Middlewares\FreeRTOS\include\projdefs.h)(0x6540A28D)
 I (..\Middlewares\FreeRTOS\include\portable.h)(0x6540A28D)
 I (..\Middlewares\FreeRTOS\include\deprecated_definitions.h)(0x6540A28D)
-I (..\Middlewares\FreeRTOS\portable\RVDS\ARM_CM7\r0p1\portmacro.h)(0x6540A28E)
+I (..\Middlewares\FreeRTOS\portable\GCC\ARM_CM7\r0p1\portmacro.h)(0x61C2EEAA)
 I (..\Middlewares\FreeRTOS\include\mpu_wrappers.h)(0x6540A28D)
 I (..\Middlewares\FreeRTOS\include\task.h)(0x6540A28D)
 I (..\Middlewares\FreeRTOS\include\list.h)(0x6540A28D)
 I (..\Middlewares\FreeRTOS\include\timers.h)(0x6540A28D)
 I (..\Middlewares\FreeRTOS\include\event_groups.h)(0x6540A28D)
-F (..\Middlewares\FreeRTOS\list.c)(0x6540A28D)(--c99 -c --cpu Cortex-M7.fp.dp -O1 --apcs=interwork --split_sections -I ..\Drivers -I ..\Drivers\CMSIS\Device\ST\STM32H7xx\Include -I ..\Drivers\STM32H7xx_HAL_Driver\Inc -I ..\Drivers\CMSIS\Include -I ..\Middlewares -I ..\Middlewares\MALLOC -I ..\Middlewares\FreeRTOS\include -I ..\Middlewares\FreeRTOS\portable\RVDS\ARM_CM7\r0p1 -I ..\Drivers\SYSTEM\delay -I ..\Drivers\SYSTEM\sys -I ..\Drivers\SYSTEM\usart -I ..\Drivers\BSP\KEY -I ..\Drivers\BSP\LCD -I ..\Drivers\BSP\LED -I ..\Drivers\BSP\MPU -I ..\Drivers\BSP\TIMER -I ..\User-IE:\dianzi\MDKv5\Keil\STM32H7xx_DFP\3.1.0\Drivers\CMSIS\Device\ST\STM32H7xx\Include-D__UVISION_VERSION="538" -DSTM32H750xx -DSTM32H750xx -DUSE_HAL_DRIVER-o ..\output\list.o --depend ..\output\list.d)
-I (E:\dianzi\MDKv5\ARM\AC5\include\stdlib.h)(0x5E8E3CC2)
+F (..\Middlewares\FreeRTOS\list.c)(0x6540A28D)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m7 -mfpu=fpv5-d16 -mfloat-abi=hard -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-O2 -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-reserved-identifier -I ../Drivers -I ../Drivers/CMSIS/Device/ST/STM32H7xx/Include -I ../Drivers/STM32H7xx_HAL_Driver/Inc -I ../Drivers/CMSIS/Include -I ../Middlewares -I ../Middlewares/MALLOC -I ../Middlewares/FreeRTOS/include -I ../Drivers/SYSTEM/delay -I ../Drivers/SYSTEM/sys -I ../Drivers/SYSTEM/usart -I ../Drivers/BSP/KEY -I ../Drivers/BSP/LCD -I ../Drivers/BSP/LED -I ../Drivers/BSP/MPU -I ../Drivers/BSP/TIMER -I ../User -I ../Middlewares/FreeRTOS/portable/GCC/ARM_CM7/r0p1-IE:/dianzi/MDKv5/Keil/STM32H7xx_DFP/3.1.0/Drivers/CMSIS/Device/ST/STM32H7xx/Include-D__UVISION_VERSION="538" -DSTM32H750xx -DSTM32H750xx -DUSE_HAL_DRIVER-o ../output/list.o -MD)
+I (E:\dianzi\MDKv5\ARM\ARMCLANG\include\stdlib.h)(0x637AECBC)
 I (..\Middlewares\FreeRTOS\include\FreeRTOS.h)(0x6540A28D)
-I (E:\dianzi\MDKv5\ARM\AC5\include\stddef.h)(0x5E8E3CC2)
-I (E:\dianzi\MDKv5\ARM\AC5\include\stdint.h)(0x5E8E3CC2)
-I (..\User\FreeRTOSConfig.h)(0x6540A28E)
-I (..\Drivers\./SYSTEM/sys/sys.h)(0x688A423C)
+I (E:\dianzi\MDKv5\ARM\ARMCLANG\include\stddef.h)(0x637AECBC)
+I (E:\dianzi\MDKv5\ARM\ARMCLANG\include\stdint.h)(0x637AECBC)
+I (..\User\FreeRTOSConfig.h)(0x68907994)
+I (..\Drivers\SYSTEM\sys\sys.h)(0x688A423C)
 I (..\Drivers\CMSIS\Device\ST\STM32H7xx\Include\stm32h7xx.h)(0x6540A28B)
 I (..\Drivers\CMSIS\Device\ST\STM32H7xx\Include\stm32h750xx.h)(0x6540A28B)
 I (..\Drivers\CMSIS\Include\core_cm7.h)(0x6540A28B)
 I (..\Drivers\CMSIS\Include\cmsis_version.h)(0x6540A28B)
 I (..\Drivers\CMSIS\Include\cmsis_compiler.h)(0x6540A28B)
-I (..\Drivers\CMSIS\Include\cmsis_armcc.h)(0x6540A28B)
+I (..\Drivers\CMSIS\Include\cmsis_armclang.h)(0x6540A28B)
+I (E:\dianzi\MDKv5\ARM\ARMCLANG\include\arm_compat.h)(0x6306C9C0)
+I (E:\dianzi\MDKv5\ARM\ARMCLANG\include\arm_acle.h)(0x637AECB8)
 I (..\Drivers\CMSIS\Include\mpu_armv7.h)(0x6540A28B)
 I (..\Drivers\CMSIS\Device\ST\STM32H7xx\Include\system_stm32h7xx.h)(0x6540A28B)
 I (..\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal.h)(0x6540A28B)
 I (..\User\stm32h7xx_hal_conf.h)(0x6540A28E)
 I (..\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_rcc.h)(0x6540A28B)
 I (..\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_def.h)(0x6540A28B)
-I (..\Drivers\STM32H7xx_HAL_Driver\Inc\Legacy/stm32_hal_legacy.h)(0x6540A28B)
-I (E:\dianzi\MDKv5\ARM\AC5\include\math.h)(0x5E8E3CC2)
+I (..\Drivers\STM32H7xx_HAL_Driver\Inc\Legacy\stm32_hal_legacy.h)(0x6540A28B)
+I (E:\dianzi\MDKv5\ARM\ARMCLANG\include\math.h)(0x637AECBA)
 I (..\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_rcc_ex.h)(0x6540A28B)
 I (..\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_gpio.h)(0x6540A28B)
 I (..\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_gpio_ex.h)(0x6540A28B)
@@ -3469,36 +3538,38 @@ I (..\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_pcd.h)(0x6540A28B)
 I (..\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_ll_usb.h)(0x6540A28C)
 I (..\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_pcd_ex.h)(0x6540A28B)
 I (..\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_hcd.h)(0x6540A28B)
-I (..\Drivers\./SYSTEM/usart/usart.h)(0x688A423C)
-I (E:\dianzi\MDKv5\ARM\AC5\include\stdio.h)(0x5E8E3CC2)
+I (..\Drivers\SYSTEM\usart\usart.h)(0x688A423C)
+I (E:\dianzi\MDKv5\ARM\ARMCLANG\include\stdio.h)(0x637AECBC)
 I (..\Middlewares\FreeRTOS\include\projdefs.h)(0x6540A28D)
 I (..\Middlewares\FreeRTOS\include\portable.h)(0x6540A28D)
 I (..\Middlewares\FreeRTOS\include\deprecated_definitions.h)(0x6540A28D)
-I (..\Middlewares\FreeRTOS\portable\RVDS\ARM_CM7\r0p1\portmacro.h)(0x6540A28E)
+I (..\Middlewares\FreeRTOS\portable\GCC\ARM_CM7\r0p1\portmacro.h)(0x61C2EEAA)
 I (..\Middlewares\FreeRTOS\include\mpu_wrappers.h)(0x6540A28D)
 I (..\Middlewares\FreeRTOS\include\list.h)(0x6540A28D)
-F (..\Middlewares\FreeRTOS\queue.c)(0x6540A28E)(--c99 -c --cpu Cortex-M7.fp.dp -O1 --apcs=interwork --split_sections -I ..\Drivers -I ..\Drivers\CMSIS\Device\ST\STM32H7xx\Include -I ..\Drivers\STM32H7xx_HAL_Driver\Inc -I ..\Drivers\CMSIS\Include -I ..\Middlewares -I ..\Middlewares\MALLOC -I ..\Middlewares\FreeRTOS\include -I ..\Middlewares\FreeRTOS\portable\RVDS\ARM_CM7\r0p1 -I ..\Drivers\SYSTEM\delay -I ..\Drivers\SYSTEM\sys -I ..\Drivers\SYSTEM\usart -I ..\Drivers\BSP\KEY -I ..\Drivers\BSP\LCD -I ..\Drivers\BSP\LED -I ..\Drivers\BSP\MPU -I ..\Drivers\BSP\TIMER -I ..\User-IE:\dianzi\MDKv5\Keil\STM32H7xx_DFP\3.1.0\Drivers\CMSIS\Device\ST\STM32H7xx\Include-D__UVISION_VERSION="538" -DSTM32H750xx -DSTM32H750xx -DUSE_HAL_DRIVER-o ..\output\queue.o --depend ..\output\queue.d)
-I (E:\dianzi\MDKv5\ARM\AC5\include\stdlib.h)(0x5E8E3CC2)
-I (E:\dianzi\MDKv5\ARM\AC5\include\string.h)(0x5E8E3CC2)
+F (..\Middlewares\FreeRTOS\queue.c)(0x6540A28E)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m7 -mfpu=fpv5-d16 -mfloat-abi=hard -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-O2 -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-reserved-identifier -I ../Drivers -I ../Drivers/CMSIS/Device/ST/STM32H7xx/Include -I ../Drivers/STM32H7xx_HAL_Driver/Inc -I ../Drivers/CMSIS/Include -I ../Middlewares -I ../Middlewares/MALLOC -I ../Middlewares/FreeRTOS/include -I ../Drivers/SYSTEM/delay -I ../Drivers/SYSTEM/sys -I ../Drivers/SYSTEM/usart -I ../Drivers/BSP/KEY -I ../Drivers/BSP/LCD -I ../Drivers/BSP/LED -I ../Drivers/BSP/MPU -I ../Drivers/BSP/TIMER -I ../User -I ../Middlewares/FreeRTOS/portable/GCC/ARM_CM7/r0p1-IE:/dianzi/MDKv5/Keil/STM32H7xx_DFP/3.1.0/Drivers/CMSIS/Device/ST/STM32H7xx/Include-D__UVISION_VERSION="538" -DSTM32H750xx -DSTM32H750xx -DUSE_HAL_DRIVER-o ../output/queue.o -MD)
+I (E:\dianzi\MDKv5\ARM\ARMCLANG\include\stdlib.h)(0x637AECBC)
+I (E:\dianzi\MDKv5\ARM\ARMCLANG\include\string.h)(0x637AECBC)
 I (..\Middlewares\FreeRTOS\include\FreeRTOS.h)(0x6540A28D)
-I (E:\dianzi\MDKv5\ARM\AC5\include\stddef.h)(0x5E8E3CC2)
-I (E:\dianzi\MDKv5\ARM\AC5\include\stdint.h)(0x5E8E3CC2)
-I (..\User\FreeRTOSConfig.h)(0x6540A28E)
-I (..\Drivers\./SYSTEM/sys/sys.h)(0x688A423C)
+I (E:\dianzi\MDKv5\ARM\ARMCLANG\include\stddef.h)(0x637AECBC)
+I (E:\dianzi\MDKv5\ARM\ARMCLANG\include\stdint.h)(0x637AECBC)
+I (..\User\FreeRTOSConfig.h)(0x68907994)
+I (..\Drivers\SYSTEM\sys\sys.h)(0x688A423C)
 I (..\Drivers\CMSIS\Device\ST\STM32H7xx\Include\stm32h7xx.h)(0x6540A28B)
 I (..\Drivers\CMSIS\Device\ST\STM32H7xx\Include\stm32h750xx.h)(0x6540A28B)
 I (..\Drivers\CMSIS\Include\core_cm7.h)(0x6540A28B)
 I (..\Drivers\CMSIS\Include\cmsis_version.h)(0x6540A28B)
 I (..\Drivers\CMSIS\Include\cmsis_compiler.h)(0x6540A28B)
-I (..\Drivers\CMSIS\Include\cmsis_armcc.h)(0x6540A28B)
+I (..\Drivers\CMSIS\Include\cmsis_armclang.h)(0x6540A28B)
+I (E:\dianzi\MDKv5\ARM\ARMCLANG\include\arm_compat.h)(0x6306C9C0)
+I (E:\dianzi\MDKv5\ARM\ARMCLANG\include\arm_acle.h)(0x637AECB8)
 I (..\Drivers\CMSIS\Include\mpu_armv7.h)(0x6540A28B)
 I (..\Drivers\CMSIS\Device\ST\STM32H7xx\Include\system_stm32h7xx.h)(0x6540A28B)
 I (..\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal.h)(0x6540A28B)
 I (..\User\stm32h7xx_hal_conf.h)(0x6540A28E)
 I (..\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_rcc.h)(0x6540A28B)
 I (..\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_def.h)(0x6540A28B)
-I (..\Drivers\STM32H7xx_HAL_Driver\Inc\Legacy/stm32_hal_legacy.h)(0x6540A28B)
-I (E:\dianzi\MDKv5\ARM\AC5\include\math.h)(0x5E8E3CC2)
+I (..\Drivers\STM32H7xx_HAL_Driver\Inc\Legacy\stm32_hal_legacy.h)(0x6540A28B)
+I (E:\dianzi\MDKv5\ARM\ARMCLANG\include\math.h)(0x637AECBA)
 I (..\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_rcc_ex.h)(0x6540A28B)
 I (..\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_gpio.h)(0x6540A28B)
 I (..\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_gpio_ex.h)(0x6540A28B)
@@ -3581,37 +3652,39 @@ I (..\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_pcd.h)(0x6540A28B)
 I (..\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_ll_usb.h)(0x6540A28C)
 I (..\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_pcd_ex.h)(0x6540A28B)
 I (..\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_hcd.h)(0x6540A28B)
-I (..\Drivers\./SYSTEM/usart/usart.h)(0x688A423C)
-I (E:\dianzi\MDKv5\ARM\AC5\include\stdio.h)(0x5E8E3CC2)
+I (..\Drivers\SYSTEM\usart\usart.h)(0x688A423C)
+I (E:\dianzi\MDKv5\ARM\ARMCLANG\include\stdio.h)(0x637AECBC)
 I (..\Middlewares\FreeRTOS\include\projdefs.h)(0x6540A28D)
 I (..\Middlewares\FreeRTOS\include\portable.h)(0x6540A28D)
 I (..\Middlewares\FreeRTOS\include\deprecated_definitions.h)(0x6540A28D)
-I (..\Middlewares\FreeRTOS\portable\RVDS\ARM_CM7\r0p1\portmacro.h)(0x6540A28E)
+I (..\Middlewares\FreeRTOS\portable\GCC\ARM_CM7\r0p1\portmacro.h)(0x61C2EEAA)
 I (..\Middlewares\FreeRTOS\include\mpu_wrappers.h)(0x6540A28D)
 I (..\Middlewares\FreeRTOS\include\task.h)(0x6540A28D)
 I (..\Middlewares\FreeRTOS\include\list.h)(0x6540A28D)
 I (..\Middlewares\FreeRTOS\include\queue.h)(0x6540A28D)
-F (..\Middlewares\FreeRTOS\stream_buffer.c)(0x6540A28E)(--c99 -c --cpu Cortex-M7.fp.dp -O1 --apcs=interwork --split_sections -I ..\Drivers -I ..\Drivers\CMSIS\Device\ST\STM32H7xx\Include -I ..\Drivers\STM32H7xx_HAL_Driver\Inc -I ..\Drivers\CMSIS\Include -I ..\Middlewares -I ..\Middlewares\MALLOC -I ..\Middlewares\FreeRTOS\include -I ..\Middlewares\FreeRTOS\portable\RVDS\ARM_CM7\r0p1 -I ..\Drivers\SYSTEM\delay -I ..\Drivers\SYSTEM\sys -I ..\Drivers\SYSTEM\usart -I ..\Drivers\BSP\KEY -I ..\Drivers\BSP\LCD -I ..\Drivers\BSP\LED -I ..\Drivers\BSP\MPU -I ..\Drivers\BSP\TIMER -I ..\User-IE:\dianzi\MDKv5\Keil\STM32H7xx_DFP\3.1.0\Drivers\CMSIS\Device\ST\STM32H7xx\Include-D__UVISION_VERSION="538" -DSTM32H750xx -DSTM32H750xx -DUSE_HAL_DRIVER-o ..\output\stream_buffer.o --depend ..\output\stream_buffer.d)
-I (E:\dianzi\MDKv5\ARM\AC5\include\stdint.h)(0x5E8E3CC2)
-I (E:\dianzi\MDKv5\ARM\AC5\include\string.h)(0x5E8E3CC2)
+F (..\Middlewares\FreeRTOS\stream_buffer.c)(0x6540A28E)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m7 -mfpu=fpv5-d16 -mfloat-abi=hard -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-O2 -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-reserved-identifier -I ../Drivers -I ../Drivers/CMSIS/Device/ST/STM32H7xx/Include -I ../Drivers/STM32H7xx_HAL_Driver/Inc -I ../Drivers/CMSIS/Include -I ../Middlewares -I ../Middlewares/MALLOC -I ../Middlewares/FreeRTOS/include -I ../Drivers/SYSTEM/delay -I ../Drivers/SYSTEM/sys -I ../Drivers/SYSTEM/usart -I ../Drivers/BSP/KEY -I ../Drivers/BSP/LCD -I ../Drivers/BSP/LED -I ../Drivers/BSP/MPU -I ../Drivers/BSP/TIMER -I ../User -I ../Middlewares/FreeRTOS/portable/GCC/ARM_CM7/r0p1-IE:/dianzi/MDKv5/Keil/STM32H7xx_DFP/3.1.0/Drivers/CMSIS/Device/ST/STM32H7xx/Include-D__UVISION_VERSION="538" -DSTM32H750xx -DSTM32H750xx -DUSE_HAL_DRIVER-o ../output/stream_buffer.o -MD)
+I (E:\dianzi\MDKv5\ARM\ARMCLANG\include\stdint.h)(0x637AECBC)
+I (E:\dianzi\MDKv5\ARM\ARMCLANG\include\string.h)(0x637AECBC)
 I (..\Middlewares\FreeRTOS\include\FreeRTOS.h)(0x6540A28D)
-I (E:\dianzi\MDKv5\ARM\AC5\include\stddef.h)(0x5E8E3CC2)
-I (..\User\FreeRTOSConfig.h)(0x6540A28E)
-I (..\Drivers\./SYSTEM/sys/sys.h)(0x688A423C)
+I (E:\dianzi\MDKv5\ARM\ARMCLANG\include\stddef.h)(0x637AECBC)
+I (..\User\FreeRTOSConfig.h)(0x68907994)
+I (..\Drivers\SYSTEM\sys\sys.h)(0x688A423C)
 I (..\Drivers\CMSIS\Device\ST\STM32H7xx\Include\stm32h7xx.h)(0x6540A28B)
 I (..\Drivers\CMSIS\Device\ST\STM32H7xx\Include\stm32h750xx.h)(0x6540A28B)
 I (..\Drivers\CMSIS\Include\core_cm7.h)(0x6540A28B)
 I (..\Drivers\CMSIS\Include\cmsis_version.h)(0x6540A28B)
 I (..\Drivers\CMSIS\Include\cmsis_compiler.h)(0x6540A28B)
-I (..\Drivers\CMSIS\Include\cmsis_armcc.h)(0x6540A28B)
+I (..\Drivers\CMSIS\Include\cmsis_armclang.h)(0x6540A28B)
+I (E:\dianzi\MDKv5\ARM\ARMCLANG\include\arm_compat.h)(0x6306C9C0)
+I (E:\dianzi\MDKv5\ARM\ARMCLANG\include\arm_acle.h)(0x637AECB8)
 I (..\Drivers\CMSIS\Include\mpu_armv7.h)(0x6540A28B)
 I (..\Drivers\CMSIS\Device\ST\STM32H7xx\Include\system_stm32h7xx.h)(0x6540A28B)
 I (..\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal.h)(0x6540A28B)
 I (..\User\stm32h7xx_hal_conf.h)(0x6540A28E)
 I (..\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_rcc.h)(0x6540A28B)
 I (..\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_def.h)(0x6540A28B)
-I (..\Drivers\STM32H7xx_HAL_Driver\Inc\Legacy/stm32_hal_legacy.h)(0x6540A28B)
-I (E:\dianzi\MDKv5\ARM\AC5\include\math.h)(0x5E8E3CC2)
+I (..\Drivers\STM32H7xx_HAL_Driver\Inc\Legacy\stm32_hal_legacy.h)(0x6540A28B)
+I (E:\dianzi\MDKv5\ARM\ARMCLANG\include\math.h)(0x637AECBA)
 I (..\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_rcc_ex.h)(0x6540A28B)
 I (..\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_gpio.h)(0x6540A28B)
 I (..\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_gpio_ex.h)(0x6540A28B)
@@ -3694,38 +3767,40 @@ I (..\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_pcd.h)(0x6540A28B)
 I (..\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_ll_usb.h)(0x6540A28C)
 I (..\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_pcd_ex.h)(0x6540A28B)
 I (..\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_hcd.h)(0x6540A28B)
-I (..\Drivers\./SYSTEM/usart/usart.h)(0x688A423C)
-I (E:\dianzi\MDKv5\ARM\AC5\include\stdio.h)(0x5E8E3CC2)
+I (..\Drivers\SYSTEM\usart\usart.h)(0x688A423C)
+I (E:\dianzi\MDKv5\ARM\ARMCLANG\include\stdio.h)(0x637AECBC)
 I (..\Middlewares\FreeRTOS\include\projdefs.h)(0x6540A28D)
 I (..\Middlewares\FreeRTOS\include\portable.h)(0x6540A28D)
 I (..\Middlewares\FreeRTOS\include\deprecated_definitions.h)(0x6540A28D)
-I (..\Middlewares\FreeRTOS\portable\RVDS\ARM_CM7\r0p1\portmacro.h)(0x6540A28E)
+I (..\Middlewares\FreeRTOS\portable\GCC\ARM_CM7\r0p1\portmacro.h)(0x61C2EEAA)
 I (..\Middlewares\FreeRTOS\include\mpu_wrappers.h)(0x6540A28D)
 I (..\Middlewares\FreeRTOS\include\task.h)(0x6540A28D)
 I (..\Middlewares\FreeRTOS\include\list.h)(0x6540A28D)
 I (..\Middlewares\FreeRTOS\include\stream_buffer.h)(0x6540A28D)
-F (..\Middlewares\FreeRTOS\tasks.c)(0x6540A28E)(--c99 -c --cpu Cortex-M7.fp.dp -O1 --apcs=interwork --split_sections -I ..\Drivers -I ..\Drivers\CMSIS\Device\ST\STM32H7xx\Include -I ..\Drivers\STM32H7xx_HAL_Driver\Inc -I ..\Drivers\CMSIS\Include -I ..\Middlewares -I ..\Middlewares\MALLOC -I ..\Middlewares\FreeRTOS\include -I ..\Middlewares\FreeRTOS\portable\RVDS\ARM_CM7\r0p1 -I ..\Drivers\SYSTEM\delay -I ..\Drivers\SYSTEM\sys -I ..\Drivers\SYSTEM\usart -I ..\Drivers\BSP\KEY -I ..\Drivers\BSP\LCD -I ..\Drivers\BSP\LED -I ..\Drivers\BSP\MPU -I ..\Drivers\BSP\TIMER -I ..\User-IE:\dianzi\MDKv5\Keil\STM32H7xx_DFP\3.1.0\Drivers\CMSIS\Device\ST\STM32H7xx\Include-D__UVISION_VERSION="538" -DSTM32H750xx -DSTM32H750xx -DUSE_HAL_DRIVER-o ..\output\tasks.o --depend ..\output\tasks.d)
-I (E:\dianzi\MDKv5\ARM\AC5\include\stdlib.h)(0x5E8E3CC2)
-I (E:\dianzi\MDKv5\ARM\AC5\include\string.h)(0x5E8E3CC2)
+F (..\Middlewares\FreeRTOS\tasks.c)(0x6540A28E)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m7 -mfpu=fpv5-d16 -mfloat-abi=hard -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-O2 -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-reserved-identifier -I ../Drivers -I ../Drivers/CMSIS/Device/ST/STM32H7xx/Include -I ../Drivers/STM32H7xx_HAL_Driver/Inc -I ../Drivers/CMSIS/Include -I ../Middlewares -I ../Middlewares/MALLOC -I ../Middlewares/FreeRTOS/include -I ../Drivers/SYSTEM/delay -I ../Drivers/SYSTEM/sys -I ../Drivers/SYSTEM/usart -I ../Drivers/BSP/KEY -I ../Drivers/BSP/LCD -I ../Drivers/BSP/LED -I ../Drivers/BSP/MPU -I ../Drivers/BSP/TIMER -I ../User -I ../Middlewares/FreeRTOS/portable/GCC/ARM_CM7/r0p1-IE:/dianzi/MDKv5/Keil/STM32H7xx_DFP/3.1.0/Drivers/CMSIS/Device/ST/STM32H7xx/Include-D__UVISION_VERSION="538" -DSTM32H750xx -DSTM32H750xx -DUSE_HAL_DRIVER-o ../output/tasks.o -MD)
+I (E:\dianzi\MDKv5\ARM\ARMCLANG\include\stdlib.h)(0x637AECBC)
+I (E:\dianzi\MDKv5\ARM\ARMCLANG\include\string.h)(0x637AECBC)
 I (..\Middlewares\FreeRTOS\include\FreeRTOS.h)(0x6540A28D)
-I (E:\dianzi\MDKv5\ARM\AC5\include\stddef.h)(0x5E8E3CC2)
-I (E:\dianzi\MDKv5\ARM\AC5\include\stdint.h)(0x5E8E3CC2)
-I (..\User\FreeRTOSConfig.h)(0x6540A28E)
-I (..\Drivers\./SYSTEM/sys/sys.h)(0x688A423C)
+I (E:\dianzi\MDKv5\ARM\ARMCLANG\include\stddef.h)(0x637AECBC)
+I (E:\dianzi\MDKv5\ARM\ARMCLANG\include\stdint.h)(0x637AECBC)
+I (..\User\FreeRTOSConfig.h)(0x68907994)
+I (..\Drivers\SYSTEM\sys\sys.h)(0x688A423C)
 I (..\Drivers\CMSIS\Device\ST\STM32H7xx\Include\stm32h7xx.h)(0x6540A28B)
 I (..\Drivers\CMSIS\Device\ST\STM32H7xx\Include\stm32h750xx.h)(0x6540A28B)
 I (..\Drivers\CMSIS\Include\core_cm7.h)(0x6540A28B)
 I (..\Drivers\CMSIS\Include\cmsis_version.h)(0x6540A28B)
 I (..\Drivers\CMSIS\Include\cmsis_compiler.h)(0x6540A28B)
-I (..\Drivers\CMSIS\Include\cmsis_armcc.h)(0x6540A28B)
+I (..\Drivers\CMSIS\Include\cmsis_armclang.h)(0x6540A28B)
+I (E:\dianzi\MDKv5\ARM\ARMCLANG\include\arm_compat.h)(0x6306C9C0)
+I (E:\dianzi\MDKv5\ARM\ARMCLANG\include\arm_acle.h)(0x637AECB8)
 I (..\Drivers\CMSIS\Include\mpu_armv7.h)(0x6540A28B)
 I (..\Drivers\CMSIS\Device\ST\STM32H7xx\Include\system_stm32h7xx.h)(0x6540A28B)
 I (..\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal.h)(0x6540A28B)
 I (..\User\stm32h7xx_hal_conf.h)(0x6540A28E)
 I (..\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_rcc.h)(0x6540A28B)
 I (..\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_def.h)(0x6540A28B)
-I (..\Drivers\STM32H7xx_HAL_Driver\Inc\Legacy/stm32_hal_legacy.h)(0x6540A28B)
-I (E:\dianzi\MDKv5\ARM\AC5\include\math.h)(0x5E8E3CC2)
+I (..\Drivers\STM32H7xx_HAL_Driver\Inc\Legacy\stm32_hal_legacy.h)(0x6540A28B)
+I (E:\dianzi\MDKv5\ARM\ARMCLANG\include\math.h)(0x637AECBA)
 I (..\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_rcc_ex.h)(0x6540A28B)
 I (..\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_gpio.h)(0x6540A28B)
 I (..\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_gpio_ex.h)(0x6540A28B)
@@ -3808,38 +3883,40 @@ I (..\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_pcd.h)(0x6540A28B)
 I (..\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_ll_usb.h)(0x6540A28C)
 I (..\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_pcd_ex.h)(0x6540A28B)
 I (..\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_hcd.h)(0x6540A28B)
-I (..\Drivers\./SYSTEM/usart/usart.h)(0x688A423C)
-I (E:\dianzi\MDKv5\ARM\AC5\include\stdio.h)(0x5E8E3CC2)
+I (..\Drivers\SYSTEM\usart\usart.h)(0x688A423C)
+I (E:\dianzi\MDKv5\ARM\ARMCLANG\include\stdio.h)(0x637AECBC)
 I (..\Middlewares\FreeRTOS\include\projdefs.h)(0x6540A28D)
 I (..\Middlewares\FreeRTOS\include\portable.h)(0x6540A28D)
 I (..\Middlewares\FreeRTOS\include\deprecated_definitions.h)(0x6540A28D)
-I (..\Middlewares\FreeRTOS\portable\RVDS\ARM_CM7\r0p1\portmacro.h)(0x6540A28E)
+I (..\Middlewares\FreeRTOS\portable\GCC\ARM_CM7\r0p1\portmacro.h)(0x61C2EEAA)
 I (..\Middlewares\FreeRTOS\include\mpu_wrappers.h)(0x6540A28D)
 I (..\Middlewares\FreeRTOS\include\task.h)(0x6540A28D)
 I (..\Middlewares\FreeRTOS\include\list.h)(0x6540A28D)
 I (..\Middlewares\FreeRTOS\include\timers.h)(0x6540A28D)
 I (..\Middlewares\FreeRTOS\include\stack_macros.h)(0x6540A28D)
-F (..\Middlewares\FreeRTOS\timers.c)(0x6540A28E)(--c99 -c --cpu Cortex-M7.fp.dp -O1 --apcs=interwork --split_sections -I ..\Drivers -I ..\Drivers\CMSIS\Device\ST\STM32H7xx\Include -I ..\Drivers\STM32H7xx_HAL_Driver\Inc -I ..\Drivers\CMSIS\Include -I ..\Middlewares -I ..\Middlewares\MALLOC -I ..\Middlewares\FreeRTOS\include -I ..\Middlewares\FreeRTOS\portable\RVDS\ARM_CM7\r0p1 -I ..\Drivers\SYSTEM\delay -I ..\Drivers\SYSTEM\sys -I ..\Drivers\SYSTEM\usart -I ..\Drivers\BSP\KEY -I ..\Drivers\BSP\LCD -I ..\Drivers\BSP\LED -I ..\Drivers\BSP\MPU -I ..\Drivers\BSP\TIMER -I ..\User-IE:\dianzi\MDKv5\Keil\STM32H7xx_DFP\3.1.0\Drivers\CMSIS\Device\ST\STM32H7xx\Include-D__UVISION_VERSION="538" -DSTM32H750xx -DSTM32H750xx -DUSE_HAL_DRIVER-o ..\output\timers.o --depend ..\output\timers.d)
-I (E:\dianzi\MDKv5\ARM\AC5\include\stdlib.h)(0x5E8E3CC2)
+F (..\Middlewares\FreeRTOS\timers.c)(0x6540A28E)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m7 -mfpu=fpv5-d16 -mfloat-abi=hard -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-O2 -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-reserved-identifier -I ../Drivers -I ../Drivers/CMSIS/Device/ST/STM32H7xx/Include -I ../Drivers/STM32H7xx_HAL_Driver/Inc -I ../Drivers/CMSIS/Include -I ../Middlewares -I ../Middlewares/MALLOC -I ../Middlewares/FreeRTOS/include -I ../Drivers/SYSTEM/delay -I ../Drivers/SYSTEM/sys -I ../Drivers/SYSTEM/usart -I ../Drivers/BSP/KEY -I ../Drivers/BSP/LCD -I ../Drivers/BSP/LED -I ../Drivers/BSP/MPU -I ../Drivers/BSP/TIMER -I ../User -I ../Middlewares/FreeRTOS/portable/GCC/ARM_CM7/r0p1-IE:/dianzi/MDKv5/Keil/STM32H7xx_DFP/3.1.0/Drivers/CMSIS/Device/ST/STM32H7xx/Include-D__UVISION_VERSION="538" -DSTM32H750xx -DSTM32H750xx -DUSE_HAL_DRIVER-o ../output/timers.o -MD)
+I (E:\dianzi\MDKv5\ARM\ARMCLANG\include\stdlib.h)(0x637AECBC)
 I (..\Middlewares\FreeRTOS\include\FreeRTOS.h)(0x6540A28D)
-I (E:\dianzi\MDKv5\ARM\AC5\include\stddef.h)(0x5E8E3CC2)
-I (E:\dianzi\MDKv5\ARM\AC5\include\stdint.h)(0x5E8E3CC2)
-I (..\User\FreeRTOSConfig.h)(0x6540A28E)
-I (..\Drivers\./SYSTEM/sys/sys.h)(0x688A423C)
+I (E:\dianzi\MDKv5\ARM\ARMCLANG\include\stddef.h)(0x637AECBC)
+I (E:\dianzi\MDKv5\ARM\ARMCLANG\include\stdint.h)(0x637AECBC)
+I (..\User\FreeRTOSConfig.h)(0x68907994)
+I (..\Drivers\SYSTEM\sys\sys.h)(0x688A423C)
 I (..\Drivers\CMSIS\Device\ST\STM32H7xx\Include\stm32h7xx.h)(0x6540A28B)
 I (..\Drivers\CMSIS\Device\ST\STM32H7xx\Include\stm32h750xx.h)(0x6540A28B)
 I (..\Drivers\CMSIS\Include\core_cm7.h)(0x6540A28B)
 I (..\Drivers\CMSIS\Include\cmsis_version.h)(0x6540A28B)
 I (..\Drivers\CMSIS\Include\cmsis_compiler.h)(0x6540A28B)
-I (..\Drivers\CMSIS\Include\cmsis_armcc.h)(0x6540A28B)
+I (..\Drivers\CMSIS\Include\cmsis_armclang.h)(0x6540A28B)
+I (E:\dianzi\MDKv5\ARM\ARMCLANG\include\arm_compat.h)(0x6306C9C0)
+I (E:\dianzi\MDKv5\ARM\ARMCLANG\include\arm_acle.h)(0x637AECB8)
 I (..\Drivers\CMSIS\Include\mpu_armv7.h)(0x6540A28B)
 I (..\Drivers\CMSIS\Device\ST\STM32H7xx\Include\system_stm32h7xx.h)(0x6540A28B)
 I (..\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal.h)(0x6540A28B)
 I (..\User\stm32h7xx_hal_conf.h)(0x6540A28E)
 I (..\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_rcc.h)(0x6540A28B)
 I (..\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_def.h)(0x6540A28B)
-I (..\Drivers\STM32H7xx_HAL_Driver\Inc\Legacy/stm32_hal_legacy.h)(0x6540A28B)
-I (E:\dianzi\MDKv5\ARM\AC5\include\math.h)(0x5E8E3CC2)
+I (..\Drivers\STM32H7xx_HAL_Driver\Inc\Legacy\stm32_hal_legacy.h)(0x6540A28B)
+I (E:\dianzi\MDKv5\ARM\ARMCLANG\include\math.h)(0x637AECBA)
 I (..\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_rcc_ex.h)(0x6540A28B)
 I (..\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_gpio.h)(0x6540A28B)
 I (..\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_gpio_ex.h)(0x6540A28B)
@@ -3922,38 +3999,40 @@ I (..\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_pcd.h)(0x6540A28B)
 I (..\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_ll_usb.h)(0x6540A28C)
 I (..\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_pcd_ex.h)(0x6540A28B)
 I (..\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_hcd.h)(0x6540A28B)
-I (..\Drivers\./SYSTEM/usart/usart.h)(0x688A423C)
-I (E:\dianzi\MDKv5\ARM\AC5\include\stdio.h)(0x5E8E3CC2)
+I (..\Drivers\SYSTEM\usart\usart.h)(0x688A423C)
+I (E:\dianzi\MDKv5\ARM\ARMCLANG\include\stdio.h)(0x637AECBC)
 I (..\Middlewares\FreeRTOS\include\projdefs.h)(0x6540A28D)
 I (..\Middlewares\FreeRTOS\include\portable.h)(0x6540A28D)
 I (..\Middlewares\FreeRTOS\include\deprecated_definitions.h)(0x6540A28D)
-I (..\Middlewares\FreeRTOS\portable\RVDS\ARM_CM7\r0p1\portmacro.h)(0x6540A28E)
+I (..\Middlewares\FreeRTOS\portable\GCC\ARM_CM7\r0p1\portmacro.h)(0x61C2EEAA)
 I (..\Middlewares\FreeRTOS\include\mpu_wrappers.h)(0x6540A28D)
 I (..\Middlewares\FreeRTOS\include\task.h)(0x6540A28D)
 I (..\Middlewares\FreeRTOS\include\list.h)(0x6540A28D)
 I (..\Middlewares\FreeRTOS\include\queue.h)(0x6540A28D)
 I (..\Middlewares\FreeRTOS\include\timers.h)(0x6540A28D)
-F (..\Middlewares\FreeRTOS\portable\MemMang\heap_4.c)(0x6540A28E)(--c99 -c --cpu Cortex-M7.fp.dp -O1 --apcs=interwork --split_sections -I ..\Drivers -I ..\Drivers\CMSIS\Device\ST\STM32H7xx\Include -I ..\Drivers\STM32H7xx_HAL_Driver\Inc -I ..\Drivers\CMSIS\Include -I ..\Middlewares -I ..\Middlewares\MALLOC -I ..\Middlewares\FreeRTOS\include -I ..\Middlewares\FreeRTOS\portable\RVDS\ARM_CM7\r0p1 -I ..\Drivers\SYSTEM\delay -I ..\Drivers\SYSTEM\sys -I ..\Drivers\SYSTEM\usart -I ..\Drivers\BSP\KEY -I ..\Drivers\BSP\LCD -I ..\Drivers\BSP\LED -I ..\Drivers\BSP\MPU -I ..\Drivers\BSP\TIMER -I ..\User-IE:\dianzi\MDKv5\Keil\STM32H7xx_DFP\3.1.0\Drivers\CMSIS\Device\ST\STM32H7xx\Include-D__UVISION_VERSION="538" -DSTM32H750xx -DSTM32H750xx -DUSE_HAL_DRIVER-o ..\output\heap_4.o --depend ..\output\heap_4.d)
-I (E:\dianzi\MDKv5\ARM\AC5\include\stdlib.h)(0x5E8E3CC2)
+F (..\Middlewares\FreeRTOS\portable\MemMang\heap_4.c)(0x6540A28E)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m7 -mfpu=fpv5-d16 -mfloat-abi=hard -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-O2 -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-reserved-identifier -I ../Drivers -I ../Drivers/CMSIS/Device/ST/STM32H7xx/Include -I ../Drivers/STM32H7xx_HAL_Driver/Inc -I ../Drivers/CMSIS/Include -I ../Middlewares -I ../Middlewares/MALLOC -I ../Middlewares/FreeRTOS/include -I ../Drivers/SYSTEM/delay -I ../Drivers/SYSTEM/sys -I ../Drivers/SYSTEM/usart -I ../Drivers/BSP/KEY -I ../Drivers/BSP/LCD -I ../Drivers/BSP/LED -I ../Drivers/BSP/MPU -I ../Drivers/BSP/TIMER -I ../User -I ../Middlewares/FreeRTOS/portable/GCC/ARM_CM7/r0p1-IE:/dianzi/MDKv5/Keil/STM32H7xx_DFP/3.1.0/Drivers/CMSIS/Device/ST/STM32H7xx/Include-D__UVISION_VERSION="538" -DSTM32H750xx -DSTM32H750xx -DUSE_HAL_DRIVER-o ../output/heap_4.o -MD)
+I (E:\dianzi\MDKv5\ARM\ARMCLANG\include\stdlib.h)(0x637AECBC)
 I (..\Middlewares\FreeRTOS\include\FreeRTOS.h)(0x6540A28D)
-I (E:\dianzi\MDKv5\ARM\AC5\include\stddef.h)(0x5E8E3CC2)
-I (E:\dianzi\MDKv5\ARM\AC5\include\stdint.h)(0x5E8E3CC2)
-I (..\User\FreeRTOSConfig.h)(0x6540A28E)
-I (..\Drivers\./SYSTEM/sys/sys.h)(0x688A423C)
+I (E:\dianzi\MDKv5\ARM\ARMCLANG\include\stddef.h)(0x637AECBC)
+I (E:\dianzi\MDKv5\ARM\ARMCLANG\include\stdint.h)(0x637AECBC)
+I (..\User\FreeRTOSConfig.h)(0x68907994)
+I (..\Drivers\SYSTEM\sys\sys.h)(0x688A423C)
 I (..\Drivers\CMSIS\Device\ST\STM32H7xx\Include\stm32h7xx.h)(0x6540A28B)
 I (..\Drivers\CMSIS\Device\ST\STM32H7xx\Include\stm32h750xx.h)(0x6540A28B)
 I (..\Drivers\CMSIS\Include\core_cm7.h)(0x6540A28B)
 I (..\Drivers\CMSIS\Include\cmsis_version.h)(0x6540A28B)
 I (..\Drivers\CMSIS\Include\cmsis_compiler.h)(0x6540A28B)
-I (..\Drivers\CMSIS\Include\cmsis_armcc.h)(0x6540A28B)
+I (..\Drivers\CMSIS\Include\cmsis_armclang.h)(0x6540A28B)
+I (E:\dianzi\MDKv5\ARM\ARMCLANG\include\arm_compat.h)(0x6306C9C0)
+I (E:\dianzi\MDKv5\ARM\ARMCLANG\include\arm_acle.h)(0x637AECB8)
 I (..\Drivers\CMSIS\Include\mpu_armv7.h)(0x6540A28B)
 I (..\Drivers\CMSIS\Device\ST\STM32H7xx\Include\system_stm32h7xx.h)(0x6540A28B)
 I (..\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal.h)(0x6540A28B)
 I (..\User\stm32h7xx_hal_conf.h)(0x6540A28E)
 I (..\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_rcc.h)(0x6540A28B)
 I (..\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_def.h)(0x6540A28B)
-I (..\Drivers\STM32H7xx_HAL_Driver\Inc\Legacy/stm32_hal_legacy.h)(0x6540A28B)
-I (E:\dianzi\MDKv5\ARM\AC5\include\math.h)(0x5E8E3CC2)
+I (..\Drivers\STM32H7xx_HAL_Driver\Inc\Legacy\stm32_hal_legacy.h)(0x6540A28B)
+I (E:\dianzi\MDKv5\ARM\ARMCLANG\include\math.h)(0x637AECBA)
 I (..\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_rcc_ex.h)(0x6540A28B)
 I (..\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_gpio.h)(0x6540A28B)
 I (..\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_gpio_ex.h)(0x6540A28B)
@@ -4036,35 +4115,37 @@ I (..\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_pcd.h)(0x6540A28B)
 I (..\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_ll_usb.h)(0x6540A28C)
 I (..\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_pcd_ex.h)(0x6540A28B)
 I (..\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_hcd.h)(0x6540A28B)
-I (..\Drivers\./SYSTEM/usart/usart.h)(0x688A423C)
-I (E:\dianzi\MDKv5\ARM\AC5\include\stdio.h)(0x5E8E3CC2)
+I (..\Drivers\SYSTEM\usart\usart.h)(0x688A423C)
+I (E:\dianzi\MDKv5\ARM\ARMCLANG\include\stdio.h)(0x637AECBC)
 I (..\Middlewares\FreeRTOS\include\projdefs.h)(0x6540A28D)
 I (..\Middlewares\FreeRTOS\include\portable.h)(0x6540A28D)
 I (..\Middlewares\FreeRTOS\include\deprecated_definitions.h)(0x6540A28D)
-I (..\Middlewares\FreeRTOS\portable\RVDS\ARM_CM7\r0p1\portmacro.h)(0x6540A28E)
+I (..\Middlewares\FreeRTOS\portable\GCC\ARM_CM7\r0p1\portmacro.h)(0x61C2EEAA)
 I (..\Middlewares\FreeRTOS\include\mpu_wrappers.h)(0x6540A28D)
 I (..\Middlewares\FreeRTOS\include\task.h)(0x6540A28D)
 I (..\Middlewares\FreeRTOS\include\list.h)(0x6540A28D)
-F (..\Middlewares\FreeRTOS\portable\RVDS\ARM_CM7\r0p1\port.c)(0x6540A28E)(--c99 -c --cpu Cortex-M7.fp.dp -O1 --apcs=interwork --split_sections -I ..\Drivers -I ..\Drivers\CMSIS\Device\ST\STM32H7xx\Include -I ..\Drivers\STM32H7xx_HAL_Driver\Inc -I ..\Drivers\CMSIS\Include -I ..\Middlewares -I ..\Middlewares\MALLOC -I ..\Middlewares\FreeRTOS\include -I ..\Middlewares\FreeRTOS\portable\RVDS\ARM_CM7\r0p1 -I ..\Drivers\SYSTEM\delay -I ..\Drivers\SYSTEM\sys -I ..\Drivers\SYSTEM\usart -I ..\Drivers\BSP\KEY -I ..\Drivers\BSP\LCD -I ..\Drivers\BSP\LED -I ..\Drivers\BSP\MPU -I ..\Drivers\BSP\TIMER -I ..\User-IE:\dianzi\MDKv5\Keil\STM32H7xx_DFP\3.1.0\Drivers\CMSIS\Device\ST\STM32H7xx\Include-D__UVISION_VERSION="538" -DSTM32H750xx -DSTM32H750xx -DUSE_HAL_DRIVER-o ..\output\port.o --depend ..\output\port.d)
+F (..\Middlewares\FreeRTOS\portable\GCC\ARM_CM7\r0p1\port.c)(0x61C2EEAA)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m7 -mfpu=fpv5-d16 -mfloat-abi=hard -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-O2 -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-reserved-identifier -I ../Drivers -I ../Drivers/CMSIS/Device/ST/STM32H7xx/Include -I ../Drivers/STM32H7xx_HAL_Driver/Inc -I ../Drivers/CMSIS/Include -I ../Middlewares -I ../Middlewares/MALLOC -I ../Middlewares/FreeRTOS/include -I ../Drivers/SYSTEM/delay -I ../Drivers/SYSTEM/sys -I ../Drivers/SYSTEM/usart -I ../Drivers/BSP/KEY -I ../Drivers/BSP/LCD -I ../Drivers/BSP/LED -I ../Drivers/BSP/MPU -I ../Drivers/BSP/TIMER -I ../User -I ../Middlewares/FreeRTOS/portable/GCC/ARM_CM7/r0p1-IE:/dianzi/MDKv5/Keil/STM32H7xx_DFP/3.1.0/Drivers/CMSIS/Device/ST/STM32H7xx/Include-D__UVISION_VERSION="538" -DSTM32H750xx -DSTM32H750xx -DUSE_HAL_DRIVER-o ../output/port.o -MD)
 I (..\Middlewares\FreeRTOS\include\FreeRTOS.h)(0x6540A28D)
-I (E:\dianzi\MDKv5\ARM\AC5\include\stddef.h)(0x5E8E3CC2)
-I (E:\dianzi\MDKv5\ARM\AC5\include\stdint.h)(0x5E8E3CC2)
-I (..\User\FreeRTOSConfig.h)(0x6540A28E)
-I (..\Drivers\./SYSTEM/sys/sys.h)(0x688A423C)
+I (E:\dianzi\MDKv5\ARM\ARMCLANG\include\stddef.h)(0x637AECBC)
+I (E:\dianzi\MDKv5\ARM\ARMCLANG\include\stdint.h)(0x637AECBC)
+I (..\User\FreeRTOSConfig.h)(0x68907994)
+I (..\Drivers\SYSTEM\sys\sys.h)(0x688A423C)
 I (..\Drivers\CMSIS\Device\ST\STM32H7xx\Include\stm32h7xx.h)(0x6540A28B)
 I (..\Drivers\CMSIS\Device\ST\STM32H7xx\Include\stm32h750xx.h)(0x6540A28B)
 I (..\Drivers\CMSIS\Include\core_cm7.h)(0x6540A28B)
 I (..\Drivers\CMSIS\Include\cmsis_version.h)(0x6540A28B)
 I (..\Drivers\CMSIS\Include\cmsis_compiler.h)(0x6540A28B)
-I (..\Drivers\CMSIS\Include\cmsis_armcc.h)(0x6540A28B)
+I (..\Drivers\CMSIS\Include\cmsis_armclang.h)(0x6540A28B)
+I (E:\dianzi\MDKv5\ARM\ARMCLANG\include\arm_compat.h)(0x6306C9C0)
+I (E:\dianzi\MDKv5\ARM\ARMCLANG\include\arm_acle.h)(0x637AECB8)
 I (..\Drivers\CMSIS\Include\mpu_armv7.h)(0x6540A28B)
 I (..\Drivers\CMSIS\Device\ST\STM32H7xx\Include\system_stm32h7xx.h)(0x6540A28B)
 I (..\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal.h)(0x6540A28B)
 I (..\User\stm32h7xx_hal_conf.h)(0x6540A28E)
 I (..\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_rcc.h)(0x6540A28B)
 I (..\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_def.h)(0x6540A28B)
-I (..\Drivers\STM32H7xx_HAL_Driver\Inc\Legacy/stm32_hal_legacy.h)(0x6540A28B)
-I (E:\dianzi\MDKv5\ARM\AC5\include\math.h)(0x5E8E3CC2)
+I (..\Drivers\STM32H7xx_HAL_Driver\Inc\Legacy\stm32_hal_legacy.h)(0x6540A28B)
+I (E:\dianzi\MDKv5\ARM\ARMCLANG\include\math.h)(0x637AECBA)
 I (..\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_rcc_ex.h)(0x6540A28B)
 I (..\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_gpio.h)(0x6540A28B)
 I (..\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_gpio_ex.h)(0x6540A28B)
@@ -4147,12 +4228,12 @@ I (..\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_pcd.h)(0x6540A28B)
 I (..\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_ll_usb.h)(0x6540A28C)
 I (..\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_pcd_ex.h)(0x6540A28B)
 I (..\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_hcd.h)(0x6540A28B)
-I (..\Drivers\./SYSTEM/usart/usart.h)(0x688A423C)
-I (E:\dianzi\MDKv5\ARM\AC5\include\stdio.h)(0x5E8E3CC2)
+I (..\Drivers\SYSTEM\usart\usart.h)(0x688A423C)
+I (E:\dianzi\MDKv5\ARM\ARMCLANG\include\stdio.h)(0x637AECBC)
 I (..\Middlewares\FreeRTOS\include\projdefs.h)(0x6540A28D)
 I (..\Middlewares\FreeRTOS\include\portable.h)(0x6540A28D)
 I (..\Middlewares\FreeRTOS\include\deprecated_definitions.h)(0x6540A28D)
-I (..\Middlewares\FreeRTOS\portable\RVDS\ARM_CM7\r0p1\portmacro.h)(0x6540A28E)
+I (..\Middlewares\FreeRTOS\portable\GCC\ARM_CM7\r0p1\portmacro.h)(0x61C2EEAA)
 I (..\Middlewares\FreeRTOS\include\mpu_wrappers.h)(0x6540A28D)
 I (..\Middlewares\FreeRTOS\include\task.h)(0x6540A28D)
 I (..\Middlewares\FreeRTOS\include\list.h)(0x6540A28D)
