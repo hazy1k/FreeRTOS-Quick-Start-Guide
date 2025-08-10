@@ -307,4 +307,3 @@ void sys_qspi_enable_memmapmode(uint8_t ftype)
     MPU->CTRL = (1 << 2) | (1 << 0);/* 使能PRIVDEFENA, 使能MPU */
     SCB->SHCSR |= 1 << 16;          /* 使能MemManage */
 }
-

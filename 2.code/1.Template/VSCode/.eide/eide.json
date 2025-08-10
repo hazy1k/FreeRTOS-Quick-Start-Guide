@@ -177,7 +177,7 @@
                 "path": "../Middlewares/FreeRTOS/portable/MemMang/heap_4.c"
               },
               {
-                "path": "../Middlewares/FreeRTOS/portable/RVDS/ARM_CM7/r0p1/port.c"
+                "path": "../Middlewares/FreeRTOS/portable/GCC/ARM_CM7/r0p1/port.c"
               }
             ],
             "folders": []
@@ -190,12 +190,12 @@
   "deviceName": null,
   "packDir": null,
   "miscInfo": {
-    "uid": "ba80f65a76c4ac058ae8fda489deff18"
+    "uid": "bb3f77aa5b997387f57019239a6761f1"
   },
   "targets": {
     "FreeRTOS": {
       "excludeList": [],
-      "toolchain": "AC5",
+      "toolchain": "AC6",
       "compileConfig": {
         "cpuType": "Cortex-M7",
         "archExtensions": "",
@@ -345,7 +345,6 @@
           "../Middlewares",
           "../Middlewares/MALLOC",
           "../Middlewares/FreeRTOS/include",
-          "../Middlewares/FreeRTOS/portable/RVDS/ARM_CM7/r0p1",
           "../Drivers/SYSTEM/delay",
           "../Drivers/SYSTEM/sys",
           "../Drivers/SYSTEM/usart",
@@ -355,6 +354,7 @@
           "../Drivers/BSP/MPU",
           "../Drivers/BSP/TIMER",
           "../User",
+          "../Middlewares/FreeRTOS/portable/GCC/ARM_CM7/r0p1",
           ".cmsis/include",
           "../Projects/RTE/_FreeRTOS"
         ],
@@ -365,30 +365,36 @@
         ]
       },
       "builderOptions": {
-        "AC5": {
-          "version": 4,
+        "AC6": {
+          "version": 3,
           "beforeBuildTasks": [],
           "afterBuildTasks": [],
           "global": {
+            "use-microLIB": false,
             "output-debug-info": "enable"
           },
           "c/cpp-compiler": {
-            "optimization": "level-1",
+            "optimization": "level-2",
+            "language-c": "c99",
+            "language-cpp": "c++03",
+            "link-time-optimization": false,
             "one-elf-section-per-function": true,
-            "c99-mode": true,
-            "C_FLAGS": "--diag_suppress=1 --diag_suppress=1295",
-            "CXX_FLAGS": "--diag_suppress=1 --diag_suppress=1295",
-            "warnings": "all-warnings"
+            "short-enums#wchar": true,
+            "warnings": "ac5-like-warnings"
           },
-          "asm-compiler": {},
+          "asm-compiler": {
+            "$use": "asm-auto",
+            "misc-controls": ""
+          },
           "linker": {
             "$outputTaskExcludes": [
               ".bin"
             ],
             "output-format": "elf",
+            "misc-controls": "--diag_suppress=L6329",
+            "xo-base": "",
             "ro-base": "0x08000000",
-            "rw-base": "0x20000000",
-            "$disableOutputTask": true
+            "rw-base": "0x20000000"
           }
         }
       }

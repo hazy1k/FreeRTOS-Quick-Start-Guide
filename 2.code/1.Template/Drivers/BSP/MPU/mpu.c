@@ -3,7 +3,6 @@
 #include "led.h"
 #include "mpu.h"
 
-
 /**
  * @brief       设置某个区域的MPU保护
  * @param       baseaddr: MPU保护区域的基址(首地址)
@@ -99,16 +98,3 @@ void MemManage_Handler(void)
     delay_ms(1000);
     NVIC_SystemReset();                 /* 软复位 */
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
