@@ -1,5 +1,5 @@
-#! armcc -E
-;#! armclang -E --target=arm-arm-none-eabi -mcpu=cortex-m7 -xc
+#! armclang -E --target=arm-arm-none-eabi -mcpu=cortex-m7 -xc
+;#! armcc -E
 /* 使用说明 
 ! armclang -E --target=arm-arm-none-eabi -mcpu=cortex-m7 -xc， 用于AC6编译报错（L6709E错误）时，请使用此设置
 ！armcc -E， 用于AC5编译报错（L6709E错误）时，请使用此设置
@@ -104,9 +104,6 @@ LR_m_qspiflash m_qspiflash_start m_qspiflash_size       /* LR_m_qspiflash加载域 
         .ANY (+RO)                                      /* 将只读数据(+RO)放这个域,任意分配.相当于程序就是存放在这个域的. */
     }
 }
-
-
-
 
 
 

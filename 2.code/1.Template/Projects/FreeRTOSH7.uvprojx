@@ -340,7 +340,7 @@
               <MiscControls></MiscControls>
               <Define>STM32H750xx,USE_HAL_DRIVER</Define>
               <Undefine></Undefine>
-              <IncludePath>..\Drivers;..\Drivers\CMSIS\Device\ST\STM32H7xx\Include;..\Drivers\STM32H7xx_HAL_Driver\Inc;..\Drivers\CMSIS\Include;..\Middlewares;..\Middlewares\MALLOC;..\Middlewares\FreeRTOS\include;..\Drivers\SYSTEM\delay;..\Drivers\SYSTEM\sys;..\Drivers\SYSTEM\usart;..\Drivers\BSP\KEY;..\Drivers\BSP\LCD;..\Drivers\BSP\LED;..\Drivers\BSP\MPU;..\Drivers\BSP\TIMER;..\User;..\Middlewares\FreeRTOS\portable\GCC\ARM_CM7\r0p1</IncludePath>
+              <IncludePath>..\Drivers;..\Drivers\CMSIS\Device\ST\STM32H7xx\Include;..\Drivers\STM32H7xx_HAL_Driver\Inc;..\Drivers\CMSIS\Include;..\Middlewares;..\Middlewares\MALLOC;..\Middlewares\FreeRTOS\include;..\Middlewares\FreeRTOS\portable\GCC\ARM_CM7\r0p1;..\Drivers\SYSTEM\delay;..\Drivers\SYSTEM\sys;..\Drivers\SYSTEM\usart;..\Drivers\BSP\KEY;..\Drivers\BSP\LCD;..\Drivers\BSP\LED;..\Drivers\BSP\MPU;..\Drivers\BSP\TIMER;..\User</IncludePath>
             </VariousControls>
           </Cads>
           <Aads>
