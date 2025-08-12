@@ -49,7 +49,7 @@
 #define portCLEAR_INTERRUPT_MASK_FROM_ISR(x) vPortSetBASEPRI(x)
 ```
 
-## 3. FreeRTOS中断测试实验
+## 3. FreeRTOS中断测试
 
 ### 3.1 程序流程图
 
