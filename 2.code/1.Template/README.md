@@ -1,1 +1,1 @@
-# 新建FreeRTOX工程模板
+# 新建FreeRTOS工程模板
