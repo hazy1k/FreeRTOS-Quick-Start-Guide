@@ -697,7 +697,6 @@ void task3(void *pvParameters)
     }
 }
 /*---------------------------------------------*/
-
 ```
 
 ### 4.3 主函数
@@ -727,9 +726,6 @@ int main(void)
     my_mem_init(SRAMIN);                /* 初始化内部内存池(AXI) */
     freertos_demo();                    /* 运行FreeRTOS例程 */
 }
-
 ```
 
 ---
-
-
