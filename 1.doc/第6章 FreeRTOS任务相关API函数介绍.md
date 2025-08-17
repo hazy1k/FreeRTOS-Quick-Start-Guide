@@ -457,7 +457,6 @@ void HAL_TIM_PeriodElapsedCallback(TIM_HandleTypeDef *htim)
         FreeRTOSRunTimeTicks++;
     }
 }
-
 ```
 
 ### 3.1 任务配置

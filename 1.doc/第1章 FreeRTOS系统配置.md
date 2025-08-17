@@ -257,5 +257,3 @@ FreeRTOS 使用“INCLUDE”配置项对部分 API 函数进行条件编译，�
 这两个宏为 PendSV 和 SVC 的中断服务函数，主要用于 FreeRTOS 操作系统的任务切换，有关 FreeRTOS 操作系统中任务切换的相关内容
 
 ---
-
-

@@ -117,8 +117,6 @@ QueueSetMemberHandle_t xQueueSelectFromSet( QueueSetHandle_t xQueueSet, TickType
 
 ### 2.5 在中断中获取队列集中有有效消息的队列
 
-### `xQueueSelectFromSetFromISR()`
-
 `xQueueSelectFromSetFromISR()` 函数是 `xQueueSelectFromSet()` 的中断安全版本，用于在 ISR 中查询队列集中是否有可用成员。
 
 **函数原型：**
@@ -303,7 +301,6 @@ int main(void)
     my_mem_init(SRAMIN);                /* 初始化内部内存池(AXI) */
     freertos_demo();                    /* 运行FreeRTOS例程 */
 }
-
 ```
 
 ## 4. 队列集模拟事件标志位
@@ -432,9 +429,6 @@ int main(void)
     my_mem_init(SRAMIN);                /* 初始化内部内存池(AXI) */
     freertos_demo();                    /* 运行FreeRTOS例程 */
 }
-
 ```
 
 ---
-
-
