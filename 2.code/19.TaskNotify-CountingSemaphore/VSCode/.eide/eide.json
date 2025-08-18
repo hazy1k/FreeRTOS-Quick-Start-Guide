@@ -1,0 +1,392 @@
+{
+  "name": "FreeRTOSH7",
+  "type": "ARM",
+  "dependenceList": [],
+  "srcDirs": [],
+  "virtualFolder": {
+    "name": "<virtual_root>",
+    "files": [],
+    "folders": [
+      {
+        "name": "User",
+        "files": [
+          {
+            "path": "../Drivers/CMSIS/Device/ST/STM32H7xx/Source/Templates/arm/startup_stm32h750xx.s"
+          },
+          {
+            "path": "../User/main.c"
+          },
+          {
+            "path": "../User/stm32h7xx_it.c"
+          },
+          {
+            "path": "../User/freertos_demo.c"
+          },
+          {
+            "path": "../Drivers/CMSIS/Device/ST/STM32H7xx/Source/Templates/system_stm32h7xx.c"
+          }
+        ],
+        "folders": []
+      },
+      {
+        "name": "Drivers",
+        "files": [],
+        "folders": [
+          {
+            "name": "SYSTEM",
+            "files": [
+              {
+                "path": "../Drivers/SYSTEM/delay/delay.c"
+              },
+              {
+                "path": "../Drivers/SYSTEM/sys/sys.c"
+              },
+              {
+                "path": "../Drivers/SYSTEM/usart/usart.c"
+              }
+            ],
+            "folders": []
+          },
+          {
+            "name": "STM32H7xx_HAL_Driver",
+            "files": [
+              {
+                "path": "../Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal.c"
+              },
+              {
+                "path": "../Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_cortex.c"
+              },
+              {
+                "path": "../Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_dma.c"
+              },
+              {
+                "path": "../Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_dma_ex.c"
+              },
+              {
+                "path": "../Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_gpio.c"
+              },
+              {
+                "path": "../Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_pwr.c"
+              },
+              {
+                "path": "../Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_pwr_ex.c"
+              },
+              {
+                "path": "../Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_rcc.c"
+              },
+              {
+                "path": "../Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_rcc_ex.c"
+              },
+              {
+                "path": "../Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_uart.c"
+              },
+              {
+                "path": "../Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_uart_ex.c"
+              },
+              {
+                "path": "../Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_usart.c"
+              },
+              {
+                "path": "../Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_usart_ex.c"
+              },
+              {
+                "path": "../Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_mdma.c"
+              },
+              {
+                "path": "../Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_sram.c"
+              },
+              {
+                "path": "../Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_tim.c"
+              },
+              {
+                "path": "../Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_tim_ex.c"
+              },
+              {
+                "path": "../Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_ll_fmc.c"
+              }
+            ],
+            "folders": []
+          },
+          {
+            "name": "BSP",
+            "files": [
+              {
+                "path": "../Drivers/BSP/LED/led.c"
+              },
+              {
+                "path": "../Drivers/BSP/KEY/key.c"
+              },
+              {
+                "path": "../Drivers/BSP/LCD/lcd.c"
+              },
+              {
+                "path": "../Drivers/BSP/MPU/mpu.c"
+              },
+              {
+                "path": "../Drivers/BSP/TIMER/btim.c"
+              }
+            ],
+            "folders": []
+          }
+        ]
+      },
+      {
+        "name": "Middlewares",
+        "files": [],
+        "folders": [
+          {
+            "name": "MALLOC",
+            "files": [
+              {
+                "path": "../Middlewares/MALLOC/malloc.c"
+              }
+            ],
+            "folders": []
+          },
+          {
+            "name": "FreeRTOS_CORE",
+            "files": [
+              {
+                "path": "../Middlewares/FreeRTOS/croutine.c"
+              },
+              {
+                "path": "../Middlewares/FreeRTOS/event_groups.c"
+              },
+              {
+                "path": "../Middlewares/FreeRTOS/list.c"
+              },
+              {
+                "path": "../Middlewares/FreeRTOS/queue.c"
+              },
+              {
+                "path": "../Middlewares/FreeRTOS/stream_buffer.c"
+              },
+              {
+                "path": "../Middlewares/FreeRTOS/tasks.c"
+              },
+              {
+                "path": "../Middlewares/FreeRTOS/timers.c"
+              }
+            ],
+            "folders": []
+          },
+          {
+            "name": "FreeRTOS_PORT",
+            "files": [
+              {
+                "path": "../Middlewares/FreeRTOS/portable/MemMang/heap_4.c"
+              },
+              {
+                "path": "../Middlewares/FreeRTOS/portable/GCC/ARM_CM7/r0p1/port.c"
+              }
+            ],
+            "folders": []
+          }
+        ]
+      }
+    ]
+  },
+  "outDir": "build",
+  "deviceName": null,
+  "packDir": null,
+  "miscInfo": {
+    "uid": "f0ab6113caddbeb851851528f35840a0"
+  },
+  "targets": {
+    "FreeRTOS": {
+      "excludeList": [],
+      "toolchain": "AC6",
+      "compileConfig": {
+        "cpuType": "Cortex-M7",
+        "archExtensions": "",
+        "floatingPointHardware": "double",
+        "scatterFilePath": "../User/SCRIPT/qspi_code.scf.scf",
+        "useCustomScatterFile": true,
+        "storageLayout": {
+          "RAM": [
+            {
+              "tag": "RAM",
+              "id": 1,
+              "mem": {
+                "startAddr": "0x30000000",
+                "size": "0x48000"
+              },
+              "isChecked": false,
+              "noInit": false
+            },
+            {
+              "tag": "RAM",
+              "id": 2,
+              "mem": {
+                "startAddr": "0x38000000",
+                "size": "0x10000"
+              },
+              "isChecked": false,
+              "noInit": false
+            },
+            {
+              "tag": "RAM",
+              "id": 3,
+              "mem": {
+                "startAddr": "0x0",
+                "size": "0x0"
+              },
+              "isChecked": false,
+              "noInit": false
+            },
+            {
+              "tag": "IRAM",
+              "id": 1,
+              "mem": {
+                "startAddr": "0x20000000",
+                "size": "0x20000"
+              },
+              "isChecked": true,
+              "noInit": false
+            },
+            {
+              "tag": "IRAM",
+              "id": 2,
+              "mem": {
+                "startAddr": "0x24000000",
+                "size": "0x80000"
+              },
+              "isChecked": true,
+              "noInit": false
+            }
+          ],
+          "ROM": [
+            {
+              "tag": "ROM",
+              "id": 1,
+              "mem": {
+                "startAddr": "0x0",
+                "size": "0x0"
+              },
+              "isChecked": false,
+              "isStartup": false
+            },
+            {
+              "tag": "ROM",
+              "id": 2,
+              "mem": {
+                "startAddr": "0x0",
+                "size": "0x0"
+              },
+              "isChecked": false,
+              "isStartup": false
+            },
+            {
+              "tag": "ROM",
+              "id": 3,
+              "mem": {
+                "startAddr": "0x0",
+                "size": "0x0"
+              },
+              "isChecked": false,
+              "isStartup": false
+            },
+            {
+              "tag": "IROM",
+              "id": 1,
+              "mem": {
+                "startAddr": "0x8000000",
+                "size": "0x20000"
+              },
+              "isChecked": true,
+              "isStartup": true
+            },
+            {
+              "tag": "IROM",
+              "id": 2,
+              "mem": {
+                "startAddr": "0x0",
+                "size": "0x0"
+              },
+              "isChecked": false,
+              "isStartup": false
+            }
+          ]
+        },
+        "options": "null"
+      },
+      "uploader": "JLink",
+      "uploadConfig": {
+        "bin": "",
+        "baseAddr": "",
+        "cpuInfo": {
+          "vendor": "null",
+          "cpuName": "null"
+        },
+        "proType": 1,
+        "speed": 8000,
+        "otherCmds": ""
+      },
+      "uploadConfigMap": {},
+      "custom_dep": {
+        "name": "default",
+        "incList": [
+          "../Drivers",
+          "../Drivers/CMSIS/Device/ST/STM32H7xx/Include",
+          "../Drivers/STM32H7xx_HAL_Driver/Inc",
+          "../Drivers/CMSIS/Include",
+          "../Middlewares",
+          "../Middlewares/MALLOC",
+          "../Middlewares/FreeRTOS/include",
+          "../Drivers/SYSTEM/delay",
+          "../Drivers/SYSTEM/sys",
+          "../Drivers/SYSTEM/usart",
+          "../Drivers/BSP/KEY",
+          "../Drivers/BSP/LCD",
+          "../Drivers/BSP/LED",
+          "../Drivers/BSP/MPU",
+          "../Drivers/BSP/TIMER",
+          "../User",
+          "../Middlewares/FreeRTOS/portable/GCC/ARM_CM7/r0p1",
+          ".cmsis/include",
+          "../Projects/RTE/_FreeRTOS"
+        ],
+        "libList": [],
+        "defineList": [
+          "STM32H750xx",
+          "USE_HAL_DRIVER"
+        ]
+      },
+      "builderOptions": {
+        "AC6": {
+          "version": 3,
+          "beforeBuildTasks": [],
+          "afterBuildTasks": [],
+          "global": {
+            "use-microLIB": false,
+            "output-debug-info": "enable"
+          },
+          "c/cpp-compiler": {
+            "optimization": "level-2",
+            "language-c": "c99",
+            "language-cpp": "c++03",
+            "link-time-optimization": false,
+            "one-elf-section-per-function": true,
+            "short-enums#wchar": true,
+            "warnings": "no-warnings"
+          },
+          "asm-compiler": {
+            "$use": "asm-auto",
+            "misc-controls": ""
+          },
+          "linker": {
+            "$outputTaskExcludes": [
+              ".bin"
+            ],
+            "output-format": "elf",
+            "misc-controls": "--diag_suppress=L6329",
+            "xo-base": "",
+            "ro-base": "0x08000000",
+            "rw-base": "0x20000000"
+          }
+        }
+      }
+    }
+  },
+  "version": "3.6"
+}
