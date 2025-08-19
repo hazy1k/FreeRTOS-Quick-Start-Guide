@@ -323,9 +323,6 @@ int main(void)
     my_mem_init(SRAMIN);                /* 初始化内部内存池(AXI) */
     freertos_demo();                    /* 运行FreeRTOS例程 */
 }
-
 ```
 
 ---
-
-
